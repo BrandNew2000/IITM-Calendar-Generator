@@ -4,7 +4,7 @@ from zoneinfo import ZoneInfo
 
 class iitmcal:
     
-    hour_slots={'A':['MO0800', 'TU1300', 'TH1100', 'FR1000'], 'B':['MO0900', 'TU0800', 'WE1300', 'FR1100'], 'C':['MO1000', 'TU0900', 'WE0800', 'FR1300'], 'D':['MO1100', 'TU1000', 'WE0900', 'TH1300'], 'E':['TU1100', 'WD1000', 'TH0800', 'FR1700'], 'F':['TU1700', 'WE1100', 'TH0900', 'FR0800']}
+    hour_slots={'A':['MO0800', 'TU1300', 'TH1100', 'FR1000'], 'B':['MO0900', 'TU0800', 'WE1300', 'FR1100'], 'C':['MO1000', 'TU0900', 'WE0800', 'FR1300'], 'D':['MO1100', 'TU1000', 'WE0900', 'TH1300'], 'E':['TU1100', 'WE1000', 'TH0800', 'FR1700'], 'F':['TU1700', 'WE1100', 'TH0900', 'FR0800']}
     long_slots={'P':['MO1400'], 'Q':['TU1400'], 'R':['WE1400'], 'S':['TH1400'], 'T':['FR1400']}
 
     def __init__(self, cal_name="cal.ical"):

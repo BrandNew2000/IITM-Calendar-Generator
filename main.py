@@ -37,9 +37,10 @@ def main():
     
     print(f"{INFO}{START_DISCLAIMER}")
 
+    keypress_valid=['a', 'A']
     keypress='a'
 
-    while keypress=='a':
+    while keypress in keypress_valid:
         menu(cal)
         keypress=input("Enter 'a' to continue and any other key to quit : ")
         print()
@@ -51,6 +52,6 @@ def main():
 if __name__=="__main__":
     try:
         main()
-    except:
+    except KeyboardInterrupt:
         print("\n\nKeyboard Interrupt Detected. Terminating....\n")
         exit()
