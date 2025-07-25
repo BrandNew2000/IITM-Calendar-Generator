@@ -12,7 +12,7 @@ const overrideData = {}; // { "Monday-A": { courseNo, name, venue } }
 async function download_tt(){
     var link = document.createElement('a');
     link.download = 'timetable.png';
-    canvas = await html2canvas(document.getElementById('timetable'));
+    canvas = await html2canvas(document.getElementById('timetable'), {scale: 10});
     link.href = canvas.toDataURL();
     link.click();
 }
@@ -147,9 +147,9 @@ function generateTable() {
         }
 
         if (data == null){
-        row = 'Free';
+        row = `<br>`;
         } else {
-        row = `(${slot})<strong> ${data.courseNo} </strong><br>${data.name}<br> <span style="">${data.venue}</span>`;
+        row = `(${slot}) <br> <strong> ${data.courseNo} </strong><br>${data.name}<br> <span style="font-size: x-small">${data.venue}</span>`;
         }
         document.getElementById(`${key}`).innerHTML = row;
     });
