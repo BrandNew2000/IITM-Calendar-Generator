@@ -96,6 +96,11 @@ function gen_gcal() {
     slotLayout[day].forEach(slot => {
         const key = `${day}-${slot}`;
         data[key] = overrideData[key] || slotData[slot];
+        if (data[key] != null){
+            if (data[key].courseNo == "" && data[key].name == "" && data[key].venue == ""){
+                data[key] = null;
+            }
+        }
     });
     });
     generateICS(data);
@@ -105,7 +110,7 @@ function parseInputs(){
     // Parse Slots
     document.querySelectorAll("#slotInputs .tt-data").forEach(row => {
     const [slot, courseNo, name, venue] = Array.from(row.children).map(el => el.value.trim());
-    if (slot && courseNo) {
+    if (slot) {
         slotData[slot] = { courseNo, name, venue };
     }
     });
@@ -115,7 +120,7 @@ function parseInputs(){
     const [daySel, slot, courseNo, name, venue] = Array.from(row.children);
     const day = daySel.value;
     const slotVal = slot.value.trim();
-    if (day && slotVal && courseNo.value.trim()) {
+    if (day && slotVal) {
         overrideData[`${day}-${slotVal}`] = {
         courseNo: courseNo.value.trim(),
         name: name.value.trim(),
@@ -133,9 +138,15 @@ function generateTable() {
     Object.keys(slotLayout).forEach(day => {
     slotLayout[day].forEach(slot => {
         const key = `${day}-${slot}`;
-        let data = overrideData[key] || slotData[slot] || { courseNo: "", name: "", venue: "" };
+        let data = overrideData[key] || slotData[slot] || null;
 
-        if (data.courseNo == ""){
+        if (data != null){
+            if (data.courseNo == "" && data.name == "" && data.venue == ""){
+                data = null;
+            }
+        }
+
+        if (data == null){
         row = 'Free';
         } else {
         row = `(${slot})<strong> ${data.courseNo} </strong><br>${data.name}<br> <span style="">${data.venue}</span>`;
