@@ -3,7 +3,7 @@
 //   "Tuesday-B": ["PH101", "Physics", "LH105"],
 // };
 
-const startDate = new Date("2025-11-28T00:00:00.000+05:30");
+const startDate = new Date("2025-07-28T00:00:00.000+05:30");
 
 const slotTimes = {
   "Monday": {
