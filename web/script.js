@@ -32,13 +32,15 @@ function addSlotRow() {
                         <option>F</option>
                         <option>G</option>
                         <option>H</option>
-                        <option>I</option>
                         <option>J</option>
                         <option>K</option>
+                        <option>L</option>
+                        <option>M</option>
                         <option>P</option>
                         <option>Q</option>
                         <option>R</option>
                         <option>S</option>
+                        <option>T</option>
                     </select>
                     <input placeholder="Course No.">
                     <input placeholder="Course Name">
