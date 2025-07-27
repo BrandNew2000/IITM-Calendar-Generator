@@ -6,8 +6,8 @@ const slotLayout = {
     "Friday": ["F", "G", "A", "B", "C", "T", "E", "K", "L"]
 };
 
-const slotData = {}; // { slot: { courseNo, name, venue } }
-const overrideData = {}; // { "Monday-A": { courseNo, name, venue } }
+var slotData = {}; // { slot: { courseNo, name, venue } }
+var overrideData = {}; // { "Monday-A": { courseNo, name, venue } }
 
 async function download_tt(){
     var link = document.createElement('a');
@@ -110,6 +110,8 @@ function gen_gcal() {
 
 function parseInputs(){
     // Parse Slots
+    slotData = {}
+    overrideData = {}
     document.querySelectorAll("#slotInputs .tt-data").forEach(row => {
     const [slot, courseNo, name, venue] = Array.from(row.children).map(el => el.value.trim());
     if (slot) {
