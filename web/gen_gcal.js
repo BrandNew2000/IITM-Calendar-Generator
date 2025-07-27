@@ -82,10 +82,10 @@ function formatICSDate(date, time) {
   const [hour, minute] = time.split(":").map(Number);
   date.setHours(hour, minute, 0);
 
-  let utcDate = new Date(date.toLocaleString('en-US', { timeZone: "UTC" }));
-  let tzDate = new Date(date.toLocaleString('en-US', { timeZone: "Asia/Kolkata" }));
-  let offset = utcDate.getTime() - tzDate.getTime();
-  date.setTime( date.getTime() - offset );
+//   let utcDate = new Date(date.toLocaleString('en-US', { timeZone: "UTC" }));
+//   let tzDate = new Date(date.toLocaleString('en-US', { timeZone: "Asia/Kolkata" }));
+//   let offset = utcDate.getTime() - tzDate.getTime();
+//   date.setTime( date.getTime() - offset );
 
   return date.toISOString().replace(/[-:]/g, "").split(".")[0] + "Z";
 }
