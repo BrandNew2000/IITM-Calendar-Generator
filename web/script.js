@@ -1,9 +1,9 @@
 const slotLayout = {
-    "Monday": ["A", "B", "C", "D", "G", "P", "H", "J", "M"],
-    "Tuesday": ["A", "B", "C", "D", "F", "Q", "H", "M", "E"],
-    "Wednesday": ["E", "B", "C", "D", "F", "R", "G", "J", "K"],
-    "Thursday": ["E", "F", "G", "A", "D", "S", "H", "L", "J"],
-    "Friday": ["F", "G", "A", "B", "C", "T", "E", "K", "L"]
+    "Monday": ["A", "B", "C", "D", "PG", "G", "P", "H", "J", "M"],
+    "Tuesday": ["A", "B", "C", "D", "PG", "F", "Q", "H", "M", "E"],
+    "Wednesday": ["E", "B", "C", "D", "PG", "F", "R", "G", "J", "K"],
+    "Thursday": ["E", "F", "G", "A", "PG", "D", "S", "H", "L", "J"],
+    "Friday": ["F", "G", "A", "B", "C", "PG", "T", "E", "K", "L"]
 };
 
 var slotData = {}; // { slot: { courseNo, name, venue } }
@@ -17,75 +17,97 @@ async function download_tt(){
     link.click();
 }
 
-function addSlotRow() {
+function addSlotRow(slot = "", course_num = "", course_name = "", venue = "") {
     const container = document.getElementById("slotInputs");
     const div = document.createElement("div");
+    function get_selected_slot(check_slot){
+        if (slot == check_slot){
+            return "selected";
+        }
+        return "";
+    }
     div.className = "form-row";
     div.innerHTML = `<span class="tt-data">
                     <select>
-                        <option value="" selected disabled>Slot</option>
-                        <option>A</option>
-                        <option>B</option>
-                        <option>C</option>
-                        <option>D</option>
-                        <option>E</option>
-                        <option>F</option>
-                        <option>G</option>
-                        <option>H</option>
-                        <option>J</option>
-                        <option>K</option>
-                        <option>L</option>
-                        <option>M</option>
-                        <option>P</option>
-                        <option>Q</option>
-                        <option>R</option>
-                        <option>S</option>
-                        <option>T</option>
+                        <option ${get_selected_slot('')} disabled>Slot</option>
+                        <option ${get_selected_slot('A')}>A</option>
+                        <option ${get_selected_slot('B')}>B</option>
+                        <option ${get_selected_slot('C')}>C</option>
+                        <option ${get_selected_slot('D')}>D</option>
+                        <option ${get_selected_slot('E')}>E</option>
+                        <option ${get_selected_slot('F')}>F</option>
+                        <option ${get_selected_slot('G')}>G</option>
+                        <option ${get_selected_slot('H')}>H</option>
+                        <option ${get_selected_slot('J')}>J</option>
+                        <option ${get_selected_slot('K')}>K</option>
+                        <option ${get_selected_slot('L')}>L</option>
+                        <option ${get_selected_slot('M')}>M</option>
+                        <option ${get_selected_slot('P')}>P</option>
+                        <option ${get_selected_slot('Q')}>Q</option>
+                        <option ${get_selected_slot('R')}>R</option>
+                        <option ${get_selected_slot('S')}>S</option>
+                        <option ${get_selected_slot('T')}>T</option>
+                        <option ${get_selected_slot('PG')}>Lunch</option>
                     </select>
-                    <input placeholder="Course No.">
-                    <input placeholder="Course Name">
-                    <input placeholder="Venue">
+                    <input placeholder="Course No." value = "${course_num}">
+                    <input placeholder="Course Name" value = "${course_name}">
+                    <input placeholder="Venue" value = "${venue}">
                     </span>
                     <span class="close-btn" value="" onclick="this.parentElement.remove()">×</span>`;
     container.appendChild(div);
 }
 
-function addOverrideRow() {
+function addOverrideRow(day = "", slot = "", course_num = "", course_name = "", venue = "") {
     const container = document.getElementById("overrideInputs");
     const div = document.createElement("div");
+    function get_selected_day(check_day){
+        if (day == check_day){
+            return "selected";
+        }
+        return "";
+    }
+    function get_selected_slot(check_slot){
+        if (slot == check_slot){
+            return "selected";
+        }
+        return "";
+    }
+
+    console.log(day);
     div.className = "form-row";
     div.innerHTML = ` <span class="tt-data">
                     <select>
-                        <option value="" selected disabled>Day</option>
-                        <option>Monday</option>
-                        <option>Tuesday</option>
-                        <option>Wednesday</option>
-                        <option>Thursday</option>
-                        <option>Friday</option>
+                        <option ${get_selected_day('')} disabled>Day</option>
+                        <option ${get_selected_day('Monday')}>Monday</option>
+                        <option ${get_selected_day('Tuesday')}>Tuesday</option>
+                        <option ${get_selected_day('Wednesday')}>Wednesday</option>
+                        <option ${get_selected_day('Thursday')}>Thursday</option>
+                        <option ${get_selected_day('Friday')}>Friday</option>
                     </select>
                     <select>
-                        <option value="" selected disabled>Slot</option>
-                        <option>A</option>
-                        <option>B</option>
-                        <option>C</option>
-                        <option>D</option>
-                        <option>E</option>
-                        <option>F</option>
-                        <option>G</option>
-                        <option>H</option>
-                        <option>J</option>
-                        <option>K</option>
-                        <option>L</option>
-                        <option>M</option>
-                        <option>P</option>
-                        <option>Q</option>
-                        <option>R</option>
-                        <option>S</option>
-                        <option>T</option>
+                        <option ${get_selected_slot('')} disabled>Slot</option>
+                        <option ${get_selected_slot('A')}>A</option>
+                        <option ${get_selected_slot('B')}>B</option>
+                        <option ${get_selected_slot('C')}>C</option>
+                        <option ${get_selected_slot('D')}>D</option>
+                        <option ${get_selected_slot('E')}>E</option>
+                        <option ${get_selected_slot('F')}>F</option>
+                        <option ${get_selected_slot('G')}>G</option>
+                        <option ${get_selected_slot('H')}>H</option>
+                        <option ${get_selected_slot('J')}>J</option>
+                        <option ${get_selected_slot('K')}>K</option>
+                        <option ${get_selected_slot('L')}>L</option>
+                        <option ${get_selected_slot('M')}>M</option>
+                        <option ${get_selected_slot('P')}>P</option>
+                        <option ${get_selected_slot('Q')}>Q</option>
+                        <option ${get_selected_slot('R')}>R</option>
+                        <option ${get_selected_slot('S')}>S</option>
+                        <option ${get_selected_slot('T')}>T</option>
+                        <option ${get_selected_slot('PG')}>Lunch</option>
                     </select>
-                    <input placeholder="Course No.">
-                    <input placeholder="Course Name">
-                    <input placeholder="Venue">
+                    <input placeholder="Course No." value = "${course_num}">
+                    <input placeholder="Course Name" value = "${course_name}">
+                    <input placeholder="Venue" value = "${venue}">
                     </span>
                     <span class="close-btn" value="" onclick="this.parentElement.remove()">×</span>`;
     container.appendChild(div);
@@ -113,7 +135,10 @@ function parseInputs(){
     slotData = {}
     overrideData = {}
     document.querySelectorAll("#slotInputs .tt-data").forEach(row => {
-    const [slot, courseNo, name, venue] = Array.from(row.children).map(el => el.value.trim());
+    var [slot, courseNo, name, venue] = Array.from(row.children).map(el => el.value.trim());
+    if (slot == "Lunch"){
+        slot = "PG";
+    }
     if (slot) {
         slotData[slot] = { courseNo, name, venue };
     }
@@ -123,7 +148,10 @@ function parseInputs(){
     document.querySelectorAll("#overrideInputs .tt-data").forEach(row => {
     const [daySel, slot, courseNo, name, venue] = Array.from(row.children);
     const day = daySel.value;
-    const slotVal = slot.value.trim();
+    var slotVal = slot.value.trim();
+    if (slotVal == "Lunch"){
+        slotVal = "PG";
+    }
     if (day && slotVal) {
         overrideData[`${day}-${slotVal}`] = {
         courseNo: courseNo.value.trim(),
@@ -133,6 +161,63 @@ function parseInputs(){
     }
     });
 }
+
+async function upload_saved_data_file(){
+
+    const upload_field = document.getElementById('upload_cal_save');
+
+    // Return a Promise that resolves when the file is selected
+    const file = await new Promise((resolve) => {
+        // Temporary one-time event listener
+        const handler = () => {
+            upload_field.removeEventListener('change', handler);
+            resolve(upload_field.files[0]);
+        };
+        upload_field.addEventListener('change', handler);
+        upload_field.click();
+    });
+
+    if (!file) return; // user may cancel
+
+    const GetFile = new FileReader();
+    GetFile.readAsText(file);
+    GetFile.onloadend = load_saved_data;
+}
+
+function load_saved_data(event){
+
+    let jsondata = event.target.result;
+
+    // jsondata = '{"slotData":{"A":{"courseNo":"asas","name":"aaa","venue":"aaa"}},"overrideData":{}}'
+
+    data = JSON.parse(jsondata)
+    slotData = data.slotData;
+    overrideData = data.overrideData;
+    
+    Object.keys(slotData).forEach(slot => {
+        addSlotRow(slot, slotData[slot].courseNo, slotData[slot].name, slotData[slot].venue);
+    })
+
+    Object.keys(overrideData).forEach(override => {
+        [day, slot] = override.split("-");
+        console.log(day, slot);
+        addOverrideRow(day, slot, overrideData[override].courseNo, overrideData[override].name, overrideData[override].venue);
+    })
+
+}
+
+function save_data(){
+    data = {slotData: slotData, overrideData: overrideData};
+    jsondata = JSON.stringify(data);
+    const blob = new Blob([jsondata], { type: "text/json;charset=utf-8" });
+    const link = document.createElement("a");
+    link.href = URL.createObjectURL(blob);
+    link.download = "calendar_save.json";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
+
 
 function generateTable() {
 

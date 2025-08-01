@@ -120,6 +120,16 @@
     <button onclick="addOverrideRow()">+ Add Override</button>
   </div>
 
+  <!-- Load Data Section -->
+  <div class="form-section no-print">
+    <h3 style="margin-bottom: 1px;">Save/Load previously generated data</h3>
+    <p>You may save your current calendar or load a previously saved calendar.</p>
+    <p><i>Warning: Making modifications to the downloaded file might lead to unpredictable results!</i></p>
+    <button onclick="save_data()">Save Data</button>
+    <button onclick="upload_saved_data_file()">Load Data</button>
+    <input id='upload_cal_save' type='file' hidden/>
+  </div>
+
   <div class="no-print">
     <h3>Google Calendar</h3>
     <p>Dowload an .ics calendar file compatible with Google Calendar. Refer <a href="https://support.google.com/calendar/answer/37118" target="_blank">here</a> for an import guide.</p>
@@ -142,10 +152,11 @@
                   <td>9.00 - 9.50</td>
                   <td>10.00 - 10.50</td>
                   <td>11.00 - 11.50</td>
-                  <th rowspan="12" width="50">
+                  <!-- <th rowspan="12" width="50">
                   <p class="font__fontrols__style"><span class="rotate__text">Lunch recess<br>
                   11.50 am - 13.00 pm</span></p>
-                  </th>
+                  </th> -->
+                  <th>Lunch</th>
                   <td>13.00 - 13.50</td>
                   <td>14.00 - 15.15</td>
                   <td>15.30 - 16.45</td>
@@ -157,6 +168,7 @@
                   <td class="lavender" rowspan="2" id="Monday-B">B</td>
                   <td class="sky" rowspan="2" id="Monday-C">C</td>
                   <td class="orange" rowspan="2" id="Monday-D">D</td>
+                  <td class="gray_light" rowspan="2" id="Monday-PG"></td>
                   <td class="mossgreen" rowspan="2" id="Monday-G">G</td>
                   <td class="sandal" colspan="2" id="Monday-P">P</td>
                   <td class="pink" rowspan="2" id="Monday-J">J</td>
@@ -171,6 +183,7 @@
                   <td class="sky" rowspan="2" id="Tuesday-C">C</td>
                   <td class="orange" rowspan="2" id="Tuesday-D">D</td>
                   <td class="red" rowspan="2" id="Tuesday-E">E</td>
+                  <td class="gray_light" rowspan="2" id="Tuesday-PG"></td>
                   <td class="lite_green" rowspan="2" id="Tuesday-A">A</td>
                   <td class="sandal" colspan="2" id="Tuesday-Q">Q</td>
                   <td class="yellow" rowspan="2" id="Tuesday-F">F</td>
@@ -185,6 +198,7 @@
                   <td class="orange" rowspan="2"id="Wednesday-D">D</td>
                   <td class="red" rowspan="2" id="Wednesday-E">E</td>
                   <td class="yellow" rowspan="2" id="Wednesday-F">F</td>
+                  <td class="gray_light" rowspan="2" id="Wednesday-PG"></td>
                   <td class="lavender" rowspan="2" id="Wednesday-B">B</td>
                   <td class="gray_light" colspan="2" id="Wednesday-R">R</td>
                   <td class="mossgreen" rowspan="2" id="Wednesday-G">G</td>
@@ -199,6 +213,7 @@
                   <td class="yellow" rowspan="2" id="Thursday-F">F</td>
                   <td class="mossgreen" rowspan="2" id="Thursday-G">G</td>
                   <td class="lite_green" rowspan="2" id="Thursday-A">A</td>
+                  <td class="gray_light" rowspan="2" id="Thursday-PG"></td>
                   <td class="orange" rowspan="2" id="Thursday-D">D</td>
                   <td class="sandal" colspan="2"id="Thursday-S">S</td>
                   <td class="green" rowspan="2" id="Thursday-H">H</td>
@@ -213,6 +228,7 @@
                   <td class="mossgreen" rowspan="2" id="Friday-G">G</td>
                   <td class="lite_green" rowspan="2" id="Friday-A">A</td>
                   <td class="lavender" rowspan="2" id="Friday-B">B</td>
+                  <td class="gray_light" rowspan="2" id="Friday-PG"></td>
                   <td class="sky" rowspan="2" id="Friday-C">C</td>
                   <td class="sandal" colspan="2" id="Friday-T">T</td>
                   <td class="red" rowspan="2" id="Friday-E">E</td>
