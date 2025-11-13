@@ -6,6 +6,9 @@
   <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
   <script src="gen_gcal.js"></script>
   <script src="script.js"></script>
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+  <script src="https://apis.google.com/js/api.js"></script>
+  <script src="g_cal_push.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <title>Timetable Generator</title>
   <link rel="stylesheet" media="all" href="style.css">
@@ -133,10 +136,13 @@
   </div>
 
   <div class="no-print">
-    <h3>Google Calendar</h3>
-    <p>Dowload an .ics calendar file compatible with Google Calendar. Refer <a href="https://support.google.com/calendar/answer/37118" target="_blank">here</a> for an import guide.</p>
+    <h3>import into your Calendar</h3>
+    <p>Dowload an .ics calendar file compatible with all Calendars. Refer <a href="https://support.google.com/calendar/answer/37118" target="_blank">here</a> for an .ics import guide for Google Calendar.</p>
     <p><i>Tip: Make a new calendar while importing the file to allow for easy modification/deletion later.</i></p>
-    <button onclick="gen_gcal()">Download .ics file</button>
+    <p><i><b>Experimental:</b></i> There is now an option to directly import to Google Calendar. This is not guranteed to work. Bear in mind that this takes a while with no progress indication. Once the import is done a message should appear on the screen.</p>
+
+    <button onclick="download_gcal()">Download .ics file</button>
+    <button onclick="import_gcal()">Import to Google Calendar</button>
   </div>
 
   <!-- Display Timetable -->

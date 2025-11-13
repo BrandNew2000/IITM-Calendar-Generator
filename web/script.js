@@ -129,7 +129,19 @@ function gen_gcal() {
         }
     });
     });
-    generateICS(data);
+    
+    return data;
+}
+
+function download_gcal(){
+    data = gen_gcal();
+    downloadICS(data);
+}
+
+
+function import_gcal(){
+    data = gen_gcal();
+    importICSgcal(data);
 }
 
 function parseInputs(){

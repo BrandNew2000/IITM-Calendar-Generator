@@ -139,6 +139,14 @@ END:VEVENT
 
   icsContent += "END:VCALENDAR";
 
+  return icsContent;
+
+}
+
+
+function downloadICS(schedule){
+
+  icsContent = generateICS(schedule);
   const blob = new Blob([icsContent], { type: "text/calendar;charset=utf-8" });
   const link = document.createElement("a");
   link.href = URL.createObjectURL(blob);
@@ -146,4 +154,9 @@ END:VEVENT
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
+}
+
+function importICSgcal(schedule){
+  icsContent = generateICS(schedule);
+  importICS(icsContent);
 }
