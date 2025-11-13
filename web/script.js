@@ -188,8 +188,8 @@ async function upload_saved_data_file(){
 
 function load_saved_data(event){
 
+    clear_tables();
     let jsondata = event.target.result;
-
     process_saved_data(jsondata);
 
 }
@@ -273,10 +273,22 @@ function generateTable() {
     
 }
 
+function clear_element(id){
+    const ele = document.getElementById(id);
+    ele.innerHTML = "";
+}
 
-function clear_page(){
-    document.cookie = 'save_data=null; path=/';
-    window.location.reload();
+function clearSlotRows(){
+    clear_element("slotInputs");
+}
+
+function clearOverrideRows(){
+    clear_element("overrideInputs");
+}
+
+function clear_tables(){
+    clearSlotRows();
+    clearOverrideRows();
 }
 
 function load_from_cookie(){

@@ -109,6 +109,7 @@
     <div id="slotInputs">
     </div>
     <button onclick="addSlotRow()">+ Add Slot</button>
+    <button onclick="clearSlotRows()">Clear Slots</button>
   </div>
 
   <!-- Override Section -->
@@ -118,6 +119,7 @@
     <div id="overrideInputs">
     </div>
     <button onclick="addOverrideRow()">+ Add Override</button>
+    <button onclick="clearOverrideRows()">Clear Overrides</button>
   </div>
 
   <!-- Load Data Section -->
@@ -143,7 +145,6 @@
     <button class="no-print" onclick="generateTable()">Generate Timetable</button>
     <button class="no-print print-btn" onclick="window.print()">Print PDF</button>
     <button class="no-print print-btn" onclick="download_tt()">Download Image</button>
-    <button class="no-print print-btn" onclick="clear_page()">Clear Everything</button>
 
 
       <table class="timetable" id="timetable" style="height: 100%;">
