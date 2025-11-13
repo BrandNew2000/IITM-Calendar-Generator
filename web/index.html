@@ -125,7 +125,7 @@
     <h3 style="margin-bottom: 1px;">Save/Load previously generated data</h3>
     <p>You may save your current calendar or load a previously saved calendar.</p>
     <p><i>Warning: Making modifications to the downloaded file might lead to unpredictable results!</i></p>
-    <button onclick="save_data()">Save Data</button>
+    <button onclick="download_data()">Save Data</button>
     <button onclick="upload_saved_data_file()">Load Data</button>
     <input id='upload_cal_save' type='file' hidden/>
   </div>
@@ -143,6 +143,8 @@
     <button class="no-print" onclick="generateTable()">Generate Timetable</button>
     <button class="no-print print-btn" onclick="window.print()">Print PDF</button>
     <button class="no-print print-btn" onclick="download_tt()">Download Image</button>
+    <button class="no-print print-btn" onclick="clear_page()">Clear Everything</button>
+
 
       <table class="timetable" id="timetable" style="height: 100%;">
           <tbody>

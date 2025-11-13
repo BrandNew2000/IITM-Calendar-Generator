@@ -55,6 +55,7 @@ function addSlotRow(slot = "", course_num = "", course_name = "", venue = "") {
                     </span>
                     <span class="close-btn" value="" onclick="this.parentElement.remove()">×</span>`;
     container.appendChild(div);
+
 }
 
 function addOverrideRow(day = "", slot = "", course_num = "", course_name = "", venue = "") {
@@ -111,6 +112,7 @@ function addOverrideRow(day = "", slot = "", course_num = "", course_name = "", 
                     </span>
                     <span class="close-btn" value="" onclick="this.parentElement.remove()">×</span>`;
     container.appendChild(div);
+
 }
 
 function gen_gcal() {
@@ -188,9 +190,15 @@ function load_saved_data(event){
 
     let jsondata = event.target.result;
 
+    process_saved_data(jsondata);
+
+}
+
+function process_saved_data(jsondata){
+
     // jsondata = '{"slotData":{"A":{"courseNo":"asas","name":"aaa","venue":"aaa"}},"overrideData":{}}'
 
-    data = JSON.parse(jsondata)
+    data = JSON.parse(jsondata);
     slotData = data.slotData;
     overrideData = data.overrideData;
     
@@ -206,9 +214,8 @@ function load_saved_data(event){
 
 }
 
-function save_data(){
-    data = {slotData: slotData, overrideData: overrideData};
-    jsondata = JSON.stringify(data);
+function download_data(){
+    jsondata = save_data();
     const blob = new Blob([jsondata], { type: "text/json;charset=utf-8" });
     const link = document.createElement("a");
     link.href = URL.createObjectURL(blob);
@@ -218,6 +225,24 @@ function save_data(){
     document.body.removeChild(link);
 }
 
+function save_data(){
+    data = {slotData: slotData, overrideData: overrideData};
+    return JSON.stringify(data);
+}
+
+
+function save_to_cookie(){
+    jsondata = save_data();
+    // Build the expiration date string:
+    var expiration_date = new Date();
+    var cookie_string = '';
+    expiration_date.setFullYear(expiration_date.getFullYear() + 1);
+    // Build the set-cookie string:
+    cookie_string = "save_data=" + jsondata +"; path=/; expires=" + expiration_date.toUTCString();
+    // Create or update the cookie:
+    document.cookie = "";
+    document.cookie = cookie_string;
+}
 
 function generateTable() {
 
@@ -243,4 +268,26 @@ function generateTable() {
         document.getElementById(`${key}`).innerHTML = row;
     });
     });
+
+    save_to_cookie();
+    
 }
+
+
+function clear_page(){
+    document.cookie = 'save_data=null; path=/';
+    window.location.reload();
+}
+
+function load_from_cookie(){
+    if (document.cookie.slice(0,9)=="save_data"){
+        console.log((document.cookie.split(";")[0]).slice(10));
+        process_saved_data((document.cookie.split(";")[0]).slice(10));
+        
+    }
+}
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  load_from_cookie();
+});
