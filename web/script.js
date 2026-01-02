@@ -9,7 +9,7 @@ const slotLayout = {
 var slotData = {}; // { slot: { courseNo, name, venue } }
 var overrideData = {}; // { "Monday-A": { courseNo, name, venue } }
 
-ACADS_COURSES = {};
+ACADS_COURSES = {}; // Add courses after pulling from file
 
 async function download_tt(){
     var link = document.createElement('a');
@@ -192,7 +192,14 @@ async function fetch_courses_json(){
 }
 
 function getCourseDataAcads(courseNo){
-    course = Object.assign({}, ACADS_COURSES[courseNo]);
+    
+    let course = {
+        slot: "Slot",
+        name: "",
+        venue: ""
+    }
+    course = Object.assign(course, ACADS_COURSES[courseNo]);
+
     course.courseNo = courseNo.toUpperCase();
     return course
 }
