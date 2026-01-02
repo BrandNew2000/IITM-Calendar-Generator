@@ -9,6 +9,8 @@ const slotLayout = {
 var slotData = {}; // { slot: { courseNo, name, venue } }
 var overrideData = {}; // { "Monday-A": { courseNo, name, venue } }
 
+ACADS_COURSES = {};
+
 async function download_tt(){
     var link = document.createElement('a');
     link.download = 'timetable.png';
@@ -28,7 +30,7 @@ function addSlotRow(slot = "", course_num = "", course_name = "", venue = "") {
     }
     div.className = "form-row";
     div.innerHTML = `<span class="tt-data">
-                    <select>
+                    <select class="row_slot">
                         <option ${get_selected_slot('')} disabled>Slot</option>
                         <option ${get_selected_slot('A')}>A</option>
                         <option ${get_selected_slot('B')}>B</option>
@@ -49,9 +51,9 @@ function addSlotRow(slot = "", course_num = "", course_name = "", venue = "") {
                         <option ${get_selected_slot('T')}>T</option>
                         <option ${get_selected_slot('PG')}>Lunch</option>
                     </select>
-                    <input placeholder="Course No." value = "${course_num}">
-                    <input placeholder="Course Name" value = "${course_name}">
-                    <input placeholder="Venue" value = "${venue}">
+                    <input placeholder="Course No." class="row_course_number" value = "${course_num}">
+                    <input placeholder="Course Name" class="row_course_name" value = "${course_name}">
+                    <input placeholder="Venue" class="row_venue"  value = "${venue}">
                     </span>
                     <span class="close-btn" value="" onclick="this.parentElement.remove()">×</span>`;
     container.appendChild(div);
@@ -77,7 +79,7 @@ function addOverrideRow(day = "", slot = "", course_num = "", course_name = "", 
     console.log(day);
     div.className = "form-row";
     div.innerHTML = ` <span class="tt-data">
-                    <select>
+                    <select class="row_day">
                         <option ${get_selected_day('')} disabled>Day</option>
                         <option ${get_selected_day('Monday')}>Monday</option>
                         <option ${get_selected_day('Tuesday')}>Tuesday</option>
@@ -85,7 +87,7 @@ function addOverrideRow(day = "", slot = "", course_num = "", course_name = "", 
                         <option ${get_selected_day('Thursday')}>Thursday</option>
                         <option ${get_selected_day('Friday')}>Friday</option>
                     </select>
-                    <select>
+                    <select class="row_slot">
                         <option ${get_selected_slot('')} disabled>Slot</option>
                         <option ${get_selected_slot('A')}>A</option>
                         <option ${get_selected_slot('B')}>B</option>
@@ -106,9 +108,9 @@ function addOverrideRow(day = "", slot = "", course_num = "", course_name = "", 
                         <option ${get_selected_slot('T')}>T</option>
                         <option ${get_selected_slot('PG')}>Lunch</option>
                     </select>
-                    <input placeholder="Course No." value = "${course_num}">
-                    <input placeholder="Course Name" value = "${course_name}">
-                    <input placeholder="Venue" value = "${venue}">
+                    <input placeholder="Course No." class="row_course_number" value = "${course_num}">
+                    <input placeholder="Course Name" class="row_course_name" value = "${course_name}">
+                    <input placeholder="Venue" class="row_venue"  value = "${venue}">
                     </span>
                     <span class="close-btn" value="" onclick="this.parentElement.remove()">×</span>`;
     container.appendChild(div);
@@ -176,8 +178,46 @@ function parseInputs(){
     });
 }
 
-async function upload_saved_data_file(){
+async function fetch_courses_json(){
+    data = await fetch('./courses.json')
+    .then(response => {
+        if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        return response.json();
+    })
+    .catch(error => console.error('Failed to course data:', error)); 
 
+    return data
+}
+
+function getCourseDataAcads(courseNo){
+    course = Object.assign({}, ACADS_COURSES[courseNo]);
+    course.courseNo = courseNo.toUpperCase();
+    return course
+}
+
+function populateData(){
+    slotData = {}
+    overrideData = {}
+    document.querySelectorAll("#slotInputs .tt-data").forEach(row => {
+    courseNo = row.getElementsByClassName("row_course_number")[0].value.toUpperCase();
+    if (courseNo) {
+        course_data = getCourseDataAcads(courseNo);
+        elements = {slot: row.getElementsByClassName("row_slot")[0], courseNo: row.getElementsByClassName("row_course_number")[0], name: row.getElementsByClassName("row_course_name")[0], venue: row.getElementsByClassName("row_venue")[0]};
+        if (elements.slot.value == "Slot"){
+            elements.slot.value = "";
+        }
+        for (let [key, element] of Object.entries(elements)){
+            if (!element.value) {
+                element.value = course_data[key];
+            }
+        }
+    }
+    });
+}
+
+async function upload_saved_data_file(){
     const upload_field = document.getElementById('upload_cal_save');
 
     // Return a Promise that resolves when the file is selected
@@ -252,7 +292,6 @@ function save_to_cookie(){
     // Build the set-cookie string:
     cookie_string = "save_data=" + jsondata +"; path=/; expires=" + expiration_date.toUTCString();
     // Create or update the cookie:
-    document.cookie = "";
     document.cookie = cookie_string;
 }
 
@@ -304,14 +343,23 @@ function clear_tables(){
 }
 
 function load_from_cookie(){
-    if (document.cookie.slice(0,9)=="save_data"){
-        console.log((document.cookie.split(";")[0]).slice(10));
-        process_saved_data((document.cookie.split(";")[0]).slice(10));
-        
+    cookies = document.cookie.split(";");
+
+    if (cookies.length == 0){
+        return;
+    }
+
+    for (let i = 0; i < cookies.length; i++){
+        let cookie = cookies[i].replace(/^\s+|\s+$/g, "");
+        if (cookie.slice(0,9)=="save_data"){
+            console.log((cookie).slice(10));
+            process_saved_data((cookie).slice(10));
+        }
     }
 }
 
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", async function() {
   load_from_cookie();
+  ACADS_COURSES = await fetch_courses_json();
 });
