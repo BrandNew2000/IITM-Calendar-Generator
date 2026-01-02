@@ -31,7 +31,7 @@ function addSlotRow(slot = "", course_num = "", course_name = "", venue = "") {
     div.className = "form-row";
     div.innerHTML = `<span class="tt-data">
                     <select class="row_slot">
-                        <option ${get_selected_slot('')} disabled>Slot</option>
+                        <option ${get_selected_slot('')}>Slot</option>
                         <option ${get_selected_slot('A')}>A</option>
                         <option ${get_selected_slot('B')}>B</option>
                         <option ${get_selected_slot('C')}>C</option>
@@ -192,7 +192,7 @@ async function fetch_courses_json(){
 }
 
 function getCourseDataAcads(courseNo){
-    
+
     let course = {
         slot: "Slot",
         name: "",

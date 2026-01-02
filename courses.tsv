@@ -1,0 +1,1181 @@
+CourseNo	SNo	Slot	AdditionalSlot	CourseName	InstructorName	OldCredit	NewCredit	Prerequisite	Period	Maxoverallstrength	MinOtherBranchStrength	OfferedforBTechDD	ElectiveVacancy	ElectiveRegn	RoomNo	Coordinator	CCChairperson	AllocationType
+AE6999	1	ZZ		Special Topics in Aerospace Engineering	MURTHY H S N	3	6			0	0	No				Y	Murthy H S N	
+AE7999	2	YY		Special Topics in Aerospace Engineering	MURTHY H S N	3	6			0	0	No				Y	Murthy H S N	
+AM1100	3	E		Engineering Mechanics	SIVAKUMAR M S	4	10	NULL		0	0	No			RMN201,RMN202,CRC305,CRC205	Y	Sayan Gupta	
+AM1100	4	E		Engineering Mechanics	GANESH TAMADAPU	4	10	NULL		0	0	No			RMN201,RMN202,CRC305,CRC205	N	Sayan Gupta	
+AM1100	5	E		Engineering Mechanics	Vagesh D Narasimhamurthy	4	10	NULL		0	0	No			RMN201,RMN202,CRC305,CRC205	N	Sayan Gupta	
+AM1100	6	E		Engineering Mechanics	SAYAN GUPTA	4	10	NULL		0	0	No			RMN201,RMN202,CRC305,CRC205	N	Sayan Gupta	
+AM2200	7	B		Strength of Materials	Ilaksh	4	10	NA		0	0	No			CRC204	Y	Sayan Gupta	
+AM4901	8	WW		Undergraduate Research Project I	SIVAKUMAR M S	3	9			0	0	No				Y	Sayan Gupta	
+AM4902	9	VV		Undergraduate Research  Project II	SIVAKUMAR M S	3	9			0	0	No				Y	Sayan Gupta	
+AM5015	10	XX		Regulations and Standards in Medical Device Technology	RAMAKRISHNAN S	3	9	Basic course on Biomedical Instrumentation		40	0	Yes			MSB112	Y	Sayan Gupta	SI
+AM5016	11	F		Numerical methods in Biomedical Engineering	SAUMENDRA KUMAR BAJPAI	3	9			30	20	Yes			MSB208	Y	Sayan Gupta	SI
+AM5017	12	C		Statistics for Biomedical Engineers	ADITI KATHPALIA	3	9	Course on Biomedical instrumentation		50	20	Yes			MSB208	Y	Sayan Gupta	SI
+AM5018	13	B		Experimental Techniques in Fluid Mechanics	SARITH P SATHIAN	3	9			35	20	Yes			FMSH	Y	Sayan Gupta	SI
+AM5019	14	Q		Advanced BME Laboratory	RAMAKRISHNAN S	2	6			0	0	No			MSB207	Y	Sayan Gupta	
+AM5019	15	Q		Advanced BME Laboratory	SWATHI SUDHAKAR	2	6			0	0	No			MSB207	N	Sayan Gupta	
+AM5022	16	R		Modelling and Simulation Laboratory	RAMAKRISHNAN S	2	6			0	0	No			DCIF	Y	Sayan Gupta	
+AM5060	17	M		Psychophysics	MANIVANNAN M	3	9	none		30	30	Yes			MSB112	Y	Sayan Gupta	SI
+AM5061	18	J		Design of Thermal and Fluid Systems	SATYANARAYANAN S	3	9			30	0	Yes			FMSH	Y	Sayan Gupta	SI
+AM5090	19	K		Flow Visualization & Imaging Techniques	KIRAN RAJ M	9	9			20	0	Yes			DCIF	Y	Sayan Gupta	SI
+AM5100	20	B		Biomedical Laser Instrumentation	SUJATHA N	3	9	COT		0	0	No			MSB208	Y	Sayan Gupta	
+AM5114	21	D		Flow and Transport in Heterogenous Porous Media	ABHIJIT CHAUDHURI	3	9	NULL		30	0	Yes			FMSH	Y	Sayan Gupta	SI
+AM5117	22	C		Analytical Methods in Engineering Mechanics	KANNABIRAN SESHASAYANAN	3	9			50	0	Yes			NEWTON HALL	Y	Sayan Gupta	SI
+AM5117	23	C		Analytical Methods in Engineering Mechanics	S GANGA PRASATH	3	9			50	0	Yes			NEWTON HALL	N	Sayan Gupta	SI
+AM5131	24	J		Advance Techniques and Models in Regenerative Medicine	SWATHI SUDHAKAR	3	9			60	30	Yes			DCIF	Y	Sayan Gupta	SI
+AM5140	25	D		Biomedical Instrumentation	VARADHAN S K M	3	9	COT		0	0	No			MSB112	Y	Sayan Gupta	
+AM5150	26	G		Biomedical Nanotechnology	RAGHAVENDRA SAI V V	3	9			25	10	Yes			MSB112	Y	Sayan Gupta	SI
+AM5160	27	A		Biomedical Imaging System	ARUN KUMAR THITTAI	3	9	NULL		50	20	Yes			MSB208	Y	Sayan Gupta	SI
+AM5190	28	E		Haptics in Biomedical Engineering	MANIVANNAN M	3	9			30	30	Yes			MSB112	Y	Sayan Gupta	SI
+AM5200	29	XX		Summer Industrial Internship	ARUL PRAKASH K	15	15	none		0	0	No				Y	Sayan Gupta	
+AM5200	30	XX		Summer Industrial Internship	ARUN KUMAR THITTAI	15	15	none		0	0	No				N	Sayan Gupta	
+AM5200	31	XX		Summer Industrial Internship	GANESH TAMADAPU	15	15	none		0	0	No				N	Sayan Gupta	
+AM5220	32	YY		Summer Project	ARUN KUMAR THITTAI	10	10			0	0	No				Y	Sayan Gupta	
+AM5230	33	XX		Clinical Practice Observations in Hospitals	RAMAKRISHNAN S	5	5	Biomedical Instrumentation Course		0	0	No			MSB207	Y	Sayan Gupta	
+AM5240	34	D		Experimental Solid Mechanics	AROCKIARAJAN A	3	9	COT		40	0	Yes			MSB208	Y	Sayan Gupta	SI
+AM5400	35	R		Experiemental Stress Analysis Lab	AROCKIARAJAN A	2	12			30	0	Yes			SM LAB	Y	Sayan Gupta	SI
+AM5400	36	R		Experiemental Stress Analysis Lab	PIJUSH GHOSH	2	12			30	0	Yes			SM LAB	N	Sayan Gupta	SI
+AM5402	37	VV		Project II	RAGHAVENDRA SAI V V	14	40			0	0	No				N	Sayan Gupta	
+AM5402	38	VV		Project II	GANESH TAMADAPU	14	40			0	0	No				N	Sayan Gupta	
+AM5402	39	VV		Project II	ARUL PRAKASH K	14	40			0	0	No				Y	Sayan Gupta	
+AM5402	40	YY		Project II	ARUN KUMAR THITTAI	14	40			0	0	No				Y	Sayan Gupta	
+AM5405	41	G		Introduction to AI and Game Development	MANIVANNAN M	12	0	Basic Programming and Engineering mathematics		100	100	Yes			NEWTON HALL	Y	Sayan Gupta	SI
+AM5411	42	UU		Project	ARUN KUMAR THITTAI	3	20			0	0	No				Y	Sayan Gupta	
+AM5440	43	H		Engg Fracture Mechanics	ANURADHA BANERJEE	3	9	AM2200 Strength of Materials or equivalent, Theory of Elasticity (Desirable).		25	10	Yes			MSB208	Y	Sayan Gupta	SI
+AM5480	44	UU		Seminar	ARUN KUMAR THITTAI	1	3	NULL		0	0	No				Y	Sayan Gupta	
+AM5530	45	A		Advanced Fluid Mechanics	Anubhab Roy	3	9			70	50	Yes			CRC202	Y	Sayan Gupta	SI
+AM5535	46	J		Bioinspired Engineering	KUNDANATI LAKSHMINATH	3	9	None		60	40	Yes			MSB208	Y	Sayan Gupta	SI
+AM5540	47	L		Irrotational flow theory and applications	BABURAJ A P	3	9	COT		30	15	Yes			FMSH	Y	Sayan Gupta	SI
+AM5570	48	F		Introduction to Turbulence	VENGADESAN S	3	9	NULL		40	0	Yes			FMSH	Y	Sayan Gupta	SI
+AM5630	49	E		Foundation of Computational Fluid Dynamics	ARUL PRAKASH K	3	9	NULL		35	10	Yes			FMSH	Y	Sayan Gupta	SI
+AM5650	50	G		Nonlinear Dynamics	MAHESH PANCHAGNULA	3	9			60	30	Yes			FMSH	Y	Sayan Gupta	SI
+AM5820	51	Q		Wind Tunnel and Numerical Experiments	RINKU MUKHERJEE	2	12			20	10	Yes			FMSH	Y	Sayan Gupta	SI
+AM5850	52	A		Advanced Finite Element Methods	LAKSHMANA RAO C	3	9	AM5450 or any other equivalent basic course on FEA with COT		25	10	Yes			DCIF	Y	Sayan Gupta	SI
+AM5920	53	G		Deep Learning for Mechanics  Deep Learning for Mechanics  Deep Learning for Mechanics	SHUVRANGSU DAS	9	0			50	15	Yes			CRC203	Y	Sayan Gupta	SI
+AM6025	54	D		Magnetohydrodynamics	KANNABIRAN SESHASAYANAN	3	9	Fluid mechanics and basics of electromagnetism		30	15	Yes			NEWTON HALL	Y	Sayan Gupta	SI
+AM6291	55	E		Computational Structural Dynamics	SHAIKH FARUQUE ALI	3	9	AM5290 or equivalent		30	20	Yes			MSB208	Y	Sayan Gupta	SI
+AM6512	56	G		Application of Molecular Dynamics	PIJUSH GHOSH	3	9	NULL		20	20	Yes			MSB208	Y	Sayan Gupta	SI
+AM6535	57	F		Medical Imaging Aided Computational Bio-Fluid Dynamics	PRASAD PATNAIK B S V	3	9	Fluid Mechanics		50	30	Yes			DCIF	Y	Sayan Gupta	SI
+AM6550	58	A		Advanced Gas Dynamics	RINKU MUKHERJEE	3	9	Fluid Mechanics, Thermodynamics		30	20	Yes			FMSH	Y	Sayan Gupta	SI
+AM6999	59	MM		Special Topics in Applied Mechanics	Ilaksh	3	6			0	0	No				N	Sayan Gupta	
+AM6999	60	MM		Special Topics in Applied Mechanics	BABURAJ A P	3	6			0	0	No				N	Sayan Gupta	
+AM6999	61	MM		Special Topics in Applied Mechanics	SUJATHA N	3	6			0	0	No				Y	Sayan Gupta	
+AM7999	62	NT		Special Topics in Applied Mechanics	Ilaksh	3	6			0	0	No				N	Sayan Gupta	
+AM7999	63	NT		Special Topics in Applied Mechanics	BABURAJ A P	3	6			0	0	No				N	Sayan Gupta	
+AM7999	64	NT		Special Topics in Applied Mechanics	SUJATHA N	3	6			0	0	No				Y	Sayan Gupta	
+AS1020	65	E		Fluid Mechanics	Manikandan M S	3	9			40	10	Yes			CR4	Y	Murthy H S N	CG
+AS1020*	66	B		Fluid Mechanics	SUMIT SUNIL TAMBE	3	9			40	10	Yes			CR4	Y	Murthy H S N	CG
+AS1300	67	F		Thermodynamics for Aerospace Engineering	SUJITH R I	3	9			40	10	Yes			CR3	Y	Murthy H S N	CG
+AS1300*	68	C		Thermodynamics for Aerospace Engineering	MURUGANANDAM T M	3	9			40	10	Yes			CR3	Y	Murthy H S N	CG
+AS2040	69	B		Flight Dynamics I	SANTANU GHOSH	3	9			40	10	Yes			CR2	Y	Murthy H S N	CG
+AS2040*	70	C		Flight Dynamics I	LUOYI TAO	3	9			40	10	Yes			CR1	Y	Murthy H S N	CG
+AS2070	71	D		Aerospace Structural Mechanics	NIDISH NARAYANA BALAJI	3	9	AS2010: Basic Strength of Materials		40	10	Yes			CR1	Y	Murthy H S N	CG
+AS2070*	72	B		Aerospace Structural Mechanics	NAGAPPA	3	9	AS2010: Basic Strength of Materials		40	10	Yes			CR3	Y	Murthy H S N	CG
+AS2080	73	E		Vibrations	BHASKAR K	3	9			40	10	Yes			CR2	Y	Murthy H S N	CG
+AS2080*	74	D		Vibrations	NAGENDRA GOPAL K V	3	9			40	10	Yes			CR3	Y	Murthy H S N	CG
+AS2101	75	P	L1	Introduction to Aerospace Engineering	Manikandan M S	2	5			40	10	Yes			CR4	Y	Murthy H S N	CG
+AS2101*	76	P	L1	Introduction to Aerospace Engineering	SUNETRA  SARKAR	2	5			40	10	Yes			CR5	Y	Murthy H S N	CG
+AS3050	77	A	H2	Flight Dynamics II	ANIKETH KALUR	5	12	NULL		40	10	Yes			CR3	Y	Murthy H S N	CG
+AS3050*	78	D	M1	Flight Dynamics II	Devaprakash Muniraj	5	12	NULL		40	10	Yes			CR4	Y	Murthy H S N	CG
+AS3270	79	G		Propulsion I	AMIT KUMAR	3	9			40	10	Yes			CR4	Y	Murthy H S N	CG
+AS3270*	80	G		Propulsion I	AMIT KUMAR	3	9			40	10	Yes			CR5	Y	Murthy H S N	CG
+AS3271	81	C		Propulsion II	CHAKRAVARTHY S R	3	10			40	10	Yes			CR4	Y	Murthy H S N	CG
+AS3271*	82	C		Propulsion II	CHAKRAVARTHY S R	3	10			40	10	Yes			CR5	Y	Murthy H S N	CG
+AS3510	83	Q	J3	Aero Lab I	RAJESH G	4	4			40	10	Yes			CR3, GD/Prop	Y	Murthy H S N	CG
+AS3510*	84	Q	J3	Aero Lab I	Senthil Murugan M	4	4			40	10	Yes			CR2, STR	Y	Murthy H S N	CG
+AS3520	85	P	L1	Aero Lab II	SIVASAMBU MAHESH	2	5	NULL		40	10	Yes			CR1, STR	Y	Murthy H S N	CG
+AS3520	86	P	L1	Aero Lab II	PRASHANT RAWAT	2	5	NULL		40	10	Yes			CR1, STR	N	Murthy H S N	CG
+AS3520*	87	P	L1	Aero Lab II	SRIRAM RENGARAJAN	2	5			40	10	Yes			CR2, GD/Prop	Y	Murthy H S N	CG
+AS4545	88	UU		Undergraduate Research	MURTHY H S N	3	9			40	10	Yes				Y	Murthy H S N	CG
+AS4600	89	UU		Project II	MURTHY H S N	9	14	NULL		40	10	Yes				Y	Murthy H S N	CG
+AS5040	90	D		Flight Mechanics	SATADAL GHOSH	4	11			40	10	Yes			CR2	Y	Murthy H S N	CG
+AS5040*	91	C		Flight Mechanics	JOEL GEORGE M	4	11			40	10	Yes			CR2	Y	Murthy H S N	CG
+AS5100	92	UU		Mini Project	MURTHY H S N	6	12	NIL		40	10	Yes				Y	Murthy H S N	CG
+AS5120	93	S		Labortaory II (Str. Lab)	VELMURUGAN R	2	3	NULL		40	10	Yes			STR	Y	Murthy H S N	CG
+AS5120*	94	S		Labortaory II (Str. Lab)	DAVID KUMAR	2	3	Nil		40	10	Yes				Y	Murthy H S N	CG
+AS5150	95	UU		M.Tech. Project	MURTHY H S N	23	38			0	0	No				Y	Murthy H S N	
+AS5150#	96	UU		M.Tech. Project	MURTHY H S N	2	20			0	0	No				Y	Murthy H S N	
+AS5150$	97	UU		M.Tech Project Proposal	MURTHY H S N	1	4			0	0	No				Y	Murthy H S N	
+AS5150+	98	UU		M.Tech. Project	MURTHY H S N	8	27			0	0	No				Y	Murthy H S N	
+AS5191	99	UU		DD Project	MURTHY H S N	20	20			20	10	Yes				Y	Murthy H S N	CG
+AS5192	100	UU		DD Project	MURTHY H S N	27	27			20	10	Yes				Y	Murthy H S N	CG
+AS5193	101	UU		DD Project	MURTHY H S N	38	38			20	10	Yes				Y	Murthy H S N	CG
+AS5211	102	R	T, J3, H3	Design of Subsonic Aircraft	NIDISH NARAYANA BALAJI	3	12	AS1020, AS2030, AS2040, AS2050 for BTech; AS5010, AS5011 for MTech		80	20	Yes			CR2	N	Murthy H S N	CG
+AS5211	103	R	T, J3, H3	Design of Subsonic Aircraft	RANJITH MOHAN	3	12	AS1020, AS2030, AS2040, AS2050 for BTech; AS5010, AS5011 for MTech		80	20	Yes			CR2	Y	Murthy H S N	CG
+AS5213	104	R	T, J3, H3	Design of MAVs and UAVs	SHANKAR GHOSH	3	12	AS1020, AS2030, AS2040, AS2050 for BTech; AS5010, AS5011 for MTech		80	20	Yes			CR4, CR5	N	Murthy H S N	CG
+AS5213	105	R	T, J3, H3	Design of MAVs and UAVs	NANDAN KUMAR SINHA	3	12	AS1020, AS2030, AS2040, AS2050 for BTech; AS5010, AS5011 for MTech		80	20	Yes			CR4, CR5	Y	Murthy H S N	CG
+AS5350	106	G		Transonic Aerodynamics	SRIRAM RENGARAJAN	3	9	NULL		40	10	Yes			CR2	Y	Murthy H S N	CG
+AS5370	107	E		Helicopter Aerodynamics	Bharath	3	9			40	40	Yes			CR1	Y	Murthy H S N	CG
+AS5420	108	F		Introduction to CFD	PRADEEP KUMAR SESHADRI	3	9	NULL		40	10	Yes			CR4	Y	Murthy H S N	CG
+AS5440	109	H		Hydrodynamic Stability,Transition and Flow Control	NIKHIL KHOBRAGADE	3	9	NULL		40	10	Yes			CR2	Y	Murthy H S N	CG
+AS5470	110	A		Unsteady Aerodynamis of Moving Bodies	SUNETRA  SARKAR	3	9	COT		40	10	Yes			CR4	Y	Murthy H S N	CG
+AS5581	111	F		Application of Numerical Techniques to Flight Mechanics	RANJITH MOHAN	3	9	Any programming language		80	20	Yes				Y	Murthy H S N	CG
+AS5600	112	E		Introduction to Plasma and Its Applications	MURTHY H S N	9	9	NIL		40	10	Yes			CR3	Y	Murthy H S N	CG
+AS5860	113	M		Composite Structures	VELMURUGAN R	3	9	NULL		40	10	Yes			CR1	Y	Murthy H S N	CG
+AS5900	114	G		Elasticity	SIVASAMBU MAHESH	3	9	NULL		40	10	Yes			CR3	Y	Murthy H S N	CG
+AS5970	115	F		Structural Dynamics and Aero-elasticity	Senthil Murugan M	3	9	NULL		40	10	Yes			CR2	Y	Murthy H S N	CG
+AS5990	116	H		Micromechanics	SHYAM KERALAVARMA	3	9			40	10	Yes			CR1	Y	Murthy H S N	CG
+AS6000	117	D		Basic Concepts in Aerospace Engineering	MURTHY H S N	4	12	none		0	0	No			CR5	Y	Murthy H S N	
+AS6010	118	M		Hypersonic Flow Theory	SHANKAR GHOSH	3	9	NULL		40	10	Yes			CR3	Y	Murthy H S N	CG
+AS6020	119	B		Introduction to Incompressible Turbulence	SAMEEN A	3	9	AS5010 or AS5011 or AS1020  or  equivalent  course		40	10	Yes			CR1	Y	Murthy H S N	CG
+AS6030	120	A		Experimental Methods in Aero/ Gas Dynami	RAJESH G	3	9	NULL		40	10	Yes			CR2	Y	Murthy H S N	CG
+AS6041	121	H		Advanced CFD - Eddy Resolving Methods	Nagabhushana Rao	3	9	AS1020, AS5420 or AS5460 or equivalent, AS6020 or equivalent		40	10	Yes			CR3	Y	Murthy H S N	CG
+AS6510	122	E		Experimental Techniques in Struc. Mech.	DAVID KUMAR	3	9	NULL		40	10	Yes			CR5	Y	Murthy H S N	CG
+BT1010	123	B		Life Sciences	SURESH KUMAR RAYALA	2	9	NULL		0	0	No			CRC101, CRC 102, CRC103, BT Seminar Hall	N	Subramaniam K	
+BT1010	124	B		Life Sciences	MANOJ N	2	9	NULL		0	0	No			CRC101, CRC 102, CRC103, BT Seminar Hall	Y	Subramaniam K	
+BT1010	125	B		Life Sciences	KESAVAN V	2	9	NULL		0	0	No			CRC101, CRC 102, CRC103, BT Seminar Hall	N	Subramaniam K	
+BT1010	126	B		Life Sciences	NINITHA A J	2	9	NULL		0	0	No			CRC101, CRC 102, CRC103, BT Seminar Hall	N	Subramaniam K	
+BT1020	127	F		Material and Energy Balances	VIGNESH MUTHUVIJAYAN	4	11			30	0	Yes			BT108	Y	Subramaniam K	ST
+BT2010	128	D		Microbiology	ARUMUGAM	3	9			40	20	Yes			BT110	Y	Athi Narayanan N	ST
+BT2022	129	A		Biostatistics	RAJAMANICKAM MURUGAN	4	10			150	80	Yes			BT Seminar Hall	Y	Athi Narayanan N	ST
+BT2030	130	E		Biochemistry	AMAL KANTI	3	12			40	20	Yes			BT108	Y	Athi Narayanan N	ST
+BT2041	131	D		Principles of Bioprocess Engineering	SMITA SRIVASTAVA	3	9	BT1020		40	40	Yes			ED306	Y	Athi Narayanan N	ST
+BT2080	132	B	R	Programming for Biology	CHITRA BABU	4	11			40	20	Yes			BT108, CRC 201	Y	Athi Narayanan N	ST
+BT3011	133	E		Molecular Biology and Genetic Engineering	MAMATA BHASKARA BANGERA	3	9			60	20	Yes			BT110	Y	Hamsa Priya Mohana Sundaram	ST
+BT3012	134	C		Molecular Biology	MADHULIKA DIXIT	3	10			40	20	Yes			BT110	Y	Gopala Krishna A	ST
+BT3022	135	C		Genomics and Proteomics	NITISH R MAHAPATRA	4	10			25	10	Yes			BT108	Y	Gopala Krishna A	ST
+BT3040	136	G		Bioinformatics	MICHAEL GROMIHA M	4	11			40	20	Yes			BT108	Y	Hamsa Priya Mohana Sundaram	ST
+BT3041	137	C		Analysis and Interpretation of Biological Data	MEIYAPPAN LAKSHMANAN	3	10			40	20	Yes			CRC101	Y	Hamsa Priya Mohana Sundaram	ST
+BT3092	138	B		Plant Biology	BASKAR R	9	9	BT1010 or equivalent		40	0	Yes			BT003	Y	Gopala Krishna A	ST
+BT3111	139	P	Q	Basic Biology Lab	BASKAR R	4	8			0	0	No			BT115	Y	Gopala Krishna A	
+BT3121	140	P	Q	Bioprocess Engineering Laboratory	VIGNESH MUTHUVIJAYAN	8	8			0	0	No			BT118	N	Hamsa Priya Mohana Sundaram	
+BT3121	141	P	Q	Bioprocess Engineering Laboratory	Shantanu Pradhan	8	8			0	0	No			BT118	Y	Hamsa Priya Mohana Sundaram	
+BT3142	142	S	T	Cell Biology lab	Nathiya	8	8			0	0	No			BT118	Y	Gopala Krishna A	
+BT3900	143	YY		Industrial Training (Summer)	NINITHA A J	2	0			0	0	No				Y	Hamsa Priya Mohana Sundaram	
+BT4122	144	S	T	Chemical Biology Laboratory	KESAVAN V	4	8			0	0	No			BT115	Y	Subramaniam K	
+BT4230	145	F		Environmental Biotechnology	CHANDRARAJ K	3	9			40	20	Yes			ED306	Y	Subramaniam K	ST
+BT5013	146	G		Cellular and Molecular Neuroscience	SANTHOSH	3	9			40	20	Yes			BT003	Y	Madhulika Dixit	ST
+BT5041	147	A		Downstream Processing	GUHAN JAYARAMAN	3	10			40	20	Yes			BT108	Y	Manoj N	ST
+BT5121	148	R	S	Bioprocess Engineering Lab 2	RICHA KARMAKAR	2	3			0	0	No			BT115	Y	Manoj N	
+BT5130	149	C		Tissue Engineering	Shantanu Pradhan	4	10	NULL		40	20	Yes			ED207	Y	Suraishkumar G K	ST
+BT5170	150	F		Membrane Biology and Signal Transduction	GOPALA KRISHNA A	3	9	NULL		40	20	Yes			BT003	Y	Suraishkumar G K	ST
+BT5210	151	D		Bioprocess Control	HAMSA PRIYA MOHANA SUNDARAM	3	9			15	0	Yes			BT003	Y	Manoj N	ST
+BT5240	152	E		Computational Systems Biology	KARTHIK RAMAN	4	12			40	20	Yes			CRC101	Y	Manoj N	ST
+BT5340	153	E		Protein Folding and Stability	ATHI NARAYANAN N	3	9	Basic knowledge of protein structures and chemistry		40	20	Yes			ED306	Y	Manoj N	ST
+BT5360	154	F		Reactive Species in Medical and Related Technologies	SURAISHKUMAR G K	3	9			25	10	Yes			BT 110	Y	Madhulika Dixit	ST
+BT5390	155	XX		Introduction to Developmental Biology	SUBRAMANIAM K	3	9			25	10	Yes				Y	Madhulika Dixit	ST
+BT5410	156	A		Infection Biology	VANI JANAKIRAMAN	3	9	COT		40	20	Yes			BT110	Y	Madhulika Dixit	ST
+BT5440	157	F		Quantitative and Population Genetics	Himanshu Sinha	3	9			40	20	Yes			ED207	Y	Suraishkumar G K	ST
+BT5480	158	G		Stem cells and Regenerative Medicine	GREESHMA THRIVIKRAMAN	3	9	None		40	20	Yes			BT110	Y	Madhulika Dixit	ST
+BT5703	159	PP		Biological Engineering DD Project (Phase III)	CHANDRARAJ K	40	40			0	0	No				Y	Sanjib Senapati	
+BT5803	160	PP		Biological Sciences DD Project (Phase III)	CHANDRARAJ K	40	40			0	0	No				Y	Sanjib Senapati	
+BT5933	161	PP		MTech Bioprocess Engineering Project III	MEIYAPPAN LAKSHMANAN	12	40			0	0	No				Y	Sanjib Senapati	
+BT6021	162	ZZ		Introduction to Research	MAMATA BHASKARA BANGERA	2	0	NIL		0	0	No				Y	Arumugam	
+BT6999	163	XX		Special Topics in Biotechnology	SANJIB SENAPATI	2	6			0	0	No				Y	Sanjib Senapati	
+BT7210	164	D		Protein Structure and Functions	SANJIB SENAPATI	3	9	COT		60	20	Yes			BT108	Y	Arumugam	ST
+BT7230	165	E		Advanced Molecular and Cellular Biology	MAHALINGAM S	3	9	BT2082; BT3012; COT		15	10	Yes			BT003	Y	Arumugam	ST
+BT7999	166	YY		Special Topics in Biotechnology	SANJIB SENAPATI	2	6			0	0	No				Y	Sanjib Senapati	
+CA5562	167	UU		Project II	RENGANATHAN T	13	40			0	0	No				Y	Upendra Natarajan	
+CE1020	168	G		Functional Design of Buildings	RAMAMURTHY K	2	6	NIL		60	10	Yes			BSB317	Y	Alagappan Ponnalagu	SI
+CE3050	169	B	P	Basic Design of Steel Structures	RUPEN GOSWAMI	4	11			0	0	No			BSB312 BSB317	Y	Alagappan Ponnalagu	
+CE3050	170	B	P	Basic Design of Steel Structures	RAGHUKANTH S T G	4	11			0	0	No			BSB312 BSB317	N	Alagappan Ponnalagu	
+CE3100	171	Q		Structural engineering laboratory	ARUN MENON	2	4	NULL		0	0	No			LAB	N	Alagappan Ponnalagu	
+CE3100	172	Q		Structural engineering laboratory	MEHER PRASAD A	2	4	NULL		0	0	No			LAB	N	Alagappan Ponnalagu	
+CE3100	173	Q		Structural engineering laboratory	ALAGAPPAN	2	4	NULL		0	0	No			LAB	Y	Alagappan Ponnalagu	
+CE3420	174	D		Concrete Technology	KEERTHANA KIRUPAKARAN	3	9	NULL		40	10	Yes			BSB312	N	Alagappan Ponnalagu	SI
+CE3420	175	D		Concrete Technology	RAVINDRA GETTU	3	9	NULL		40	10	Yes			BSB312	Y	Alagappan Ponnalagu	SI
+CE4010	176	A	R	Construction Project Management	ASHWIN MAHALINGAM	4	10			0	0	No			BSB312	Y	Alagappan Ponnalagu	
+CE4010	177	A	R	Construction Project Management	NIKHIL BUGALIA IITM	4	10			0	0	No			BSB312	N	Alagappan Ponnalagu	
+CE4050	178	UU		Under graduate Project I	RAMAMURTHY K	3	13	None		0	0	No				Y	Alagappan Ponnalagu	
+CE4060	179	UU		Under graduate Project II	RAMAMURTHY K	6	14	CE4050		0	0	No				Y	Alagappan Ponnalagu	
+CE4310	180	G		Design of concrete structural systems	AMLAN K SENGUPTA	3	9	CE3060 Basic Reinforced Concrete Design or CoT		150	0	Yes			BSB203	Y	Alagappan Ponnalagu	SI
+CE4803	181	UU		Project - Even Semester	RAMAMURTHY K	40	40	CE4802		0	0	No				Y	Alagappan Ponnalagu	
+CE4901	182	VV		Undergraduate Research - I	RAMAMURTHY K	3	9	Students should have a CGPA > 8.0 without any backlogs		0	0	No				Y	Alagappan Ponnalagu	
+CE4902	183	VV		Undergraduate Research - II	RAMAMURTHY K	3	9	Students should have a CGPA > 8.0 without any backlogs		0	0	No				Y	Alagappan Ponnalagu	
+CE4903	184	VV		Undergraduate Research - III	RAMAMURTHY K	3	9	Students should have a CGPA > 8.0 without any backlogs		0	0	No				Y	Alagappan Ponnalagu	
+CE5011	185	F		Design of Masonry Structures	ARUN MENON	3	9	NIL		60	0	Yes			STR 301	Y	Soumendra Nath Kuiry	SI
+CE5027	186	E		Mechanical Behaviour of Cement-Based Materials	KEERTHANA KIRUPAKARAN	3	9	Nil		30	10	Yes			BSB206	Y	Soumendra Nath Kuiry	SI
+CE5040	187	K		Construction,Methods & Equipment	MURALI JAGANNATHAN	3	9	NIL		60	0	Yes			BSB203	Y	Soumendra Nath Kuiry	SI
+CE5090	188	P		Construction Materials Lab	Piyush Chaunsali	3	8	NIL		60	0	Yes			LAB	Y	Soumendra Nath Kuiry	SI
+CE5090	189	P		Construction Materials Lab	ASLAM KUNHI MOHAMED	3	8	NIL		60	0	Yes			LAB	N	Soumendra Nath Kuiry	SI
+CE5100	190	Q		Construction Software Lab	ARITRA PAL	4	6	N/A		0	0	No			DCF	Y	Soumendra Nath Kuiry	
+CE5105	191	D		Environmental Toxicology and Risk Assessment	Mathava Kumar S	3	9			40	10	Yes			NAC II 331	Y	Soumendra Nath Kuiry	SI
+CE5111	192	H		Geophysical Exploration Methods	ELANGO LAKSHMANAN	3	9	Nil		25	5	Yes			NAC II 238	Y	Soumendra Nath Kuiry	SI
+CE5115	193	B		Admixtures and Special Concretes	MANU SANTHANAM	3	9	UG course in Concrete Technology		10	0	Yes			BSB206	Y	Soumendra Nath Kuiry	SI
+CE5160	194	A		Biological Process Design for Wastewater Treatment	LIGY PHILIP	4	12	NIL		40	10	Yes			NAC II 331	Y	Soumendra Nath Kuiry	SI
+CE5180	195	B		Air Pollution and Control Engineering	SHIVA NAGENDRA S M	4	12	B.Tech/DD- CE3040 or CE4810		40	10	Yes			NAC II 331	Y	Soumendra Nath Kuiry	SI
+CE5200	196	P	Q	Environment Process Lab	MOHANAKRISHNAN LOGAN	4	8			0	0	No			NAC II 317	Y	Soumendra Nath Kuiry	
+CE5215	197	E		Concrete Pavement Technology	Surender Singh	3	9	NIL		30	5	Yes			BSB377	Y	Soumendra Nath Kuiry	SI
+CE5220	198	R		Environmental Engineering Seminar	MOHANAKRISHNAN LOGAN	2	3			0	0	No			NAC II 331	Y	Soumendra Nath Kuiry	
+CE5225	199	E	R	Numerical techniques in civil engineering	Venkatraman	3	10			40	10	Yes			NAC II 122	Y	Soumendra Nath Kuiry	SI
+CE5260	200	C		Models of Water & Air Quality	Chandan	3	9	B.Tech/DD-CE3040 -Environmental Engineering		40	10	Yes			NAC II 331	Y	Soumendra Nath Kuiry	SI
+CE5290	201	F		Transportation Network Analysis	KARTHIK K SRINIVASAN	3	9	NIL		30	5	Yes			BSB377	Y	Soumendra Nath Kuiry	SI
+CE5300	202	A		Applied Soil Mechanics	SOUGATA MUKHERJEE	4	10	CE 2060, CE 3350 or equivalent (for B. Tech or DD)		50	10	Yes			BSB 370	Y	Soumendra Nath Kuiry	SI
+CE5340	203	B		Finite Element Method: Concepts and Applications in Geomechanics	Chandra Annavarapu	4	12	NIL		50	10	Yes			BSB 370	Y	Soumendra Nath Kuiry	SI
+CE5350	204	L		Geosynthetics & Reinforced Soil Structures	DALI NAIDU ARNEPALLI	3	9	CE3350 for UG students & nil for PG students		50	10	Yes			BSB 370	Y	Soumendra Nath Kuiry	SI
+CE5410	205	P	Q	Experimental Geotechnics Lab	DALI NAIDU ARNEPALLI	4	8	NIL		30	0	Yes			BSB 149	Y	Soumendra Nath Kuiry	SI
+CE5410	206	P	Q	Experimental Geotechnics Lab	DODAGOUDAR G R	4	8	NIL		30	0	Yes			BSB 149	N	Soumendra Nath Kuiry	SI
+CE5480	207	A		Water Resources Planning and Management	SUBBARAO PICHUKA	4	12			0	0	No			NAC II 238	Y	Soumendra Nath Kuiry	
+CE5500	208	P	J	Hydroinformatics	BALAJI NARASIMHAN	9	9	NIL		0	0	No			NAC II 121	Y	Soumendra Nath Kuiry	
+CE5520	209	M		Hyd. & Water Resources Engg. Seminar	BALAJI NARASIMHAN	1	2			0	0	No			NAC II 122	Y	Soumendra Nath Kuiry	
+CE5690	210	J		Theory and Design of Plates and Shells	ALAGUSUNDARAMOORTHY P	3	9	NIL		60	10	Yes			STR 301	Y	Soumendra Nath Kuiry	SI
+CE5710	211	D		Prestressed concrete structures	APPARAO G	3	9	CE3060 or equivalent		60	0	Yes			STR 301	Y	Soumendra Nath Kuiry	SI
+CE5720	212	E		Structural stability	Lakshmi Priya P S	3	9			60	0	Yes			STR 301	Y	Soumendra Nath Kuiry	SI
+CE5730	213	K		Probability Methods in Civil Engg	SUDHEENDRA HERKAL	3	9	NIL		60	20	Yes			STR 301	Y	Soumendra Nath Kuiry	SI
+CE5800	214	B		Pavement Analysis and Design	Atul Narayan S P	4	12	NIL		30	5	Yes			BSB377	Y	Soumendra Nath Kuiry	SI
+CE5831	215	R		Transportation Engg. Studio	KARTHIK K SRINIVASAN	3	9	CE5830 and CE5810		30	5	Yes			LAB	Y	Soumendra Nath Kuiry	SI
+CE5831	216	R		Transportation Engg. Studio	LELITHA DEVI	3	9	CE5830 and CE5810		30	5	Yes			LAB	N	Soumendra Nath Kuiry	SI
+CE5850	217	P	Q	Pavement Materials and Evaluation Lab	MURALI KRISHNAN J	3	9	NIL		30	5	Yes			LAB	Y	Soumendra Nath Kuiry	SI
+CE5900	218	A		Intelligent Transportation Systems	LELITHA DEVI	3	9	NIL		30	5	Yes			BSB377	Y	Soumendra Nath Kuiry	SI
+CE5950	219	A		Characterization of Construction Materials	Piyush Chaunsali	3	9	NA		30	10	Yes			BSB206	Y	Soumendra Nath Kuiry	SI
+CE5950	220	A		Characterization of Construction Materials	ASLAM KUNHI MOHAMED	3	9	NA		30	10	Yes			BSB206	N	Soumendra Nath Kuiry	SI
+CE6013	221	D		River Engineering	VENU CHANDRA	3	9			0	0	No			NAC II 237	Y	Soumendra Nath Kuiry	
+CE6018	222	L		Seismic Data Analytics	RAGHUKANTH S T G	9	9	NA		60	20	Yes			STR 301	Y	Soumendra Nath Kuiry	SI
+CE6030	223	C		Construction economics and finance	NIKHIL BUGALIA IITM	3	9	COT		100	20	Yes			BSB312	Y	Soumendra Nath Kuiry	SI
+CE6070	224	G		Construction Project Modelling	ARITRA PAL	3	9	Postgraduate		40	0	Yes			BSB206	N	Soumendra Nath Kuiry	SI
+CE6070	225	G		Construction Project Modelling	KOSHY VARGHESE	3	9	Postgraduate		40	0	Yes			BSB206	Y	Soumendra Nath Kuiry	SI
+CE6123	226	UU		Project - Even Semester (building technology and construction management)	SIVAKUMAR PALANIAPPAN	20	45	CE6122		0	0	No				Y	Soumendra Nath Kuiry	
+CE6143	227	UU		Project - Even semester (construction technology and management)	RAMAMURTHY K	22	48	CE6142		0	0	No				N	Soumendra Nath Kuiry	
+CE6143	228	UU		Project - Even semester (construction technology and management)	KOSHY VARGHESE	22	48	CE6142		0	0	No				Y	Soumendra Nath Kuiry	
+CE6180	229	E		Environmental Impact Assessment	TANUSHREE PARSAI	3	9	B.Tech/DD-CE3040 :Environmental Engineering		40	10	Yes			NAC II 331	Y	Soumendra Nath Kuiry	SI
+CE6293	230	UU		Project - Even semester (Environmental Engineering)	Mathava Kumar S	20	35	CE6292		0	0	No			NAC II 356	Y	Soumendra Nath Kuiry	
+CE6293	231	UU		Project - Even semester (Environmental Engineering)	SHIVA NAGENDRA S M	20	35	CE6292		0	0	No			NAC II 356	N	Soumendra Nath Kuiry	
+CE6330	232	H		Rock Engineering	VIDYA BHUSHAN MAJI	3	9	NIL		40	10	Yes			BSB 370	Y	Soumendra Nath Kuiry	SI
+CE6350	233	G		Mechanics and Constitutive Modelling of Geomaterials	ROBINSON R G	3	10			50	10	Yes			BSB 370	Y	Soumendra Nath Kuiry	SI
+CE6350	234	G		Mechanics and Constitutive Modelling of Geomaterials	Ramesh Kannan Kandasami	3	10			50	10	Yes			BSB 370	N	Soumendra Nath Kuiry	SI
+CE6400	235	F		Hydrologic Data Analysis and Modeling	CHINGKA KALAI	3	9			40	5	Yes			NAC II 122	Y	Soumendra Nath Kuiry	SI
+CE6420	236	F		Ground Improvement Techniques	THYAGARAJ T	3	9	NIL		50	10	Yes			BSB 370	Y	Soumendra Nath Kuiry	SI
+CE6433	237	UU		Project - Even semester (Geotechnical Engineering)	DALI NAIDU ARNEPALLI	25	44	CE6432		0	0	No				Y	Soumendra Nath Kuiry	
+CE6480	238	G		Contaminant Transport Modelling	ELANGO LAKSHMANAN	3	9	NIL		35	5	Yes			NAC II 122	N	Soumendra Nath Kuiry	SI
+CE6480	239	G		Contaminant Transport Modelling	SOUMENDRA NATH KUIRY	3	9	NIL		35	5	Yes			NAC II 122	Y	Soumendra Nath Kuiry	SI
+CE6493	240	UU		Project - Even semester (Hydraulics and Water Resources Engineering)	SOUMENDRA NATH KUIRY	24	40	CE6492		0	0	No				Y	Soumendra Nath Kuiry	
+CE6693	241	UU		Project - Even Semester (Structural Engineering)	SARAVANAN U	20	35	CE6692		0	0	No				Y	Soumendra Nath Kuiry	
+CE6710	242	G		Bridge Engineering	MURTY C V R	3	9	Course in reinforced concrete design		60	0	Yes			STR 301	Y	Soumendra Nath Kuiry	SI
+CE6740	243	C		Advanced analysis and design for wind and earthquake effects	SATHISH KUMAR S R	3	9	CE5620 or equivalent		60	0	Yes			STR 301	Y	Soumendra Nath Kuiry	SI
+CE6840	244	G		Traffic Flow Theory	Bhargava Rama Chilukuri	3	9	NIL		30	5	Yes			BSB377	Y	Soumendra Nath Kuiry	SI
+CE6933	245	UU		Project - Even semester (Transportation Engineering)	Atul Narayan S P	24	45	CE6932		30	5	Yes			PROJECT	Y	Soumendra Nath Kuiry	SI
+CE6999	246	XX		Special Topics in Civil Engineering	BENNY RAPHAEL	2	6			0	0	No				Y	Soumendra Nath Kuiry	
+CE7026	247	J		Displacement-based Earthquake Resistant Design of Structures	MURTY C V R	3	9			60	0	Yes			STR 401	Y	Soumendra Nath Kuiry	SI
+CE7200	248	L		Fracture mechanics of concrete	APPARAO G	3	9	NIL		60	0	Yes			STR 401	Y	Soumendra Nath Kuiry	SI
+CE7640	249	K		Elastic and plastic stress analysis	ALAGAPPAN	3	9	CE6780, ID6010 or COT		60	20	Yes			STR 401	Y	Soumendra Nath Kuiry	SI
+CE7999	250	YY		Special topics in Civil Engineering	BENNY RAPHAEL	2	6			0	0	No				Y	Soumendra Nath Kuiry	
+CH1020	251	C		Principles & Calculations in Chemical	NIKET KAISARE	4	10			0	0	No			CRC103	Y	Tarak Kumar Patra	
+CH2014	252	B		Fundamentals of Heat and Mass Transfer	BASAVARAJA MADIVALA GURAPPA	4	10	None		0	0	No			MSB 355	N	Tarak Kumar Patra	
+CH2014	253	B		Fundamentals of Heat and Mass Transfer	Sumesh P Thampi	4	10	None		0	0	No			MSB 355	Y	Tarak Kumar Patra	
+CH2015	254	D		Fluid and Particle Mechanics	SANKHA KARMAKAR	4	10			0	0	No			MSB 355	Y	Tarak Kumar Patra	
+CH2017	255	P		Properties and variables measurements laboratory	RAMNARAYANAN R	3	8			0	0	No			CHL	N	Tarak Kumar Patra	
+CH2017	256	P		Properties and variables measurements laboratory	Rajnish Kumar	3	8			0	0	No			CHL	N	Tarak Kumar Patra	
+CH2017	257	Q		Properties and variables measurements laboratory	RAMNARAYANAN R	3	8			0	0	No			CHL	N	Tarak Kumar Patra	
+CH2017	258	Q		Properties and variables measurements laboratory	Aravind Kumar Chandiran	3	8			0	0	No			CHL	Y	Tarak Kumar Patra	
+CH2017	259	P		Properties and variables measurements laboratory	Aravind Kumar Chandiran	3	8			0	0	No			CHL	Y	Tarak Kumar Patra	
+CH2017	260	Q		Properties and variables measurements laboratory	Rajnish Kumar	3	8			0	0	No			CHL	N	Tarak Kumar Patra	
+CH3050	261	B		Process Dynamics and Control	ABHIJIT DESHPANDE P	4	10	Basics of differential calculus, complex number theory and linear algebra.		0	0	No			MSB 240	Y	Tarak Kumar Patra	
+CH3050	262	B		Process Dynamics and Control	PARUL VERMA	4	10	Basics of differential calculus, complex number theory and linear algebra.		0	0	No			MSB 240	N	Tarak Kumar Patra	
+CH3052	263	C		Material Science for Chemical Engineers	NITIN MURALIDHARAN	4	10			0	0	No			MSB 355	Y	Tarak Kumar Patra	
+CH3522	264	R		Unit Operations Lab	ABHIJIT DESHPANDE P	3	8			0	0	No			CHL	N	Tarak Kumar Patra	
+CH3522	265	S		Unit Operations Lab	RENGANATHAN T	3	8			0	0	No			CHL	N	Tarak Kumar Patra	
+CH3522	266	S		Unit Operations Lab	ABHIJIT DESHPANDE P	3	8			0	0	No			CHL	N	Tarak Kumar Patra	
+CH3522	267	S		Unit Operations Lab	RAVI KRISHNA R	3	8			0	0	No			CHL	Y	Tarak Kumar Patra	
+CH3522	268	R		Unit Operations Lab	RAVI KRISHNA R	3	8			0	0	No			CHL	Y	Tarak Kumar Patra	
+CH3522	269	R		Unit Operations Lab	RENGANATHAN T	3	8			0	0	No			CHL	N	Tarak Kumar Patra	
+CH4170	270	M		Catalyst Science & Technology	VINU R	3	9			25	10	Yes			MSB 123	Y	Tarak Kumar Patra	SI
+CH4250	271	R		Process Engineering	Rajagopalan Srinivasan	4	10	CH4010: Process and Product Design		0	0	No			MSB 355 / DCF	Y	Tarak Kumar Patra	
+CH4250	272	S		Process Engineering	Rajagopalan Srinivasan	4	10	CH4010: Process and Product Design		0	0	No			MSB 355 / DCF	Y	Tarak Kumar Patra	
+CH4560	273	UU		Project II	RAVI KRISHNA R	6	18			50	0	Yes				Y	Tarak Kumar Patra	SI
+CH4901	274	VV		Undergraduate Research 1	RAVI KRISHNA R	3	9			35	0	Yes				Y	Tarak Kumar Patra	SI
+CH4902	275	VV		Undergraduate Research 2	RAVI KRISHNA R	3	9			35	0	Yes				Y	Tarak Kumar Patra	SI
+CH4999	276	VV		Undergraduate Research	RAVI KRISHNA R	3	9			35	0	Yes				Y	Tarak Kumar Patra	SI
+CH5002	277	G		Engineering Principles in Mammalian Systems and Synthetic Biology	RASHMI PRAVA MOHANTY	3	9	Undergraduate level understanding of ordinary differential equations and reaction rate equations is assumed. No prior knowledge of molecular cell biology is expected.		50	40	Yes			MSB 356	Y	Rajagopalan Srinivasan	SI
+CH5003	278	E		Machine learning for molecular simulations	ABHINAV SANKARA RAMAN	3	9			30	15	Yes			MSB 235	Y	Rajagopalan Srinivasan	SI
+CH5014	279	F		Interfacial Science and Engineering	UPENDRA NATARAJAN	3	9			150	70	Yes			MSB 355	Y	Rajagopalan Srinivasan	SI
+CH5023	280	F		Unconventional Oil and Gas Resources	Rajnish Kumar	3	9	None		40	20	Yes			MSB 356	Y	Rajagopalan Srinivasan	SI
+CH5030	281	A		Transport Phenomena	PUSHPAVANAM S	4	10	NIL		0	0	No			MSB 355	Y	Rajagopalan Srinivasan	
+CH5060	282	T		Seminar	UPENDRA NATARAJAN	2	3			0	0	No			MSB 240	Y	Rajagopalan Srinivasan	
+CH5080	283	K		Theory & Appln. of Multi Component Mass Transfer	RAVI R	3	9	NIL		15	10	Yes			CRC202	Y	Rajagopalan Srinivasan	SI
+CH5100	284	G		Multiphase Systems	RENGANATHAN T	3	9	NIL		40	10	Yes			MSB 240	Y	Rajagopalan Srinivasan	SI
+CH5130	285	G		Rheology of Complex Materials	KHUSHBOO SUMAN	3	9	NIL		30	20	Yes			MSB 235	Y	Rajagopalan Srinivasan	SI
+CH5205	286	D		Natural Gas Engineering	JITENDRA SANGWAI	3	9			20	0	Yes			MSB 235	Y	Rajagopalan Srinivasan	SI
+CH5270	287	K		Soft robotics	SUSY VARUGHESE	3	9	NIL		30	25	Yes			MSB 123	Y	Rajagopalan Srinivasan	SI
+CH5400	288	G		Microelectronic Fabrication	RAMANATHAN S	3	9			20	10	Yes			MSB 123	Y	Rajagopalan Srinivasan	SI
+CH5415	289	K		Constructal Design in Engineering Systems	TANMAY BASAK	3	9	NONE		15	10	Yes			CRC203	Y	Upendra Natarajan	SI
+CH5440	290	G		Multivariate Data Analysis for Process Modeling	KANNAN A	3	9	NIL		100	50	Yes			MSB 355	Y	Upendra Natarajan	SI
+CH5460	291	D		Unit Operation and Processes in Env.Engg.	RAVI KRISHNA R	3	9	NIL		20	10	Yes			MSB 240	Y	Upendra Natarajan	SI
+CH5530	292	Q		Process Simulation Lab	Himanshu Goyal	4	9			0	0	No			DCF	Y	Rajagopalan Srinivasan	
+CH5530	293	P		Process Simulation Lab	Himanshu Goyal	4	9			0	0	No			DCF	Y	Rajagopalan Srinivasan	
+CH5541	294	M		Advanced Topics in Momentum Transfer	TANMAY BASAK	3	9	Knowledge on Fluid Mechanics		15	10	Yes			CRC203	Y	Upendra Natarajan	SI
+CH5562	295	UU		Project II	RENGANATHAN T	14	42			0	0	No				Y	Upendra Natarajan	
+CH5600	296	E		Introduction to Electrochemical Impedance Spectroscopy	RAMANATHAN S	3	9	COT		25	10	Yes			MSB 123	Y	Upendra Natarajan	SI
+CH5650	297	D		Molecular Data Science and Informatics	Tarak K Patra	3	9	None		0	0	No			MSB 356	Y	Upendra Natarajan	
+CH6020	298	F		Computational Fluid Dynamics Tech	SREENIVAS JAYANTI	3	9	NIL		60	20	Yes			MSB240	Y	Upendra Natarajan	SI
+CH6021	299	ZZ		Introduction to Research	RAVI KRISHNA R	2	0	NIL		0	0	No				Y	Upendra Natarajan	
+CH6022	300	L		Microwave Processing in Materials, Food and Medical Sciences	TANMAY BASAK	3	9			15	10	Yes			CRC203	Y	Upendra Natarajan	SI
+CH6060	301	H		Numerical Tech for Engrs	RAVI R	3	9	NIL		15	10	Yes			CRC203	N	Upendra Natarajan	SI
+CH6060	302	H		Numerical Tech for Engrs	TANMAY BASAK	3	9	NIL		15	10	Yes			CRC203	Y	Upendra Natarajan	SI
+CH6260	303	E		Carbon Capture and Sequestration	Swapna	3	9	None		30	10	Yes			MSB 240	Y	Upendra Natarajan	SI
+CH6999	304	YY		Special Topics in Chemical Engineering	NIKET KAISARE	2	6			0	0	No				Y	Upendra Natarajan	
+CH7999	305	XX		Special Topics in Chemical Engineering	NIKET KAISARE	2	6			0	0	No				Y	Upendra Natarajan	
+CS1100	306	F	R1, S1	Introduction to Programming	Akanksha Agrawal	3	12			0	0	No			RJN 202	Y	Nandita Das Gupta	
+CS1202	307	E		Discrete Mathematics II	RAGHAVENDRA RAO B V	3	10	CS1200		10	10	Yes			SSB 134	Y	Rupesh Nasre	CG
+CS1234	308	D	R	Small-Scale Application Development	RUPESH NASRE	12	12	The student must have done an introductory course on programming		0	0	No			SSB 134	Y	Madhu Mutyam	
+CS2200	309	C		Language Machines and Computations	JAYALAL SARMA M N	3	10	NIL		10	10	Yes			CS 15	Y	Rupesh Nasre	CG
+CS2600	310	B		Computer Organization and Architecture	GOPALAKRISHNAN SRINIVASAN	4	10	CS2300, CS2310		10	10	Yes			CS 15	Y	Rupesh Nasre	CG
+CS2610	311	P		Computer Organization and Architecture Lab	GOPALAKRISHNAN SRINIVASAN	2	6			3	3	Yes			DCF+ SYS	Y	Rupesh Nasre	CG
+CS2800	312	D		Design and Analysis of Algorithms	JOHN EBENEZER AUGUSTINE	4	10	CS1100, CS1200, CS2700, CS2710		10	10	Yes			CS 15	Y	Rupesh Nasre	CG
+CS2810	313	Q		Object-Oriented Algorithms Implementation and Analysis Lab	Prashanth	2	6	CS2700 (Programming and Data Structures); CS2710 (PDS Lab); CS1200 (Discrete Mathematics) and MA2130 (Graph Theory).		0	0	No			SSB 134, DCF+SYS	Y	Rupesh Nasre	
+CS3205	314	H		Introduction to Computer Networks	MUKULIKA MAITY	4	12			110	10	Yes			SSB 134	Y	Rupesh Nasre	CG
+CS3666	315	YY		Industrial Training	Nishad	1	0			100	0	Yes				Y	Rupesh Nasre	CG
+CS3700	316	A		Introduction to Database Systems	MADHU MUTYAM	4	12	CS1200 and CS2700		90	10	Yes			SSB 134	Y	Rupesh Nasre	CG
+CS4700	317	G		Advanced Data Stuctures	YADU VASUDEV	4	12	Basic data structures and algorithms		80	20	Yes			SSB 134	Y	Rupesh Nasre	CG
+CS4805	318	UU		B. Tech. Project	Aishwarya	8	24			100	0	Yes				Y	Rupesh Nasre	CG
+CS4900	319	VV		Undergraduate Research in Computer Science - I	JAYALAL SARMA M N	4	12	CS2800, CS2810, CS2600, CS2610, CS2200		100	0	Yes				Y	Rupesh Nasre	CG
+CS4910	320	VV		Undergraduate Research in Computer Science - II	Nishad	0	12	CS4900		100	0	Yes				Y	Rupesh Nasre	CG
+CS5691	321	G		Pattern Recognition and Machine Learning	SUKHENDU DAS	5	15			80	20	Yes			CS 15	Y	Rupesh Nasre	CG
+CS5705	322	UU		Dual Degree Project I	RUPESH NASRE	4	12			100	0	Yes				Y	Madhu Mutyam	CG
+CS5815	323	UU		Dual Degree Project III	RUPESH NASRE	15	40			100	0	Yes				Y	Madhu Mutyam	CG
+CS5931	324	UU		M. Tech Project Phase I	YADU VASUDEV	16	50			0	0	No				Y	Rupesh Nasre	
+CS5932	325	UU		M. Tech Project Phase II	MANIKANDAN	13	36			0	0	No				Y	Rupesh Nasre	
+CS6013	326	F		Advanced Compiler Design	KRISHNA NANDIVADA V	4	12			40	10	Yes			CS 26	Y	Rupesh Nasre	CG
+CS6015	327	B		Linear Algebra and Random Processes	KRISHNA M SIVALINGAM	4	12	None		0	0	No			SSB 134	Y	Rupesh Nasre	
+CS6024	328	H		Algorithmic Approaches to Computational Biology	MANIKANDAN	4	12	CS2800 or EE4371 or BT3051 or MA5910 or equivalent		60	30	Yes			CS 24	Y	Rupesh Nasre	CG
+CS6045	329	J		Software Defined Networking	SRINIVAS NARAYANA GANAPATHY	4	12	CS3200; COT		25	5	Yes			CS 26	Y	Rupesh Nasre	CG
+CS6123	330	H		Introduction to Algorithmic Learning Theory I	RAGHAVENDRA RAO B V	12	12	Familiarity with Algorithms and basics of Probability		40	20	Yes			CS 36	Y	Rupesh Nasre	CG
+CS6130	331	C		Advanced Graph Algorithms	MEGHANA NASRE	4	12			50	10	Yes			CS 34	Y	Rupesh Nasre	CG
+CS6170	332	F		Randomized Algorithms	SHREYAS KIRAN PAI	4	12	UGs must have taken CS2800 or equivalent and some probability course. PGs must have taken CS5800 and CS5820.		60	20	Yes			CS 24	Y	Rupesh Nasre	CG
+CS6190	333	D		Recent Dev. in Theoretical Computer Scie	Aishwarya	4	12	NIL		40	10	Yes			CS 36	Y	Rupesh Nasre	CG
+CS6220	334	J		Foundations of Databases (FunDB)	ANANTHA PADMANABHA MATIKURKE SHANKARA NARAYANA	4	12	CS1200, CS2700, CS2800, CS3700		40	10	Yes			CS 34	Y	Rupesh Nasre	CG
+CS6225	335	G		Programs and Proofs	KARTIK NAGAR	4	12	CS3100 of equivalent		40	10	Yes			CS 26	Y	Rupesh Nasre	CG
+CS6260	336	E		Automated Planning and Learning (AUPL)	MADHU MUTYAM	4	0	Familiarity with Logic, Programming, Analysis of Algorithms, and Probability		60	20	Yes				Y	Rupesh Nasre	CG
+CS6330	337	J		Digital System Testing & Testable Design	KAMAKOTI V	4	12	NIL		80	80	Yes			SSB 134	Y	Rupesh Nasre	CG
+CS6370	338	A		Natural Language Processing	SUTANU CHAKRABORTI	4	12	NIL		105	60	Yes			CS 15	Y	Rupesh Nasre	CG
+CS6535	339	J		Matching Theory	Nishad	4	12	CS6240 / MA6230		40	10	Yes			CS 36	Y	Rupesh Nasre	CG
+CS6570	340	H		Secure Systems Engineering	NARAYANASWAMY N S	4	12	COT		80	40	Yes			CS 15	Y	Rupesh Nasre	CG
+CS6630	341	C		Secure Processor Microarchitecture	Chester Rebeiro	4	12	CS2600/CS6600 or equivalent		80	40	Yes			CS 24	Y	Rupesh Nasre	CG
+CS6640	342	E		Advanced Computer Architecture	MADHU MUTYAM	4	12			40	10	Yes			CS 26	Y	Rupesh Nasre	CG
+CS6651	343	K		Recent Topics in IoT-based Sensing	Ayon Chakraborty	3	12	CS6650, Basics of linear algebra and statistics		40	10	Yes			CS 24	Y	Rupesh Nasre	CG
+CS6840	344	A		Modern Complexity Theory	JAYALAL SARMA M N	4	12	CS6014		40	10	Yes			CS 36	Y	Rupesh Nasre	CG
+CS6842	345	E		Algorithmic Algebra	JAYALAL SARMA M N	4	12	COT		40	10	Yes			CS 36	Y	Rupesh Nasre	CG
+CS6868	346	D		Concurrent Programming	K C SIVARAMAKRISHNAN	4	12			40	10	Yes			CS 26	Y	Rupesh Nasre	CG
+CS6900	347	UU		Postgraduate Research Credits in CS	KRISHNA M SIVALINGAM	4	12			0	0	No				Y	Rupesh Nasre	
+CS6910	348	D		Fundamentals of Deep Learning	CHANDRA SEKHAR C	4	12			30	10	Yes			CS 34	Y	Rupesh Nasre	CG
+CS6999	349	XX		Special Topics in Computer Science and Engineering	MADHU MUTYAM	2	6			0	0	No				Y	Rupesh Nasre	
+CS7011	350	J		Topics in Reinforcement Learning	Prashanth	4	12	CS6700 or COT		40	10	Yes			CS 24	Y	Rupesh Nasre	CG
+CS7111	351	K		Topics in Cryptography	ASHRUJIT GHOSHAL	4	12	Foundations of Cryptography		40	10	Yes			CS 34	Y	Rupesh Nasre	CG
+CS7260	352	L		Post Quantum Cryptography	Shweta Agrawal	4	12	CS6111		40	10	Yes			CS 34	Y	Rupesh Nasre	CG
+CS7999	353	YY		Special Topics in Computer Science and Engineering	MADHU MUTYAM	2	6			0	0	No				Y	Rupesh Nasre	
+CV1020	354	A1	R1	Solid and Fluid Mechanics	ALAGAPPAN	3	12	Vector calculus and numerical methods		0	0	No			BSB204 BSB317	N	Alagappan Ponnalagu	
+CV1020	355	A1	R1	Solid and Fluid Mechanics	SARAVANAN U	3	12	Vector calculus and numerical methods		0	0	No			BSB204 BSB317	Y	Alagappan Ponnalagu	
+CV1020	356	A1	R1	Solid and Fluid Mechanics	VENU CHANDRA	3	12	Vector calculus and numerical methods		0	0	No			BSB204 BSB317	N	Alagappan Ponnalagu	
+CV1020	357	A1	R1	Solid and Fluid Mechanics	SOUMENDRA NATH KUIRY	3	12	Vector calculus and numerical methods		0	0	No			BSB204 BSB317	N	Alagappan Ponnalagu	
+CV2020	358	A	Q	Construction Engineering	MURALI JAGANNATHAN	4	12	Nil		0	0	No			BSB202 BSB 203	N	Alagappan Ponnalagu	
+CV2020	359	A	Q	Construction Engineering	RADHAKRISHNA G  PILLAI	4	12	Nil		0	0	No			BSB202 BSB 203	Y	Alagappan Ponnalagu	
+CV2020	360	A	Q	Construction Engineering	KOSHY VARGHESE	4	12	Nil		0	0	No			BSB202 BSB 203	N	Alagappan Ponnalagu	
+CV2020	361	A	Q	Construction Engineering	RAVINDRA GETTU	4	12	Nil		0	0	No			BSB202 BSB 203	N	Alagappan Ponnalagu	
+CV2040	362	C	T	Geotechnical Engineering	Ramesh Kannan Kandasami	4	12	Nil		0	0	No			BSB202 BSB203	N	Alagappan Ponnalagu	
+CV2040	363	C	T	Geotechnical Engineering	ROBINSON R G	4	12	Nil		0	0	No			BSB202 BSB203	N	Alagappan Ponnalagu	
+CV2040	364	C	T	Geotechnical Engineering	THYAGARAJ T	4	12	Nil		0	0	No			BSB202 BSB203	Y	Alagappan Ponnalagu	
+CV2040	365	C	T	Geotechnical Engineering	Tarun Naskar	4	12	Nil		0	0	No			BSB202 BSB203	N	Alagappan Ponnalagu	
+CV2060	366	D		Transportation Engineering	Bhargava Rama Chilukuri	4	12	Nil		0	0	No			BSB317 BSB370 BSB377	N	Alagappan Ponnalagu	
+CV2060	367	D		Transportation Engineering	MURALI KRISHNAN J	4	12	Nil		0	0	No			BSB317 BSB370 BSB377	Y	Alagappan Ponnalagu	
+CV2060	368	D		Transportation Engineering	ANMOL PAHWA	4	12	Nil		0	0	No			BSB317 BSB370 BSB377	N	Alagappan Ponnalagu	
+CV2060	369	D		Transportation Engineering	Surender Singh	4	12	Nil		0	0	No			BSB317 BSB370 BSB377	N	Alagappan Ponnalagu	
+CV2060	370	D		Transportation Engineering	LELITHA DEVI	4	12	Nil		0	0	No			BSB317 BSB370 BSB377	N	Alagappan Ponnalagu	
+CV2080	371	B	R	Structural Design	Lakshmi Priya P S	4	12	Structural Mechanics and Analysis		0	0	No			BSB202 BSB203	Y	Alagappan Ponnalagu	
+CV2080	372	B	R	Structural Design	Pradeep	4	12	Structural Mechanics and Analysis		0	0	No			BSB202 BSB203	N	Alagappan Ponnalagu	
+CV5102	373	P		COMPUTATIONAL MODELLING FOR STRUCTURAL ENGINEERS	Pradeep	2	6			60	0	Yes			STR 301	N	Soumendra Nath Kuiry	SI
+CV5102	374	P		COMPUTATIONAL MODELLING FOR STRUCTURAL ENGINEERS	MEHER PRASAD A	2	6			60	0	Yes			STR 301	Y	Soumendra Nath Kuiry	SI
+CV5104	375	B		BEHAVIOUR & DESIGN OF CONCRETE STRUCTURES	PRAKASH SINGH BADAL	3	9			60	0	Yes			STR 301	Y	Soumendra Nath Kuiry	SI
+CV5106	376	A		BEHAVIOUR & DESIGN OF METAL STRUCTURES	ARUL JAYACHANDRAN S	3	9			60	0	Yes			STR 301	Y	Soumendra Nath Kuiry	SI
+CV5510	377	S		Water Resources Engineering Laboratory	Venkatraman	4	4			0	0	No			LAB	Y	Soumendra Nath Kuiry	
+CV5510	378	S		Water Resources Engineering Laboratory	VENU CHANDRA	4	4			0	0	No			LAB	N	Soumendra Nath Kuiry	
+CV5510	379	S		Water Resources Engineering Laboratory	SUBBARAO PICHUKA	4	4			0	0	No			LAB	N	Soumendra Nath Kuiry	
+CV5520	380	D		Construction Quality and Sustainability	SIVAKUMAR PALANIAPPAN	3	9			10	5	Yes			BSB206	Y	Soumendra Nath Kuiry	SI
+CV5520	381	D		Construction Quality and Sustainability	MANU SANTHANAM	3	9			10	5	Yes			BSB206	N	Soumendra Nath Kuiry	SI
+CV5600	382	C		Geospatial Data Science	SREEPARVATHY VIJAY	3	9	Nil		40	5	Yes			NAC II 122	Y	Soumendra Nath Kuiry	SI
+CY1001	383	C		Chemistry I: Structure, Bonding & Reactivity	SOUMEN GHOSH	4	10	NIL		500	500	Yes				N	Sekar G	SI
+CY1001	384	C		Chemistry I: Structure, Bonding & Reactivity	ARNAB RIT	4	10	NIL		500	500	Yes				N	Sekar G	SI
+CY1001	385	C		Chemistry I: Structure, Bonding & Reactivity	ANBARASAN P	4	10	NIL		500	500	Yes				N	Sekar G	SI
+CY1001	386	C		Chemistry I: Structure, Bonding & Reactivity	DESAI AAMOD VIKAS	4	10	NIL		500	500	Yes				N	Sekar G	SI
+CY1001	387	C		Chemistry I: Structure, Bonding & Reactivity	KOTHANDARAMAN RAMANUJAM	4	10	NIL		500	500	Yes				N	Sekar G	SI
+CY1001	388	C		Chemistry I: Structure, Bonding & Reactivity	ARTI DUA	4	10	NIL		500	500	Yes				N	Sekar G	SI
+CY1001	389	C		Chemistry I: Structure, Bonding & Reactivity	YOGESH  GANGARAM SHELKE	4	10	NIL		500	500	Yes				N	Sekar G	SI
+CY1001	390	C		Chemistry I: Structure, Bonding & Reactivity	DILLIP KUMAR CHAND	4	10	NIL		500	500	Yes				Y	Sekar G	SI
+CY1001	391	C		Chemistry I: Structure, Bonding & Reactivity	SANJAY KUMAR	4	10	NIL		500	500	Yes				N	Sekar G	SI
+CY1001	392	C		Chemistry I: Structure, Bonding & Reactivity	BASKARAN S	4	10	NIL		500	500	Yes				N	Sekar G	SI
+CY1001	393	C		Chemistry I: Structure, Bonding & Reactivity	MANGALA SUNDER K	4	10	NIL		500	500	Yes				N	Sekar G	SI
+CY1001	394	C		Chemistry I: Structure, Bonding & Reactivity	T PALANISELVAM	4	10	NIL		500	500	Yes				N	Sekar G	SI
+CY1002	395	R1		Chemistry Lab I	MAHIUDDIN BAIDYA	1	3	COT		100	100	Yes				Y	Sekar G	SI
+CY1002	396	P1		Chemistry Lab I	ARTI DUA	1	3	COT		100	100	Yes				Y	Sekar G	SI
+CY1002	397	P2		Chemistry Lab I	SANJAY KUMAR	1	3	COT		100	100	Yes				Y	Sekar G	SI
+CY1002	398	Q2		Chemistry Lab I	RAJAKUMAR B	1	3	COT		100	100	Yes				Y	Sekar G	SI
+CY1002	399	Q1		Chemistry Lab I	MAHIUDDIN BAIDYA	1	3	COT		100	100	Yes				Y	Sekar G	SI
+CY1002	400	R2		Chemistry Lab I	ARNAB RIT	1	3	COT		100	100	Yes				Y	Sekar G	SI
+CY1020	401	A		Basic Organic Chemistry	SANKARARAMAN S	4	10	Nil		0	0	No				Y	Dillip Kumar Chand	
+CY1020	402	A		Basic Organic Chemistry	VENKATAKRISHNAN P	4	10	Nil		0	0	No				N	Dillip Kumar Chand	
+CY1022	403	C		Mathematics-II	SUBRAMANIAN V	4	10			0	0	No				N	Dillip Kumar Chand	
+CY1022	404	C		Mathematics-II	SOORAJ K	4	10			0	0	No				Y	Dillip Kumar Chand	
+CY1024	405	B		Biochemistry	MURALEEDHARAN K M	3	9	Nil		0	0	No				Y	Dillip Kumar Chand	
+CY1024	406	B		Biochemistry	Hema Chandra	3	9	Nil		0	0	No				N	Dillip Kumar Chand	
+CY1026	407	T2		Organic Laboratory I	BEERAIAH BAIRE	5	5			0	0	No				Y	Dillip Kumar Chand	
+CY1050	408	A		Macromolecules as Engineering Materials	RAMESH GARDAS	3	9	COT		100	100	Yes				N	Sekar G	SI
+CY1050	409	A		Macromolecules as Engineering Materials	DHAMODHARAN R	3	9	COT		100	100	Yes				Y	Sekar G	SI
+CY1051	410	C		Chemistry II: Introduction to Spectroscopic Methods​	EDAMANA PRASAD	3	9	CY1001		100	100	Yes				Y	Sekar G	SI
+CY1051	411	C		Chemistry II: Introduction to Spectroscopic Methods​	KRISHNA REDDY NANDIPATI	3	9	CY1001		100	100	Yes				N	Sekar G	SI
+CY2010	412	E		Kinetics and Catalysis	Jithin John Varghese	3	9	CY 1001		0	0	No			MSB 355	N	Tarak Kumar Patra	
+CY2010	413	E		Kinetics and Catalysis	RAGHURAM CHETTY	3	9	CY 1001		0	0	No			MSB 355	Y	Tarak Kumar Patra	
+CY5012	414	A		Main Group Chemistry and Spectroscopic Characterization of Inorganic Compounds	MURTHY N N	3	9	COT		0	0	No			CB250	Y	Ramesh Gardas	
+CY5014	415	B		Reactive Intermediates and Concerted Reactions	SANKARARAMAN S	3	9	NIL		0	0	No			CB250	Y	Ramesh Gardas	
+CY5014	416	B		Reactive Intermediates and Concerted Reactions	MAHIUDDIN BAIDYA	3	9	NIL		0	0	No			CB250	N	Ramesh Gardas	
+CY5016	417	E		Kinetics and Reaction Dynamics	RAJAKUMAR B	3	9	COT		0	0	No			CB250	Y	Ramesh Gardas	
+CY5016	418	E		Kinetics and Reaction Dynamics	EDAMANA PRASAD	3	9	COT		0	0	No			CB250	N	Ramesh Gardas	
+CY5018	419	D		Chemical Bonding and Group Theory	KRISHNA REDDY NANDIPATI	3	9	COT		0	0	No			CB250	N	Ramesh Gardas	
+CY5018	420	D		Chemical Bonding and Group Theory	YAMIJALA S R K CHAITANYA SHARMA	3	9	COT		0	0	No			CB250	Y	Ramesh Gardas	
+CY5020	421	C		Analytical Chemistry: Principles, Practices and Applications	MISHRA  A K	3	9	COT		0	0	No			CB250	Y	Ramesh Gardas	
+CY5020	422	C		Analytical Chemistry: Principles, Practices and Applications	RANGA RAO G	3	9	COT		0	0	No			CB250	N	Ramesh Gardas	
+CY5022	423	Z		Inorganic Chemistry Laboratory	SUNDARGOPAL GHOSH	3	3	NIL		0	0	No				Y	Ramesh Gardas	
+CY5022	424	Z		Inorganic Chemistry Laboratory	SANJIB PANDA	3	3	NIL		0	0	No				N	Ramesh Gardas	
+CY5024	425	Y		Physical Chemistry Laboratory	MISHRA  A K	3	3	COT		0	0	No				Y	Ramesh Gardas	
+CY5024	426	Y		Physical Chemistry Laboratory	DHAMODHARAN R	3	3	COT		0	0	No				N	Ramesh Gardas	
+CY6021	427	ZZ		Introduction to Research	SUNDARGOPAL GHOSH	2	0	COT		0	0	No				Y	Sekar G	
+CY6026	428	XX		Project II	SEKAR G	6	18	COT		0	0	No				Y	Kothandaraman Ramanujam	
+CY6102	429	A		Advanced Bioinorganic Chemistry	BHYRAPPA P	3	9	COT		0	0	No				Y	Kothandaraman Ramanujam	
+CY6102	430	A		Advanced Bioinorganic Chemistry	SANJIB PANDA	3	9	COT		0	0	No				N	Kothandaraman Ramanujam	
+CY6104	431	B		Molecular Clusters	SUNDARGOPAL GHOSH	3	9	COT		0	0	No				Y	Kothandaraman Ramanujam	
+CY6106	432	D		Organometallic Chemistry for Organic Synthesis	JEGANMOHAN M	3	9	COT		0	0	No				Y	Kothandaraman Ramanujam	
+CY6108	433	A		Medicinal Chemistry	MURALEEDHARAN K M	3	9			0	0	No				N	Kothandaraman Ramanujam	
+CY6108	434	A		Medicinal Chemistry	INDRAPAL SINGH AIDHEN	3	9			0	0	No				Y	Kothandaraman Ramanujam	
+CY6116	435	D		Advanced Solution Thermodynamics	RAMESH GARDAS	3	9	COT		0	0	No				Y	Kothandaraman Ramanujam	
+CY6123	436	G		Asymmetric Organic synthesis	SEKAR G	3	9	COT		0	0	No				Y	Kothandaraman Ramanujam	
+CY6123	437	G		Asymmetric Organic synthesis	ANBARASAN P	3	9	COT		0	0	No				N	Kothandaraman Ramanujam	
+CY6124	438	E		Organic Photochemistry: Principles and Applications	VENKATAKRISHNAN P	3	9	COT		0	0	No				Y	Kothandaraman Ramanujam	
+CY6124	439	E		Organic Photochemistry: Principles and Applications	DAWANDE SUDAM GANPAT	3	9	COT		0	0	No				N	Kothandaraman Ramanujam	
+CY6126	440	C		Green Organic Synthesis: Principles and Applications	BEERAIAH BAIRE	3	9	COT		0	0	No				Y	Kothandaraman Ramanujam	
+CY6127	441	E		Chemical Processes at Surfaces and Interfaces	RANGA RAO G	3	9	Nil		0	0	No				Y	Kothandaraman Ramanujam	
+CY6128	442	H		Computational Quantum Chemistry and Molecular Simulations	SOORAJ K	3	9	COT		0	0	No				N	Kothandaraman Ramanujam	
+CY6128	443	H		Computational Quantum Chemistry and Molecular Simulations	YAMIJALA S R K CHAITANYA SHARMA	3	9	COT		0	0	No				Y	Kothandaraman Ramanujam	
+CY6128	444	H		Computational Quantum Chemistry and Molecular Simulations	SOUMEN GHOSH	3	9	COT		0	0	No				N	Kothandaraman Ramanujam	
+CY6205	445	G		Basic Concepts in X-ray Crystallography and Data Refinements	KARTIK CHANDRA MONDAL	3	9			0	0	No				Y	Kothandaraman Ramanujam	
+CY6215	446	G		Chemistry of Alkali Metal Ion Batteries and Capacitors	KOTHANDARAMAN RAMANUJAM	3	9			0	0	No				Y	Kothandaraman Ramanujam	
+CY6215	447	G		Chemistry of Alkali Metal Ion Batteries and Capacitors	T PALANISELVAM	3	9			0	0	No				N	Kothandaraman Ramanujam	
+CY6999	448	WW		Special Topics in Chemistry	SEKAR G	2	6			0	0	No				Y	Sekar G	
+CY7999	449	WW		Special Topics in Chemistry-II	SEKAR G	2	6			0	0	No				Y	Sekar G	
+CYPCL0	450	WW		Preparatory Course Lab	MURALEEDHARAN K M	0	4			0	0	No				Y	Muraleedharan K M	
+CYPCT0	451	XX		Preparatory Course Theory	DAWANDE SUDAM GANPAT	0	9			0	0	No				N	Muraleedharan K M	
+CYPCT0	452	XX		Preparatory Course Theory	DILLIP KUMAR CHAND	0	9			0	0	No				Y	Muraleedharan K M	
+CYPCT0	453	XX		Preparatory Course Theory	Hema Chandra	0	9			0	0	No				N	Muraleedharan K M	
+DA1002	454	B1		Optimization for Engineers	GITAKRISHNAN RAMADURAI	3	9	DA1000 and DA1001		0	0	No			NAC632	Y	Karthik Raman	
+DA1002	455	B1		Optimization for Engineers	SRIDHARAKUMAR NARASIMHAN	3	9	DA1000 and DA1001		0	0	No			NAC632	N	Karthik Raman	
+DA1003	456	P1		Optimization Lab	GITAKRISHNAN RAMADURAI	2	6	DA1000 and DA1001		0	0	No			NAC632	Y	Karthik Raman	
+DA1004	457	A1		Probability & Statistics for Engineers	GANAPATHY KRISHNAMURTHI	4	10	None		0	0	No			NAC632	Y	Karthik Raman	
+DA1100	458	C1		Introduction to Computational Chemistry	RAVINDRAN B	3	9	None		0	0	No			NAC632	Y	Karthik Raman	
+DA1302	459	E1		Computational Methods for Data Science	Sivaram Ambikasaran	4	10	DA1000 and DA1001		0	0	No			NAC632	Y	Karthik Raman	
+DA2303	460	C		Algorithms for Data Science	Sivaram Ambikasaran	3	9			0	0	No			NAC631	Y	Karthik Raman	
+DA2304	461	A		Introduction to Computer Systems	RAVINDRAN B	3	9			0	0	No			NAC631	Y	Karthik Raman	
+DA2403	462	D		Artificial Intelligence	ARUN RAJKUMAR	3	9			0	0	No			NAC631	Y	Karthik Raman	
+DA2404	463	T		Artificial Intelligence Lab	SRI VALLABHA DEEVI	2	6			0	0	No			NAC631	Y	Karthik Raman	
+DA4901	464	VV		Undergraduate Research Project	Sivaram Ambikasaran	3	9			0	0	No				Y	Sivaram Ambikasaran	
+DA4911	465	UU		Capstone Project I	Sivaram Ambikasaran	4	12			0	0	No				Y	Sivaram Ambikasaran	
+DA4912	466	UU		Capstone Project II	Sivaram Ambikasaran	8	24			0	0	No				Y	Sivaram Ambikasaran	
+DA5000	467	G		Mathematical Foundations of Data Science	HARISH GURUPRASAD RAMASWAMY	3	12			0	0	No			NAC633	Y	Ganapathy Krishnamurthi	
+DA5001	468	J		Privacy in AI	KRISHNA PILLUTLA	3	12	CS5691 or equivalent		80	30	Yes			CRC103	Y	Ganapathy Krishnamurthi	CG
+DA5400	469	L		Foundation of Machine Learning	NIRAV PRAVINBHAI BHATT	4	12	Basics of Linear Algebra, Probability, and Statistics		40	40	Yes			NAC633	Y	Ganapathy Krishnamurthi	CG
+DA5402	470	F		Machine Learning Operations Lab	SUDARSUN SANTHIAPPAN	3	9	DA5000/CS6015 and DA5400/CS6591		0	0	No			CRC103	Y	Ganapathy Krishnamurthi	
+DA5410	471	UU		Industrial Placement	NIRAV PRAVINBHAI BHATT	5	15			0	0	No				Y	Sivaram Ambikasaran	
+DA5411	472	UU		Project 2	NIRAV PRAVINBHAI BHATT	12	46			0	0	No				Y	Sivaram Ambikasaran	
+DA5412	473	UU		Project - 3	NIRAV PRAVINBHAI BHATT	4	15			0	0	No				Y	Sivaram Ambikasaran	
+DA6400	474	H		Introduction to Reinforcement Learning	RAVINDRAN B	4	12	FML or COT		100	100	Yes			CRC103	Y	Ganapathy Krishnamurthi	CG
+DA6401	475	C		Introduction to Deep Learning	GANAPATHY KRISHNAMURTHI	4	12	DA5000/CS6015		100	100	Yes			CRC103	Y	Ganapathy Krishnamurthi	CG
+DA6701	476	B		Data Science and AI in Finance	Nandan Sudarsanam	4	12	DA5400		100	50	Yes			Terrace Hall	Y	Ganapathy Krishnamurthi	CG
+DA6900	477	UU		Project-I Summer	Mitesh Khapra	6	20			0	0	No				Y	Sivaram Ambikasaran	
+DA6901	478	UU		Project-II	Mitesh Khapra	10	30			0	0	No				Y	Sivaram Ambikasaran	
+DA6902	479	UU		Project-III	Mitesh Khapra	15	45			0	0	No				Y	Sivaram Ambikasaran	
+DA6999	480	ZZ		Special Topics in Data Science and Artificial Intelligence	RAVINDRAN B	2	6			0	0	No				Y	Sivaram Ambikasaran	
+DA7999	481	ZZ		Special Topics in Data Science and Artificial Intelligence	RAVINDRAN B	2	6			0	0	No				Y	Sivaram Ambikasaran	
+ED1011	482	B	R	Functional and Conceptual Design	ASOKAN THONDIYATH	3	9			0	0	No			ED108	Y	Tuhin Subhra Santra	
+ED1033	483	F	Q	Form and Aesthetics in Design I	RAJNY KRISHNAN	3	6			0	0	No			ED107	Y	Tuhin Subhra Santra	
+ED1091	484	H		Japanese Language	NORIE KOBAYASHI	3	9	-		40	30	Yes			ED109	Y	Tuhin Subhra Santra	SI
+ED1091	485	H		Japanese Language	R DURGA	3	9	-		40	30	Yes			ED109	N	Tuhin Subhra Santra	SI
+ED2040	486	D	P	Control Systems	ATRIYA BISWAS	4	12	EE1101 Signals and Systems		0	0	No			ED207	Y	Tuhin Subhra Santra	
+ED2141	487	C		Physics of Measurement	NILESH JAYANTILAL VASA	3	9	NIL		0	0	No			ED108	Y	Tuhin Subhra Santra	
+ED3040	488	S		Aesthetics in Design	RAJNY KRISHNAN	3	9	Null		60	30	Yes			ED107	Y	Tuhin Subhra Santra	SI
+ED4040	489	B	S	Design of Thermal and Fluid Systems	SRIKANTH VEDANTAM	3	15	Nil		0	0	No			ED207	Y	Tuhin Subhra Santra	
+ED4060	490	A	R	Design of Mechanical Systems 2	K R GURUPRASAD	4	15	Design of Mechanical System 1		0	0	No			ED307	Y	Tuhin Subhra Santra	
+ED4571	491	K		Introduction to Chinese Language	CHIUNGWEN CHANG	3	9			60	60	Yes			ED109	Y	Tuhin Subhra Santra	SI
+ED4572	492	L		Chinese Language II	CHIUNGWEN CHANG	3	9			60	60	Yes			ED109	Y	Tuhin Subhra Santra	SI
+ED4901	493	UU		Undergraduate Research Project	SRIKANTH VEDANTAM	3	9			0	0	No				Y	Tuhin Subhra Santra	
+ED5012	494	T		Advanced Applications of Human Factors	VENKATESH BALASUBRAMANIAN	3	9	Undergraduate Students to have completed ED3010/ C		30	30	Yes			ED107	Y	Tuhin Subhra Santra	SI
+ED5012	495	T		Advanced Applications of Human Factors	HARIKRISHNA RANGAM	3	9	Undergraduate Students to have completed ED3010/ C		30	30	Yes			ED107	N	Tuhin Subhra Santra	SI
+ED5013	496	A		Analytical and Experimental Techniques in Vibration	BALAKRISHNA RAO	3	9	Signals and Systems		0	0	No			ED109	Y	Tuhin Subhra Santra	
+ED5015	497	B		Computational Methods in Design	PALANIAPPAN RAMU	4	10	Nil		10	5	Yes			ED306	Y	Tuhin Subhra Santra	SI
+ED5016	498	J		Biomedical Micro/Nano Devices and Applications	TUHIN SUBHRA SANTRA	3	9	NA		40	30	Yes			ED109	Y	Bijo	SI
+ED5017	499	C		Digital Signal Processing for Engineering Design	Srikanthan Sridharan	4	10	ED2130 for B.Tech. and DD. CoT for M.Tech., M.S. and Ph.D.		10	5	Yes			ED306	Y	Tuhin Subhra Santra	SI
+ED5018	500	R		Business Excellence and Quality Management	VENKATESH BALASUBRAMANIAN	3	9			30	30	Yes			ED107	Y	Tuhin Subhra Santra	SI
+ED5018	501	R		Business Excellence and Quality Management	PRIYADARSHINI NATARAJAN	3	9			30	30	Yes			ED107	N	Tuhin Subhra Santra	SI
+ED5021	502	H	S	Battery Charging Technology	DEEPAK RONANKI	4	12			20	10	Yes			ED307	Y	Tuhin Subhra Santra	SI
+ED5060	503	R		Medical Equipment Dissection Lab	KAVITHA ARUNACHALAM	2	3	NULL		0	0	No			CFTI	Y	Tuhin Subhra Santra	
+ED5070	504	D	S	Design of Monitoring and Diagnostic System (L&P)	NILESH JAYANTILAL VASA	5	12	NIL		10	5	Yes			ED109	Y	Tuhin Subhra Santra	SI
+ED5071	505	A		Design of Medical Imaging Systems	NARESH KUMAR R	3	12	Familiarity with signals and systems and elementary probability. UG courses: EE1101, ED2130		10	5	Yes			ED306	Y	Tuhin Subhra Santra	SI
+ED5212	506	R	T	EMobility Lab – 2	NILESH JAYANTILAL VASA	2	6			0	0	No			ED304	N	Tuhin Subhra Santra	
+ED5212	507	R	T	EMobility Lab – 2	Srikanthan Sridharan	2	6			0	0	No			ED304	Y	Tuhin Subhra Santra	
+ED5215	508	F		Introduction to Motion Planning	Nirav Patel	3	9	ID6040 or ME7020 or a similar course on Introduction to Robotics, MA2031 or similar course on Linear Algebra and, Programming experience in C++ or Python		10	5	Yes			ED108	Y	Tuhin Subhra Santra	SI
+ED5220	509	D	Q	Vehicle Dynamics	SHANKAR RAM C S	3	12	NULL		0	0	No			ED108	Y	Tuhin Subhra Santra	
+ED5314	510	J		Design, Analysis and Control of Robot Manipulators	SANDIPAN BANDYOPADHYAY	3	9	ED6007		50	50	Yes			ED306	Y	Tuhin Subhra Santra	SI
+ED5316	511	M		Antenna Theory and Design	KAVITHA ARUNACHALAM	4	10			15	15	Yes			ED109	Y	Tuhin Subhra Santra	SI
+ED5321	512	M		Science of musical instruments	RAMANATHAN M	3	9			50	40	Yes			ED306	Y	Tuhin Subhra Santra	SI
+ED5321	513	M		Science of musical instruments	Srikanthan Sridharan	3	9			50	40	Yes			ED306	N	Tuhin Subhra Santra	SI
+ED5321	514	M		Science of musical instruments	SANDIPAN BANDYOPADHYAY	3	9			50	40	Yes			ED306	N	Tuhin Subhra Santra	SI
+ED5340	515	G	T	Data Science: Theory and practice	RAMANATHAN M	4	12	ED1021 / CS1100 / ED3170 / Equivalent (or Working knowledge of any programming language) and  Fundamentals in linear algebra / statistics / probability		40	20	Yes			ED207	Y	Tuhin Subhra Santra	SI
+ED5345	516	H		Powertrain and Fuels	KAUSHAL JHA	3	9	None		50	50	Yes			ED207	Y	Tuhin Subhra Santra	SI
+ED5350	517	E		Electric Vehicle Engineering and Development	BALAJI B	3	9	None		50	20	Yes			ED109	Y	Tuhin Subhra Santra	SI
+ED5516	518	A		Design and Control of AC Machines for Electrified Vehicles	KANNAN LAKSHMINARAYAN	9	9	An introductory course on electric motors		0	0	No			ED108	Y	Tuhin Subhra Santra	
+ED5601	519	UU		Project I (Industry)	SARAVANA KUMAR G	10	40			0	0	No				Y	Tuhin Subhra Santra	
+ED5602	520	UU		Project II	Jayaganthan	8	20			0	0	No				Y	Tuhin Subhra Santra	
+ED5603	521	UU		Project III	Jayaganthan	12	35			0	0	No				Y	Tuhin Subhra Santra	
+ED5900	522	UU		Project II	Jayaganthan	11	11			0	0	No				Y	Tuhin Subhra Santra	
+ED6002	523	M		Optimization methods in Engineering Design	SARAVANA KUMAR G	3	9	Mechanics of deformable solids, Linear Algebra		30	30	Yes			ED307	Y	Tuhin Subhra Santra	SI
+ED6021	524	UU		Introduction to Research	Jayaganthan	2	0	NIL		0	0	No				Y	Tuhin Subhra Santra	
+EE1100	525	E		Basic Electrical Engineering	KALYAN KUMAR B	3	10			0	0	No			RJN - 101, RJN - 102	N	Shanti Bhattacharya	
+EE1100	526	E		Basic Electrical Engineering	KRISHNA S	3	10			0	0	No			RJN - 101, RJN - 102	Y	Shanti Bhattacharya	
+EE1101	527	E		Signals and Systems	KRISHNA JAGANNATHAN	4	10			0	0	No			RJN - 201, RJN - 202, RJN301	Y	Shanti Bhattacharya	
+EE1101	528	E		Signals and Systems	NAIR PRAVIN RAMACHANDRAN	4	10			0	0	No			RJN - 201, RJN - 202, RJN301	N	Shanti Bhattacharya	
+EE1101	529	E		Signals and Systems	Bhaswar Chakrabarti	4	10			0	0	No			RJN - 201, RJN - 202, RJN301	N	Shanti Bhattacharya	
+EE2002	530	B		Digital Systems	ANANTH KRISHNAN	4	10	None		210	0	Yes			ESB - 127, ESB - 242, ESB -106	Y	Shanti Bhattacharya	ST
+EE2002	531	B		Digital Systems	SRIDHARAN  K	4	10	None		210	0	Yes			ESB - 127, ESB - 242, ESB -106	N	Shanti Bhattacharya	ST
+EE2002	532	B		Digital Systems	Shivananju	4	10	None		210	0	Yes			ESB - 127, ESB - 242, ESB -106	N	Shanti Bhattacharya	ST
+EE2004	533	D		Digital Signal Processing	ARUN PACHAI KANNU	4	10	EE1101 Signals and Systems		210	0	Yes			ESB -127, ESB - 242	Y	Shanti Bhattacharya	ST
+EE2004	534	D		Digital Signal Processing	RAMALINGAM C S	4	10	EE1101 Signals and Systems		210	0	Yes			ESB -127, ESB - 242	N	Shanti Bhattacharya	ST
+EE2006	535	A		Electrical Machines	KRISHNA VASUDEVAN	4	10	EE2015 - Electric Circuits and Networks		180	0	Yes			ESB - 127, ESB - 242	Y	Shanti Bhattacharya	ST
+EE2006	536	A		Electrical Machines	KAMALESH HATUA	4	10	EE2015 - Electric Circuits and Networks		180	0	Yes			ESB - 127, ESB - 242	N	Shanti Bhattacharya	ST
+EE2007	537	E		Analog Systems	Saurabh Saxena	4	10			230	0	Yes			ESB - 127, ESB - 242	N	Shanti Bhattacharya	ST
+EE2007	538	E		Analog Systems	ANIRUDDHAN S	4	10			230	0	Yes			ESB - 127, ESB - 242	Y	Shanti Bhattacharya	ST
+EE2702	539	P1		Digital Systems Lab	Janakiraman	1	5			210	0	Yes			IE LAB	Y	Shanti Bhattacharya	ST
+EE2706	540	A		Electrical Machines Lab	KRISHNA VASUDEVAN	2	5			180	0	Yes			ESB - 127, ESB - 242	Y	Shanthi Pavan	ST
+EE2706	541	A		Electrical Machines Lab	KAMALESH HATUA	2	5			180	0	Yes			ESB - 127, ESB - 242	N	Shanthi Pavan	ST
+EE2707	542	T		Analog Systems Lab	ANIRUDDHAN S	2	5			230	0	Yes			IE Lab	N	Shanti Bhattacharya	ST
+EE2707	543	T		Analog Systems Lab	Saurabh Saxena	2	5			230	0	Yes			IE Lab	Y	Shanti Bhattacharya	ST
+EE3001	544	C		Solid State Devices	AMITAVA DAS GUPTA	4	10			210	0	Yes			ESB - 106, ESB - 128, ESB - 242	N	Shanti Bhattacharya	ST
+EE3001	545	C		Solid State Devices	NANDITA DAS GUPTA	4	10			210	0	Yes			ESB - 106, ESB - 128, ESB - 242	N	Shanti Bhattacharya	ST
+EE3001	546	C		Solid State Devices	ANJAN CHAKRAVORTHY	4	10			210	0	Yes			ESB - 106, ESB - 128, ESB - 242	Y	Shanti Bhattacharya	ST
+EE3005	547	D		Communication Systems	LAKSHMI NARASIMHAN THEAGARAJAN	4	10	EE1101 Signals and Systems		90	0	Yes			ESB - 106	Y	Shanti Bhattacharya	ST
+EE3007	548	A		RF and Optical Communication	SUDHARSANAN SRINIVASAN	3	9			80	10	Yes			ESB - 106	Y	Shanti Bhattacharya	ST
+EE3110	549	B		Probability Foundations for Electrical Engineers	MANIVASAKAN R	4	10			60	10	Yes			ESB - 207A	Y	Shanti Bhattacharya	ST
+EE3111	550	G		Statistics for Electrical Engineers	ANDREW THANGARAJ	4	10	Basic course in probability		100	10	Yes			ESB - 350	Y	Shanti Bhattacharya	ST
+EE3203	551	C		Power Electronics	Arun Karuppaswamy	4	10	None		100	20	Yes			ESB - 127	Y	Shanti Bhattacharya	ST
+EE3500	552	YY		Industrial Training (summer)	ARUN PACHAI KANNU	2	0			180	0	Yes			0	Y	Shanti Bhattacharya	ST
+EE4371	553	T		Introduction to Data Structures and Algorithms	VENKATESH T G	3	9	programming course		70	10	Yes			ESB - 106	Y	Shanti Bhattacharya	ST
+EE4502	554	E	R	Optics for Engineers	SHANTI BHATTACHARYA	4	9	Electromagnetics		10	5	Yes			ESB - 234	Y	Shanti Bhattacharya	ST
+EE4900	555	UU		B.Tech Project	Avishek	9	27			150	10	Yes			0	Y	Shanti Bhattacharya	ST
+EE4901	556	PP		Mini Project 1	KRISHNA JAGANNATHAN	3	9			150	10	Yes			0	Y	Shanti Bhattacharya	ST
+EE4902	557	QQ		Mini Project 2	KRISHNA JAGANNATHAN	3	9			150	10	Yes			0	Y	Shanti Bhattacharya	ST
+EE4903	558	RR		Mini Project 3	Janakiraman	3	9			150	10	Yes			0	Y	Shanti Bhattacharya	ST
+EE5002	559	A		Analysis of Networks & Systems	MATHIAZAGAN C	4	12	UG courses on Electrical Circuits and Networks and systems		0	0	No			ESB - 207A	Y	Shanti Bhattacharya	
+EE5004	560	ZZ		Seminar on the history of Electrical Engineering	DELEEP R NAIR	1	3			25	5	Yes			0	Y	Shanti Bhattacharya	ST
+EE5110	561	B		Probability Foundations for Electrical Engineers	PRADEEP SARVEPALLI	4	12			0	0	No			ESB - 128	Y	Shanti Bhattacharya	
+EE5111	562	D		Estimation Theory	SHEETAL KALYANI	4	12			20	4	Yes			ESB - 207A	Y	Shanti Bhattacharya	ST
+EE5112	563	A		Detection Theory	SRIKRISHNA B	4	12			25	5	Yes			ESB - 129	Y	Shanti Bhattacharya	ST
+EE5141	564	F		Introduction to Wireless and Cellular Communication	GIRIDHAR K	4	12			40	5	Yes			ESB - 128	Y	Shanti Bhattacharya	ST
+EE5143	565	E		Information Theory	SAURAV PRAKASH	3	9			30	5	Yes			ESB - 106	Y	Shanti Bhattacharya	ST
+EE5150	566	G		Communication Networks	VENKATESH R	4	12			50	25	Yes			ESB - 129	Y	Shanti Bhattacharya	ST
+EE5160	567	K		Error Control Coding	SHANTI BHATTACHARYA	3	9	Basic linear algebra and probability		25	5	Yes			ESB - 242	Y	Shanti Bhattacharya	ST
+EE5175	568	B		Image Signal Processing	RAJAGOPALAN A N	4	12			40	20	Yes			ESB - 213B	Y	Shanti Bhattacharya	ST
+EE5178	569	G		Modern Computer Vision	KAUSHIK MITRA	4	12	1. A formal course on linear algebra and probability 2. Familiarity with image processing		40	20	Yes			ESB - 127	Y	Shanti Bhattacharya	ST
+EE5180	570	J		Introduction to Machine Learning	RAHUL HARISHCHANDRA MESHRAM	4	12	EE3110 or equivalent AND basics of linear algebra (vector, matrix, norm, eigenvalue, SVD, etc.)		40	20	Yes			ESB - 129	Y	Shanti Bhattacharya	ST
+EE5203	571	G		Switched Mode Power Conversion	LAKSHMINARASAMMA N	3	9			20	10	Yes			ESB - 242	Y	Shanti Bhattacharya	ST
+EE5254	572	C		High Voltage Technology	SARATHI  R	3	9			10	5	Yes			ESB - 207A	Y	Shanti Bhattacharya	ST
+EE5257	573	A		Energy Management Systems and SCADA	SWARUP K S	3	9	Power Systems		15	15	Yes			ESB - 350	Y	Shanti Bhattacharya	ST
+EE5262	574	E		Distributed Generation and Microgrid Systems	MAHESH KUMAR	3	9	B. Tech./DD with power electronics (EE3203)		10	5	Yes			ESB - 350	Y	Shanti Bhattacharya	ST
+EE5314	575	T		Microelectronics Lab	SOUMYA DUTTA	2	6	Fundamentals of Microfabrication and Semiconductor devices		0	0	No			ESB - 213B	Y	Shanti Bhattacharya	
+EE5320	576	D		Analog IC Design	NAGENDRA KRISHNAPURA	4	12			65	25	Yes			ESB - 128	Y	Shanti Bhattacharya	ST
+EE5323	577	J		Advanced Electrical Networks	SHANTHI PAVAN	4	12			20	0	Yes			ESB - 242	Y	Shanti Bhattacharya	ST
+EE5325	578	B		Power Management Integrated Circuits	SHANTI BHATTACHARYA	4	12	Analog Circuits		25	5	Yes			ESB 314	Y	Shanti Bhattacharya	ST
+EE5332	579	G		Mapping Signal Processing Algorithms to DSP Architectures	NITIN CHANDRACHOODAN	4	12	UG DSP required, Digital IC design recommended		30	10	Yes			ESB - 106	Y	Shanti Bhattacharya	ST
+EE5333	580	E		Introduction to Physical Design Automation	S RAMPRASATH	4	12			25	10	Yes			ESB - 128	Y	Shanti Bhattacharya	ST
+EE5340	581	E		Micro Electro Mechanical Systems	ANWESHA MUKHERJEE	3	9	COT		0	0	No			ESB - 129	Y	Shanti Bhattacharya	
+EE5342	582	B		Compound Semiconductors - Properties and Applications	SAYAK DUTTA GUPTA	4	12	EE5313 (Semiconductor Device Modelling) for EE M.Tech, MS and Ph.D; EE 3001 (Solid State Devices) for EE B.Tech/DD and EE3301 (Introduction to Semiconductor Devices) for non-EE B.Tech/DD students		20	5	Yes			ESB - 129	Y	Shanti Bhattacharya	ST
+EE5343	583	F		Solar Cell Device Physics and Materials Technology	DEBDUTTA RAY	4	12	Basics of semiconductor devices		20	5	Yes			ESB - 350	Y	Shanti Bhattacharya	ST
+EE5351	584	F		Linear Algebra Techniques for data analysis and modelling	VINITA VASUDEVAN	3	9			20	0	Yes			ESB - 213B	Y	Shanti Bhattacharya	ST
+EE5402	585	F		Industrial Internet-of-Things (IoT)	BOBY  GEORGE	4	12	EE3006, for B. Tech., BS and DD		40	2	Yes			ESB - 127	Y	Shanti Bhattacharya	ST
+EE5410	586	F		Introduction to Digital Signal Processing	DAVID KOILPILLAI	4	12	EE1101 Signals and Systems or equivalent		30	10	Yes			ESB - 207B	Y	Shanti Bhattacharya	ST
+EE5419	587	L		Advanced Control Laboratory	RAMKRISHNA PASUMARTHY	2	6	None		0	0	No			ESB -129	Y	Shanti Bhattacharya	
+EE5502	588	E		Optical Engineering	SHANTI BHATTACHARYA	5	9	UG Electromagnetics course		0	0	No			ESB - 234	Y	Shanti Bhattacharya	
+EE5504	589	B		Fiber Optic Communication Technology	ANIL PRABHAKAR	4	12	Undergraduate-level course in electro-magnetics or optics		25	10	Yes			ESB - 207B	Y	Shanti Bhattacharya	ST
+EE5507	590	R		RF Systems Laboratory	SUDHARSANAN SRINIVASAN	2	6			0	0	No			0	Y	Shanti Bhattacharya	
+EE5702	591	R		Power Laboratory	LAKSHMINARASAMMA N	2	6	CoT		0	0	No			PS LAB	N	Shanti Bhattacharya	
+EE5702	592	R		Power Laboratory	SRIRAMA SRINIVAS	2	6	CoT		0	0	No			PS LAB	Y	Shanti Bhattacharya	
+EE5702	593	R		Power Laboratory	MAHESH KUMAR	2	6	CoT		0	0	No			PS LAB	N	Shanti Bhattacharya	
+EE5702	594	R		Power Laboratory	SARATHI  R	2	6	CoT		0	0	No			PS LAB	N	Shanti Bhattacharya	
+EE5708	595	S		Data Analytics Laboratory	GAURAV RAINA	3	6	CH5019		70	10	Yes			ESB - 106	Y	Shanti Bhattacharya	ST
+EE6000	596	WW		Seminar	SUDHARSANAN SRINIVASAN	1	3			0	0	No			0	Y	Shanti Bhattacharya	
+EE6150	597	L		Stochastic Modeling and the Theory of Queues	Avishek	4	12			15	2	Yes			ESB - 128	Y	Shanti Bhattacharya	ST
+EE6255	598	D		Power System Protection	SWARUP K S	3	9	EE3003 Electrical Power Systems		15	15	Yes			ESB - 213B	Y	Shanti Bhattacharya	ST
+EE6262	599	F		Advanced Motor Control	SRIRAMA SRINIVAS	3	9	Power Electronic Control of Electrical Machines		10	10	Yes			ESB - 207A	Y	Shanti Bhattacharya	ST
+EE6320	600	H		RF Integrated Circuits	ANIRUDDHAN S	4	12	EE5310 or EE3002		45	10	Yes			ESB - 242	Y	Shanti Bhattacharya	ST
+EE6331	601	S		Embedded Memory Design	Janakiraman	4	12	EE5311		30	10	Yes			ESB - 127	Y	Shanti Bhattacharya	ST
+EE6345	602	C		Advanced Memory Technology	Anbarasu Manivannan	3	9	EE5313 Semiconductor device modeling or equivalent desired		20	5	Yes			ESB - 213B	Y	Shanti Bhattacharya	ST
+EE6346	603	A		Advanced CMOS Devices and Technology	DELEEP R NAIR	4	12	EE3001 or EE5313 is necessary. EE 5312 is desirable		20	5	Yes			ESB - 213B	Y	Shanti Bhattacharya	ST
+EE6402	604	F		Biomedical Electronic Systems	MOHANASANKAR S	3	9			20	10	Yes			ESB - 129	Y	Shanti Bhattacharya	ST
+EE6403	605	E		Transducers	JAGADEESH KUMAR V	4	12			0	0	No			ESB - 314 & NEW IE LAB	Y	Shanti Bhattacharya	
+EE6408	606	B		Non-invasive Sensing & Signal Processing for Human Health	Jayaraj	4	12	Undergraduate level skills in electronics, analog circuits, signal processing in Matlab/Lab VIEW • Exposure to biomedical instrumentation / engineering (preferred)		10	0	Yes			ESB - 350	Y	Shanti Bhattacharya	ST
+EE6412	607	H		Optimal Control	Rachel	4	12	EE3004 or equivalent,   COT		30	30	Yes			ESB - 127	Y	Shanti Bhattacharya	ST
+EE6415	608	J		Nonlinear Systems Analysis	PUDURU VISWANADHA REDDY	4	12	Basic Course in Control		15	15	Yes			ESB - 128	Y	Shanti Bhattacharya	ST
+EE6417	609	J		Incentive-Cenetred Design (Advanced Topics in Control)	BHARADWAJ SATCHIDANANDAN	3	9			25	25	Yes			ESB - 207B	Y	Shanti Bhattacharya	ST
+EE6430	610	D		Fundamentals of  Linear Optimization	BHARATH BHIKKAJI	3	9	Linear Algebra		15	15	Yes			ESB -129	Y	Shanti Bhattacharya	ST
+EE6431	611	D		Nonsmooth analysis in control and optimization	ARUNKUMAR D MAHINDRAKAR	3	9	Control Engineering or equivalent		15	10	Yes			ESB - 314	Y	Shanti Bhattacharya	ST
+EE6500	612	F		Integrated Optoelectronics Devices and Circuits	BIJOY KRISHNA DAS	4	12			15	0	Yes			ESB - 314	Y	Shanti Bhattacharya	ST
+EE6501	613	E		Optical Sensors	BALAJI SRINIVASAN	3	9			20	10	Yes			ESB - 207A	Y	Shanti Bhattacharya	ST
+EE6502	614	ZZ		Optical Signal Processing and Quantum Communication	ANIL PRABHAKAR	3	9			10	10	Yes			ESB 207B	Y	Shanti Bhattacharya	ST
+EE6904	615	UU		M.Tech Project 40	KAMALESH HATUA	40	40	No		150	0	Yes			0	Y	Shanti Bhattacharya	ST
+EE6999	616	XX		Special Topics in Electrical Engineering	Uday	3	6			0	0	No			0	Y	Shanti Bhattacharya	
+EE7500	617	M		Advanced Topics in RF and Photonics	Uday	3	9	COT		20	10	Yes			ESB - 242	Y	Shanti Bhattacharya	ST
+EE7999	618	YY		Special Topics in Electrical Engineering	Uday	3	6			0	0	No			0	Y	Shanti Bhattacharya	
+EP2210	619	B		Principles of Quantum Mechanics	PRANAY MAHESH PATIL	3	9			60	20	Yes			HSB 210	Y	Santhosh P N	SI
+EP3100	620	D		Atomic & Molecular Spectroscopy	Vidya Praveen Bhallamudi	3	9	EP2210		30	20	Yes			HSB 317	Y	Santhosh P N	SI
+EP3190	621	P	Q	Engineering Physics Lab II	RAGHUVEER GARANI RAMESH	2	4	None		55	0	Yes				N	Santhosh P N	SI
+EP3190	622	P	Q	Engineering Physics Lab II	DAWOOD KOTHAWALA	2	4	None		55	0	Yes				Y	Santhosh P N	SI
+EP3190	623	P	Q	Engineering Physics Lab II	Jayeeta Bhattacharyya	2	4	None		55	0	Yes				N	Santhosh P N	SI
+EP3190	624	P	Q	Engineering Physics Lab II	PRAHALLAD PADHAN	2	4	None		55	0	Yes				N	Santhosh P N	SI
+EP3190	625	P	Q	Engineering Physics Lab II	RAVICHANDRAN SHIVANNA	2	4	None		55	0	Yes				N	Santhosh P N	SI
+EP3220	626	A		Solid State Physics	RAVICHANDRAN SHIVANNA	3	9			60	20	Yes			HSB 210	Y	Santhosh P N	SI
+EP3291	627	T		Engineering Physics Lab IV	Prabhat	2	4			60	20	Yes				N	Santhosh P N	SI
+EP3291	628	T		Engineering Physics Lab IV	ARAVIND G	2	4			60	20	Yes				Y	Santhosh P N	SI
+EP3291	629	T		Engineering Physics Lab IV	SUBRAMANIAN V	2	4			60	20	Yes				N	Santhosh P N	SI
+EP4040	630	WW		Seminar	SETHUPATHI K	1	3	NILL		0	0	No				Y	Santhosh P N	
+EP4150	631	XX		Project	SETHUPATHI K	18	18	NULL		0	0	No				Y	Santhosh P N	
+EP4170	632	UU		Project II	SANTHOSH PN	12	12			0	0	No				Y	Santhosh P N	
+GN1101	633	T		Life Skills 1	SIVAKUMAR M S	0	0			580	0	Yes			SAC	Y	Sayan Gupta	SI
+GN1101	634	S		Life Skills 1	SIVAKUMAR M S	0	0			580	0	Yes			SAC	Y	Sayan Gupta	SI
+GN5002	635	GM		Discovering Creativity	SIVAKUMAR M S	3	9	-nil-		50	45	Yes			CRC305	Y	Sayan Gupta	SI
+GN5004	636	N		Research Skills	PREETI AGHALAYAM	1	3			0	0	No				Y	Tarak Kumar Patra	
+GN5005	637	MM		Nurturing Women’s Leadership Potential	SIVAKUMAR M S	3	9			40	40	Yes			NEWTON HALL	Y	Sayan Gupta	SI
+GN5007	638	GW		Becoming an effective corporate leader through Indian Knowledge Systems	MAHESH PANCHAGNULA	9	9	NIL		100	100	Yes			CRC304	Y	Sayan Gupta	SI
+GN6001	639	S		Integral Karmayoga	PARAG RAVINDRAN	3	9	Consent of Teacher (COT)		100	40	Yes			BSB368 (VSH)	Y	Soumendra Nath Kuiry	SI
+GN6001	640	S		Integral Karmayoga	Srikanthan Sridharan	3	9	Consent of Teacher (COT)		100	40	Yes			BSB368 (VSH)	N	Soumendra Nath Kuiry	SI
+GN6002	641	S		Lets Play to Learn	SIVAKUMAR M S	3	9			20	15	Yes			DCIF	Y	Sayan Gupta	SI
+GN6106	642	GM		Happiness, Habits and Success	SIVAKUMAR M S	3	9			165	150	Yes			NEWTON HALL,CRC103,DCIF	Y	Sayan Gupta	SI
+GN6106	643	GH		Happiness, Habits and Success	SIVAKUMAR M S	3	9			55	50	Yes			CRC304	Y	Sayan Gupta	SI
+GN6106	644	Q		Happiness, Habits and Success	SIVAKUMAR M S	3	9			55	50	Yes			NEWTON HALL	Y	Sayan Gupta	SI
+GN6106	645	GT		Happiness, Habits and Success	SIVAKUMAR M S	3	9			110	100	Yes			NEWTON HALL, CRC304	Y	Sayan Gupta	SI
+GN6106	646	GW		Happiness, Habits and Success	SIVAKUMAR M S	3	9			250	250	Yes			CLT, NEWTON HALL	Y	Sayan Gupta	SI
+GN6106	647	P		Happiness, Habits and Success	SIVAKUMAR M S	3	9			55	50	Yes			CRC305,NEWTON HALL	Y	Sayan Gupta	SI
+GN6107	648	R		Cross Cultural Understanding	SIVAKUMAR M S	3	9	Nil		50	45	Yes			CRC305	Y	Sayan Gupta	SI
+GN6109	649	S		Fostering Enriching Relationships	SIVAKUMAR M S	3	9			35	30	Yes			NEWTON HALL	Y	Sayan Gupta	SI
+GN6120	650	P		Flow for Performance	SIVAKUMAR M S	3	9			100	90	Yes			CRC103	Y	Sayan Gupta	SI
+GN6120	651	Q		Flow for Performance	SIVAKUMAR M S	3	9			100	90	Yes			CRC103	Y	Sayan Gupta	SI
+GN6130	652	Q		Systems Thinking for Engineers (Cultivating Wisdom)	SIVAKUMAR M S	3	9	Nil		60	50	Yes			CRC305	Y	Sayan Gupta	SI
+HS1020	653	B		Aspects of Western Philosophy	SATYA SUNDAR SETHY	4	10	NULL		65	30	Yes			HSB354	Y	John Bosco Lourdusamy	SI
+HS1060	654	D		Ancient Civilizations	SANTHOSH ABRAHAM	3	9			65	30	Yes			CRC304	Y	John Bosco Lourdusamy	SI
+HS1091	655	F		TAMIL FOR BEGINNERS	JAYALAKSHMI SAMPATH	9	9			65	30	Yes			HSB334	Y	John Bosco Lourdusamy	SI
+HS1100	656	F		German II	MILIND BRAHME	3	9	HS1090		65	30	Yes			RJN102	Y	John Bosco Lourdusamy	SI
+HS2021	657	ZZ		Feminism:Concepts and Theories	AYSHA IQBAL	4	10			0	0	No			HSB342	Y	John Bosco Lourdusamy	
+HS2040	658	F		Indian National Movement	SANTHOSH ABRAHAM	3	9			65	30	Yes			RJN101	Y	John Bosco Lourdusamy	SI
+HS2160	659	M		Indian Constitution:Text & Practice	SUDHIR CHELLA RAJAN	4	10			65	30	Yes			HSB352	Y	John Bosco Lourdusamy	SI
+HS3002	660	D		Principles of Economics	SUBASH S	3	9			65	65	Yes			HSB334	Y	John Bosco Lourdusamy	SI
+HS3002B	661	D		Principles of Economics	SANDEEP KUMAR KUJUR	3	9			65	65	Yes			TH	Y	John Bosco Lourdusamy	SI
+HS3012	662	C		Urbanization and Development	THANGGOULEN KIPGEN	4	10			65	30	Yes			HSB354	Y	John Bosco Lourdusamy	SI
+HS3013	663	F		Human Rights and Justice	TABRAZ  S S	4	10			65	30	Yes			RJN201	Y	John Bosco Lourdusamy	SI
+HS3024	664	G		Research Methods and Programme Evaluation	RAJESH KUMAR	2	6			65	0	Yes			HSB354	Y	John Bosco Lourdusamy	SI
+HS3050	665	Q		Professional Ethics	SREEKUMAR N	2	0	NULL		65	65	Yes			CLT	Y	John Bosco Lourdusamy	SI
+HS3240	666	M		Shakespeare	HEMACHANDRAN KARAH	4	10			65	30	Yes			HSB334	Y	John Bosco Lourdusamy	SI
+HS3410	667	D		Modern Science in India	JOHN BOSCO LOURDUSAMY	3	9			65	30	Yes			HSB355	Y	John Bosco Lourdusamy	SI
+HS4022	668	C		Introduction to Cultural Studies	JYOTIRMAYA TRIPATHY	4	10			65	30	Yes			HSB336	Y	John Bosco Lourdusamy	SI
+HS4290	669	B		Development Alternatives	KALPANA K	3	9			65	30	Yes			HSB336	Y	John Bosco Lourdusamy	SI
+HS4850	670	F		Astronomy in India	ADITYA KOLACHANA	3	9			65	30	Yes			RJN301	Y	John Bosco Lourdusamy	SI
+HS4860	671	D		Mathematics in India	ADITYA KOLACHANA	3	9			65	30	Yes			CRC305	Y	John Bosco Lourdusamy	SI
+HS5005	672	ZZ		Celebrity Studies	AYSHA IQBAL	3	9	nil		0	0	No			HSB342	Y	John Bosco Lourdusamy	
+HS5013	673	ZZ		Religion and Modernity	SANTHOSH R	4	12			0	0	No			HSB339B	Y	John Bosco Lourdusamy	
+HS5060	674	A		Technology & Sustainable Development	RAJESH KUMAR	4	10			65	0	Yes			HSB334	Y	John Bosco Lourdusamy	SI
+HS5062	675	F		An Introduction to Tirukkural	S P DHANAVEL	3	9	Nil		65	30	Yes			HSB354	Y	John Bosco Lourdusamy	SI
+HS5110	676	D		Introduction to Carnatic Music	DEEPAK PARAMASHIVAN	3	9			65	65	Yes			KCB318	Y	John Bosco Lourdusamy	SI
+HS5502	677	A		Climate Change, Technology and Sustainable Development	RAJESH KUMAR	4	10			65	65	Yes			HSB334	Y	John Bosco Lourdusamy	SI
+HS5503	678	J		Development and Ethics	SREEKUMAR N	4	10			65	30	Yes			HSB352	Y	John Bosco Lourdusamy	SI
+HS5504	679	H		State-Making, Governance and Development	SUDHIR CHELLA RAJAN	4	10			65	30	Yes			HSB334	Y	John Bosco Lourdusamy	SI
+HS5507	680	B		International Relations: Theory and Practice	JOE THOMAS KARACKATTU	4	10			65	30	Yes			HSB352	Y	John Bosco Lourdusamy	SI
+HS5561	681	R		Introduction to Cultural Anthropology	MATHANGI KRISHNAMURTHY	3	9			65	30	Yes			HSB352	Y	John Bosco Lourdusamy	SI
+HS5606	682	H		Romantic Literature and Philosophy	SWARNALATHA R	4	10	none		65	0	Yes			HSB336	Y	John Bosco Lourdusamy	SI
+HS5607	683	B		Victorian Realism	MERIN SIMI RAJ	10	10			65	30	Yes			HSB334	Y	John Bosco Lourdusamy	SI
+HS5608	684	G		20th Century Modernisms	AYSHA IQBAL	4	10			65	30	Yes			HSB352	Y	John Bosco Lourdusamy	SI
+HS5609	685	M		Indian Aesthetic Thought	SREENATH V S	3	10			65	30	Yes			HSB355	Y	John Bosco Lourdusamy	SI
+HS5614	686	C		Media Culture and Society	Avishek Parui	3	10			65	30	Yes			HSB334	Y	John Bosco Lourdusamy	SI
+HS5615	687	H		Poverty and Inequality	MURALEEDHARAN V R	3	10			65	30	Yes			HSB335	Y	John Bosco Lourdusamy	SI
+HS5620	688	M		American Literature	UMASANKAR PATRA	4	10			65	30	Yes			HSB336	Y	John Bosco Lourdusamy	SI
+HS5652	689	D		Language, Cognition and Computation	Anindita Sahoo	3	9	Nill		65	30	Yes			HSB354	Y	John Bosco Lourdusamy	SI
+HS5656	690	K		Indian Writing in English	SREENATH V S	9	9			65	30	Yes			HSB335	Y	John Bosco Lourdusamy	SI
+HS5662	691	D		Film Theory & Practice	AYSHA IQBAL	9	9			65	30	Yes			HSB352	Y	John Bosco Lourdusamy	SI
+HS5679	692	F		Tarka Sangraha - Fundamentals of Indian Logic	DEEPAK PARAMASHIVAN	9	9	None		65	30	Yes			RJN302	Y	John Bosco Lourdusamy	SI
+HS5706	693	G		Microeconomics 2	Anup Kumar Bhandari	4	10	Microeconomics 1		35	0	Yes			HSB336	Y	John Bosco Lourdusamy	SI
+HS5707	694	B		Macroeconomics 2	PRAMOD KUMAR NAIK	4	10	Macroeconomics 1		35	0	Yes			HSB335	Y	John Bosco Lourdusamy	SI
+HS5708	695	C		Econometrics 1	SABUJ KUMAR MANDAL	4	10	NA		35	30	Yes			HSB335	Y	John Bosco Lourdusamy	SI
+HS5709	696	F		Indian Economy	SANDEEP KUMAR KUJUR	4	10	NA		35	35	Yes			HSB352	Y	John Bosco Lourdusamy	SI
+HS5711	697	D		Ethics	SATYA SUNDAR SETHY	3	9			65	30	Yes			HSB336	Y	John Bosco Lourdusamy	SI
+HS5712	698	H		Advanced Topics in Economic Development	KRISHNA MALAKAR	4	10			35	35	Yes			HSB354	Y	John Bosco Lourdusamy	SI
+HS5759	699	H		Applied Industrial Organization	SUBASH S	3	9	NA		35	0	Yes			HSB352	Y	John Bosco Lourdusamy	SI
+HS5812	700	A		Feminist Writing	MERIN SIMI RAJ	4	12			65	65	Yes			HSB352	Y	John Bosco Lourdusamy	SI
+HS5813	701	B		Post Colonial & New Writings	UMASANKAR PATRA	4	12			65	30	Yes			HSB355	Y	John Bosco Lourdusamy	SI
+HS5910	702	H		Contemporary India: A Sociological Perspective	SANTHOSH R	4	10			65	30	Yes			HSB354	Y	John Bosco Lourdusamy	SI
+HS5930	703	G		War and Peace in West Asia	TABRAZ  S S	3	9			65	30	Yes			HSB335	Y	John Bosco Lourdusamy	SI
+HS6021	704	ZZ		Introduction to Research	SANTHOSH R	2	0	NIL		65	30	Yes			HSB352	Y	John Bosco Lourdusamy	SI
+HS6060	705	L		Disability, Literature, and Culture	HEMACHANDRAN KARAH	4	12			65	30	Yes			HSB334	Y	John Bosco Lourdusamy	SI
+HS6140	706	D		Production Economics: Efficiency and Productivity Analysis	Anup Kumar Bhandari	4	12	Course #HS1050/#HS3002/ Consent of the Teacher (CO		35	35	Yes			HSB335	Y	John Bosco Lourdusamy	SI
+HS6210	707	L		Financial Economics	PRAMOD KUMAR NAIK	3	9			35	0	Yes			HSB352	Y	John Bosco Lourdusamy	SI
+HS6550	708	A		International Economics	RAJESH KUMAR	4	12			0	0	No			HSB335	Y	John Bosco Lourdusamy	
+HS6730	709	J		Economics of Healthcare	RAJESH KUMAR	4	12			65	30	Yes			HSB334	Y	John Bosco Lourdusamy	SI
+HS6750	710	H		Applied Linguistics	RAJESH KUMAR	4	10			65	65	Yes			HSB337	Y	John Bosco Lourdusamy	SI
+HS7021	711	L		Infrastructure & Housing in Developing Countries: Emerging Challenges and Opportunities	RAJESH KUMAR	4	12	HS3012 Urbanization and Development/ COT		65	30	Yes			HSB354	Y	John Bosco Lourdusamy	SI
+HS7550	712	ZZ		Critical Theory in the Social Sciences	MATHANGI KRISHNAMURTHY	3	9			0	0	No			HSB339	Y	John Bosco Lourdusamy	
+HS7580	713	M		Science and Technology in the 20th Century	JOHN BOSCO LOURDUSAMY	3	9			35	0	Yes			HSB354	Y	John Bosco Lourdusamy	SI
+ID1200	714	WW		Ecology and Environment	Rajnish Kumar	2	0			0	0	No				Y	Upendra Natarajan	
+ID4100	715	UU		Creative Engineering Project	Jayaganthan	3	9	COT		0	0	No				Y	Tuhin Subhra Santra	
+ID4200	716	UU		Creative Engineering Project II	Jayaganthan	6	18	COT		0	0	No				Y	Tuhin Subhra Santra	
+ID4900	717	UU		Undergraduate Research Project	CHAKRAVARTHY BALAJI	3	9			250	20	Yes				Y	Chakravarthy Balaji	CG
+ID4901	718	UU		Undergraduate Research Project (YRF)	Prabhat	3	9			0	0	No				Y	Santhosh P N	
+ID4951	719	UU		B.Tech. Project	CHAKRAVARTHY BALAJI	9	27			250	20	Yes				Y	Chakravarthy Balaji	CG
+ID5011	720	XX		A Hybrid Course on Water Quality – An approach to People’s Water Data	PRADEEP T	3	9	Interested in clean water, environment, sustainability		1000	1000	Yes				Y	Sekar G	SI
+ID5030	721	L		Machine Learning for Engineering and Science Applications	PALANIAPPAN RAMU	4	10	Courses in Linear Algebra and Probability & Statistics Good knowledge of programming in Python/C/C++/Java/Matlab. Total no of students restricted to 60.		60	20	Yes			ED306	N	Tuhin Subhra Santra	SI
+ID5030	722	L		Machine Learning for Engineering and Science Applications	Jayaganthan	4	10	Courses in Linear Algebra and Probability & Statistics Good knowledge of programming in Python/C/C++/Java/Matlab. Total no of students restricted to 60.		60	20	Yes			ED306	Y	Tuhin Subhra Santra	SI
+ID5035	723	L		Climate Change and Society	SACHIN S GUNTHE	3	9	NA		50	20	Yes			CRC 201	Y	Soumendra Nath Kuiry	SI
+ID5035	724	L		Climate Change and Society	KRISHNA MALAKAR	3	9	NA		50	20	Yes			CRC 201	N	Soumendra Nath Kuiry	SI
+ID5040	725	G		Engineering Plasticity	PARAG RAVINDRAN	3	9	Nil		30	20	Yes			NAC 2 - 229	Y	Raju Sethuraman	CG
+ID5060	726	GT		First Principles tools in Engineering	SIVAKUMAR M S	3	9			30	30	Yes			CRC305	Y	Sayan Gupta	SI
+ID5070	727	G		Energy Economics	Santosh Kumar Sahu	3	9			35	30	Yes			HSB334	Y	John Bosco Lourdusamy	SI
+ID5083	728	ZZ		IDDD QF project Phase 3	SAJI MATHEW	15	45			0	0	No				Y	Srinivasan G	
+ID5101	729	MM		Innovative Entrepreneur - 1 Customer Discovery	SATYANARAYANAN S	3	9			60	0	Yes			CRC102	Y	Sayan Gupta	SI
+ID5102	730	YY		The Innovative Entrepreneur 2: Launching your venture	SATYANARAYANAN S	3	9	ID5101 or COT		30	0	Yes			NIRMAAN	Y	Sayan Gupta	SI
+ID5127	731	G		Introduction to Atmospheric and Climate Sciences	Anubhab Roy	3	10			70	50	Yes			CRC202	Y	Sayan Gupta	SI
+ID5127	732	G		Introduction to Atmospheric and Climate Sciences	CHAKRAVARTHY BALAJI	3	10			70	50	Yes			CRC202	N	Sayan Gupta	SI
+ID5127	733	G		Introduction to Atmospheric and Climate Sciences	SACHIN S GUNTHE	3	10			70	50	Yes			CRC202	N	Sayan Gupta	SI
+ID5130	734	D		Parallel Scientific Computing	KAMESWARARAO ANUPINDI	3	10	Programming experience is expected in one of the languages.		60	20	Yes			RMN 302	Y	Raju Sethuraman	CG
+ID5140	735	M		Academic communication: Intent, Style and Argument composition	DANNY RAJ M	3	9			25	0	Yes			DCIF	Y	Sayan Gupta	SI
+ID5192	736	XX		Project III	Abhishek Misra	14	40			0	0	No				Y	Santhosh P N	
+ID5200	737	GM		Introduction of Biomimicry	SIVAKUMAR M S	3	9	None		50	45	Yes			CRC304	Y	Sayan Gupta	SI
+ID5201	738	G		Robotics Seminar	BIJO SEBASTIAN	1	1	Nil		0	0	No			ED109	Y	Tuhin Subhra Santra	
+ID5392	739	XX		Project III	PRASAD PATNAIK B S V	14	40			0	0	No				N	Sayan Gupta	
+ID5392	740	XX		Project III	SAYAN GUPTA	14	40			0	0	No				Y	Sayan Gupta	
+ID5690	741	UU		Project I	BIJO SEBASTIAN	20	20			0	0	No				Y	Tuhin Subhra Santra	
+ID5692	742	UU		Project III	Nirav Patel	42	42			0	0	No				Y	Tuhin Subhra Santra	
+ID5792	743	XX		Project III	Prabha Mandayam	40	40			0	0	No				Y	Santhosh P N	
+ID5841	744	YY		Quantum Computing Lab	Prabha Mandayam	2	3	PH5840		20	15	Yes				Y	Santhosh P N	SI
+ID5843	745	L		Experimental techniques for quantum computation and metrology	SIDDHARTH DATTATRAYA DHOMKAR	3	9			30	20	Yes			HSB 217	Y	Santhosh P N	SI
+ID5892	746	XX		Project III	SAYAN GUPTA	40	40			0	0	No				Y	Sayan Gupta	
+ID5990	747	UU		IDDD EV Project I	Srikanthan Sridharan	10	20			0	0	No				Y	Tuhin Subhra Santra	
+ID5992	748	UU		IDDD EV Project III	Srikanthan Sridharan	15	35			0	0	No				Y	Tuhin Subhra Santra	
+ID6020	749	S		Introduction of Research (Institute Module)	EDAMANA PRASAD	2	0			500	500	Yes			Terrace hall	N	Soumendra Nath Kuiry	SI
+ID6020	750	S		Introduction of Research (Institute Module)	RAMAMURTHY K	2	0			500	500	Yes			Terrace hall	Y	Soumendra Nath Kuiry	SI
+ID6023	751	J		Geometry & mechanics of materials	RAUSHAN SINGH	3	9	Introductory level courses in Solid Mechanics		15	10	Yes			MSB112	N	Sayan Gupta	SI
+ID6023	752	J		Geometry & mechanics of materials	S GANGA PRASATH	3	9	Introductory level courses in Solid Mechanics		15	10	Yes			MSB112	Y	Sayan Gupta	SI
+ID6060	753	G		Role of Microstructure in Materials Selection and Design	RAVIKUMAR N V	3	9	Nil		50	30	Yes			KCB 205	Y	Parasuraman Swaminathan	SI
+ID6070	754	E		Mechanics of Viscoelastic Materials	PARAG RAVINDRAN	3	9	COT		50	25	Yes			RMN 102	Y	Raju Sethuraman	CG
+ID6080	755	A		Impact Mechanics	PRASHANT RAWAT	3	9			40	10	Yes			CR1	Y	Murthy H S N	CG
+ID6102	756	A		Principles and techniques of Transmission Electron Microscopy	SANKARAN S	3	9			0	0	No			KCB 134	Y	Parasuraman Swaminathan	
+ID6106	757	K		Materials for energy storage and conversion	TIJU THOMAS	3	9	N/A		10	10	Yes			KCB 204	Y	Bhattacharya S S	SI
+ID7020	758	G		Finite Elasticity	KRISHNAKANNAN	3	9	ID6010,ME6700		60	30	Yes			MDS 306	Y	Raju Sethuraman	CG
+MA1101	759	B		Functions of Several Variables	ARINDAMA SINGH	4	10			0	0	No			CRC 201, CRC 202, CRC 203	N	Nandita Das Gupta	
+MA1101	760	B		Functions of Several Variables	SOUMEN SARKAR	4	10			0	0	No			CRC 201, CRC 202, CRC 203	Y	Nandita Das Gupta	
+MA1101	761	B		Functions of Several Variables	BIDHAN CHANDRA SARDAR	4	10			0	0	No			CRC 201, CRC 202, CRC 203	N	Nandita Das Gupta	
+MA2020	762	A		Differential Equations	ARINDAMA SINGH	3	9	NULL		20	20	Yes			RJN 101, RJN 102, RJN 201	N	Satyajit Roy	SI
+MA2020	763	A		Differential Equations	SANYASIRAJU Y V S S	3	9	NULL		20	20	Yes			RJN 101, RJN 102, RJN 201	N	Satyajit Roy	SI
+MA2020	764	A		Differential Equations	SHRUTI DUBEY	3	9	NULL		20	20	Yes			RJN 101, RJN 102, RJN 201	Y	Satyajit Roy	SI
+MA2040	765	A		Probability, Statistics and Stochastic Process	SUBHAJIT GHOSH	3	9	NULL		20	20	Yes			RJN 301, RJN 302, RJN 202	Y	Satyajit Roy	SI
+MA2040	766	A		Probability, Statistics and Stochastic Process	KUNAL KRISHNA MUKHERJEE	3	9	NULL		20	20	Yes			RJN 301, RJN 302, RJN 202	N	Satyajit Roy	SI
+MA2040	767	A		Probability, Statistics and Stochastic Process	ARINDAMA SINGH	3	9	NULL		20	20	Yes			RJN 301, RJN 302, RJN 202	N	Satyajit Roy	SI
+MA2040	768	A		Probability, Statistics and Stochastic Process	SRINIVASA RAO MANAM	3	9	NULL		20	20	Yes			RJN 301, RJN 302, RJN 202	N	Satyajit Roy	SI
+MA2101	769	A		Linear Algebra via Matrices	P Aprameyan	3	9			70	70	Yes			RMN 101, RMN 102, RMN 201, RMN 202	N	Satyajit Roy	SI
+MA2101	770	A		Linear Algebra via Matrices	NARAYANAN N	3	9			70	70	Yes			RMN 101, RMN 102, RMN 201, RMN 202	N	Satyajit Roy	SI
+MA2101	771	A		Linear Algebra via Matrices	UMA V	3	9			70	70	Yes			RMN 101, RMN 102, RMN 201, RMN 202	Y	Satyajit Roy	SI
+MA2101	772	A		Linear Algebra via Matrices	ARIJIT DEV	3	9			70	70	Yes			RMN 101, RMN 102, RMN 201, RMN 202	N	Satyajit Roy	SI
+MA2102	773	A		Differential Equations	SHRUTI DUBEY	3	9	Partial derivatives and Series		77	77	Yes			RJN 101, RJN 102, RJN 201	Y	Satyajit Roy	SI
+MA2102	774	A		Differential Equations	ARINDAMA SINGH	3	9	Partial derivatives and Series		77	77	Yes			RJN 101, RJN 102, RJN 201	N	Satyajit Roy	SI
+MA2102	775	A		Differential Equations	SANYASIRAJU Y V S S	3	9	Partial derivatives and Series		77	77	Yes			RJN 101, RJN 102, RJN 201	N	Satyajit Roy	SI
+MA2103	776	A		Probability, Stochastic Processes & Statistics	SRINIVASA RAO MANAM	3	9			67	67	Yes			RJN 301, RJN 302, RJN 202	N	Satyajit Roy	SI
+MA2103	777	A		Probability, Stochastic Processes & Statistics	ARINDAMA SINGH	3	9			67	67	Yes			RJN 301, RJN 302, RJN 202	N	Satyajit Roy	SI
+MA2103	778	A		Probability, Stochastic Processes & Statistics	SUBHAJIT GHOSH	3	9			67	67	Yes			RJN 301, RJN 302, RJN 202	Y	Satyajit Roy	SI
+MA2103	779	A		Probability, Stochastic Processes & Statistics	KUNAL KRISHNA MUKHERJEE	3	9			67	67	Yes			RJN 301, RJN 302, RJN 202	N	Satyajit Roy	SI
+MA5018	780	E		Stochastic Calculus for Finance	BARUN SARKAR	3	9	Probability Theory		10	10	Yes			KCB 506	Y	Rama R	SI
+MA5340	781	B		Measure and Integration	Sumesh K	3	9	NULL		10	10	Yes			KCB 519	Y	Shruti Dubey	SI
+MA5350	782	D		Combinatorics	KALPANA M	3	9			10	10	Yes			KCB 519	Y	Shruti Dubey	SI
+MA5360	783	E		Complex Analysis	PONNUSAMY S	3	9			10	10	Yes			KCB 519	Y	Shruti Dubey	SI
+MA5380	784	C		Topology	SUHAS JAYKUMAR PANDIT	3	9			10	10	Yes			KCB 519	Y	Shruti Dubey	SI
+MA5470	785	A		Numerical Analysis	ARYA KUMAR BEDABRATA CHAND	3	9	NULL		10	10	Yes			KCB 519	Y	Shruti Dubey	SI
+MA5755	786	P		Data Analysis & Visualization in R/Python/SQL	RAKHI SINGH	3	6			10	10	Yes			KCB 504	Y	Jayanthan A V	SI
+MA5770	787	C		Modelling Workshop	Priyanka Shukla	3	6	NULL		10	10	Yes			KCB 505	Y	Jayanthan A V	SI
+MA5895	788	B		Numerical Optimization	SIVAKUMAR K C	3	9	MA 5890		10	10	Yes			KCB 505	Y	Jayanthan A V	SI
+MA5920	789	F		Partial Differential Equations	SRINIVASA RAO C H	3	9	Ordinary Differential Equations		10	10	Yes			KCB 519	Y	Shruti Dubey	SI
+MA5990	790	UU		Project	Priyanka Shukla	16	40			0	0	No			KCB 506	Y	Rama R	
+MA6003	791	M		Theory of Wavelets	RADHA R	3	9	Functional Analysis.  Knowledge of MA6080 Fourier Analysis will be an added advantage though not mandatory		10	10	Yes			KCB 506	Y	Rama R	SI
+MA6090	792	H		Sobolev Spaces and PDE	ANOOP	3	9	Functional Analysis, Measure theory.		10	10	Yes			KCB 506	Y	Rama R	SI
+MA6110	793	D		Topics in Advanced Analysis	SURJIT KUMAR	3	9	(i)MA5330 Real Analysis, (ii) MA5310 Linear Algebra, (iii) MA5340 Measure and Integration, (iv) MA5380  Topology		10	10	Yes			KCB 506	Y	Rama R	SI
+MA6120	794	A		Advanced Complex Analysis	ANWOY MAITRA	3	9	NIL		10	10	Yes			KCB 506	Y	Rama R	SI
+MA6150	795	G		Basic Operator Theory	SRIRAM B	3	9	NIL		10	10	Yes			KCB 506	Y	Rama R	SI
+MA6180	796	H		Introduction to Algebraic Geometry	SARANG SHARAD SANE	3	9	NIL		10	10	Yes			KCB 505	Y	Rama R	SI
+MA6181	797	B		Introduction to Lie Algebras	G. ARUNKUMAR	9	9	Modern Algebra		10	10	Yes			KCB 506	Y	Rama R	SI
+MA6210	798	D		Combinatorial Optimization	SOUNAKA MISHRA	3	9	NIL		20	20	Yes			KCB 504	Y	Rama R	SI
+MA6270	799	A		Numerical Solutions of Partial Diff. Equations	SATYAJIT ROY	3	9	NIL		10	10	Yes			KCB 505	Y	Jayanthan A V	SI
+MA6312	800	F		Mathematical Theory of Games	SHAIJU A J	3	9			10	10	Yes			KCB 506	Y	Rama R	SI
+MA6380	801	L		Stochastic Methods in Industry	NEELESH S UPADHYE	3	9	NIL		10	10	Yes			KCB 504	Y	Jayanthan A V	SI
+MA6490	802	C		Introduction to Algebraic Number Theory	ANUJ JAKHAR	3	9	MA 5430		10	10	Yes			KCB 506	Y	Rama R	SI
+MA6650	803	UU		Project	Priyanka Shukla	3	9			0	0	No			KCB 505	Y	Rama R	
+MA7011	804	L		Advanced Topics in Commutative Algebra	JAYANTHAN A V	3	9			0	0	No			KCB 505	Y	Radha R	
+MA7015	805	G		Introduction to Cryptology	Santanu Sarkar	3	9			20	20	Yes			KCB 505	Y	Rama R	SI
+MA7830	806	F		Advanced Algebra (for Ph.D Scholars)	VENKATA BALAJI T E	4	12			0	0	No			KCB 504	Y	Radha R	
+MA7880	807	J		Advanced Stochastic Processes	KESAV SARANYAN KRISHNAN	4	12	MA5400		0	0	No			KCB 505	Y	Radha R	
+MA7890	808	K		Advanced Algebraic Topology	Ramesh Kasilingam	4	12	Basic general topology, group and ring theory		0	0	No			KCB 505	Y	Radha R	
+MD1004	809	G	Q	Medical Biochemistry	SUNIL KUMAR BODA	3	9			45	5	Yes			533	Y	Boby George	SI
+MD1005	810	D		Mathematical Modelling in Physiology and Medicine	MURALI K	4	9			40	0	Yes			533_x000d_	Y	Boby George	SI
+MD2003	811	E		Fluid Mechanics for Physiology	SRIKANTH VEDANTAM	4	9			45	5	Yes			533	Y	Boby George	SI
+MD2004	812	B		Electrical Circuits and Bioelectricity	BOBY  GEORGE	3	11			40	0	Yes			533	Y	Boby George	SI
+MD2005	813	A	T	Medical Microbiology, Immunology and Pathology	ANUBAMA RAJAN	4	12			40	0	Yes			533	Y	Boby George	SI
+MD3002	814	C		Basics of Pharmacology	SIVAKUMAR VIJAYARAGHAVALU	3	11			50	20	Yes			531	Y	Boby George	SI
+MD3004	815	A	S	Physiology of the Sensory System – Vision, Smell, Taste and Hearing	BOBY  GEORGE	3	11			30	0	Yes			532	Y	Boby George	SI
+MD3005	816	H		Introduction to Reproductive System	SIVAKUMAR VIJAYARAGHAVALU	3	6			30	0	Yes			532	Y	Boby George	SI
+MD4001	817	D	R	Pharmacokinetics and Pharmacodynamics	SUNIL KUMAR BODA	4	12			35	5	Yes			532	Y	Boby George	SI
+MD4001	818	D	R	Pharmacokinetics and Pharmacodynamics	SRIKANTH VEDANTAM	4	12			35	5	Yes			532	N	Boby George	SI
+MD5002	819	A	S	Introduction to Nephrology and Gastroenternology	KRISHNAKUMAR R	4	15			30	0	Yes			531	Y	Boby George	SI
+MD5003	820	E		Finite Element Method for Physiologists	KRISHNAKUMAR R	3	9			30	0	Yes			531	Y	Boby George	SI
+MD5004	821	B	T	Medical Image Analysis	PRADEEBA SRIDAR	3	9			40	10	Yes			531	Y	Boby George	SI
+MD5005	822	B	T	Cardiovascular & Respiratory Mechanics & Hemodynamics	KRISHNAKUMAR R	3	15			30	0	Yes			532	Y	Boby George	SI
+MD5015	823	TT		Understanding Data for Clinicians	PRADEEBA SRIDAR	3	12			0	0	No			566	Y	Boby George	
+ME1480	824	G2		Engineering Drawing	MANOJ PANDEY	3	7	NULL		0	0	No				N	Pallab Sinha Mahapatra	
+ME1480	825	G2		Engineering Drawing	RAMKUMAR P	3	7	NULL		0	0	No				Y	Pallab Sinha Mahapatra	
+ME1480	826	B2		Engineering Drawing	RAMKUMAR P	3	7	NULL		0	0	No				Y	Pallab Sinha Mahapatra	
+ME1480	827	B2		Engineering Drawing	Sourav Rakshit	3	7	NULL		0	0	No				N	Pallab Sinha Mahapatra	
+ME1480	828	R1		Engineering Drawing	RAMKUMAR P	3	7	NULL		0	0	No			MSB 301, MSB 302	Y	Pallab Sinha Mahapatra	
+ME1480	829	G2		Engineering Drawing	Sourav Rakshit	3	7	NULL		0	0	No				N	Pallab Sinha Mahapatra	
+ME1480	830	Q1		Engineering Drawing	RAMKUMAR P	3	7	NULL		0	0	No			MSB 301, MSB 302	Y	Pallab Sinha Mahapatra	
+ME1480	831	R1		Engineering Drawing	Sourav Rakshit	3	7	NULL		0	0	No			MSB 301, MSB 302	N	Pallab Sinha Mahapatra	
+ME1480	832	P1		Engineering Drawing	MANOJ PANDEY	3	7	NULL		0	0	No			MSB 301, MSB 302	N	Pallab Sinha Mahapatra	
+ME1480	833	P1		Engineering Drawing	RAMKUMAR P	3	7	NULL		0	0	No			MSB 301, MSB 302	Y	Pallab Sinha Mahapatra	
+ME1480	834	Q1		Engineering Drawing	MANOJ PANDEY	3	7	NULL		0	0	No			MSB 301, MSB 302	N	Pallab Sinha Mahapatra	
+ME1480	835	Q1		Engineering Drawing	Sourav Rakshit	3	7	NULL		0	0	No			MSB 301, MSB 302	N	Pallab Sinha Mahapatra	
+ME1480	836	P1		Engineering Drawing	Sourav Rakshit	3	7	NULL		0	0	No			MSB 301, MSB 302	N	Pallab Sinha Mahapatra	
+ME1480	837	R1		Engineering Drawing	MANOJ PANDEY	3	7	NULL		0	0	No			MSB 301, MSB 302	N	Pallab Sinha Mahapatra	
+ME1480	838	B2		Engineering Drawing	MANOJ PANDEY	3	7	NULL		0	0	No				N	Pallab Sinha Mahapatra	
+ME2100	839	K		Applied Thermal Engineering	VARUNKUMAR S	4	10	ME1100, AM2530		50	0	Yes			NAC 2 - 228	Y	Pallab Sinha Mahapatra	CG
+ME2102	840	D		Foundations of Thermal Engineering-1	KRITHIKA NARAYANASWAMY	7	7	Thermodynamics		200	0	Yes			CRC 201, CRC 202, CRC 203	N	Pallab Sinha Mahapatra	CG
+ME2102	841	D		Foundations of Thermal Engineering-1	MALLIKARJUNA J M	7	7	Thermodynamics		200	0	Yes			CRC 201, CRC 202, CRC 203	N	Pallab Sinha Mahapatra	CG
+ME2102	842	D		Foundations of Thermal Engineering-1	BABU VISWANATHAN	7	7	Thermodynamics		200	0	Yes			CRC 201, CRC 202, CRC 203	Y	Pallab Sinha Mahapatra	CG
+ME2200	843	E		Materials and Design	MANOJ MYNENI	4	10			200	0	Yes			MSB 242, MSB 243, MSB 357	N	Pallab Sinha Mahapatra	CG
+ME2200	844	E		Materials and Design	RATNA KUMAR ANNABATTULA	4	10			200	0	Yes			MSB 242, MSB 243, MSB 357	Y	Pallab Sinha Mahapatra	CG
+ME2200	845	E		Materials and Design	VIMAL EDACHERY	4	10			200	0	Yes			MSB 242, MSB 243, MSB 357	N	Pallab Sinha Mahapatra	CG
+ME2302	846	B		Manufacturing Technology-I	S Sathyan	11	11			200	0	Yes			MSB 242, MSB 243, MSB 357	N	Pallab Sinha Mahapatra	CG
+ME2302	847	B		Manufacturing Technology-I	ARUNACHALAM N	11	11			200	0	Yes			MSB 242, MSB 243, MSB 357	Y	Pallab Sinha Mahapatra	CG
+ME2302	848	B		Manufacturing Technology-I	Hariharan	11	11			200	0	Yes			MSB 242, MSB 243, MSB 357	N	Pallab Sinha Mahapatra	CG
+ME2400	849	C		Measurements,Instrumentation and Control	SUSHANTA KUMAR PANIGRAHI	5	11	NIL		200	0	Yes			MSB 242, MSB 243, MSB 357	Y	Pallab Sinha Mahapatra	CG
+ME2400	850	C		Measurements,Instrumentation and Control	CHARCHIT KUMAR	5	11	NIL		200	0	Yes			MSB 242, MSB 243, MSB 357	N	Pallab Sinha Mahapatra	CG
+ME2400	851	C		Measurements,Instrumentation and Control	MANIVANNAN P V	5	11	NIL		200	0	Yes			MSB 242, MSB 243, MSB 357	N	Pallab Sinha Mahapatra	CG
+ME2482	852	P		Mechanical Engineering Lab I	SHANKAR KRISHNAPILLAI	3	3			65	0	Yes			UG/PG LAB	Y	Pallab Sinha Mahapatra	CG
+ME2482	853	R		Mechanical Engineering Lab I	VISWANATH K	3	3			65	0	Yes			UG/PG LAB	Y	Pallab Sinha Mahapatra	CG
+ME2482	854	Q		Mechanical Engineering Lab I	ANUJ KUMAR TIWARI	3	3			65	0	Yes			UG/PG LAB	Y	Pallab Sinha Mahapatra	CG
+ME3100	855	G		Basic Thermal Engineering	DHIMAN CHATTERJEE	4	10			0	0	No			NAC 2 - 323	Y	Pallab Sinha Mahapatra	
+ME3103	856	C		Energy Conversion System	SHYAMA PRASAD DAS	4	10			50	0	Yes			NAC 2 -321	Y	Pallab Sinha Mahapatra	CG
+ME3302	857	A		Automation in manufacturing	SOMASHEKHAR S	0	10			240	0	Yes			MSB 242, MSB 243, MSB 245	Y	Pallab Sinha Mahapatra	CG
+ME3302	858	A		Automation in manufacturing	ANUJ KUMAR TIWARI	0	10			240	0	Yes			MSB 242, MSB 243, MSB 245	N	Pallab Sinha Mahapatra	CG
+ME3302	859	A		Automation in manufacturing	SAMUEL G L	0	10			240	0	Yes			MSB 242, MSB 243, MSB 245	N	Pallab Sinha Mahapatra	CG
+ME3484	860	R		Mechanical Engg. Lab III	REGULAGADDA KARTIK	2	3			74	0	Yes			UG/PG LAB	Y	Pallab Sinha Mahapatra	CG
+ME3484	861	S		Mechanical Engg. Lab III	ADVAITH S	2	3			74	0	Yes			UG/PG LAB	Y	Pallab Sinha Mahapatra	CG
+ME3484	862	T		Mechanical Engg. Lab III	SHAMIT BAKSHI	2	3			74	0	Yes			UG/PG LAB	Y	Pallab Sinha Mahapatra	CG
+ME3484	863	T		Mechanical Engg. Lab III	ANIL KUMAR MEENA	2	3			74	0	Yes			UG/PG LAB	N	Pallab Sinha Mahapatra	CG
+ME4001	864	UU		Project	CHAKRAVARTHY BALAJI	3	9			100	0	Yes				Y	Chakravarthy Balaji	CG
+ME4490	865	UU		B.Tech. Project	CHAKRAVARTHY BALAJI	9	27			250	0	Yes				Y	Chakravarthy Balaji	CG
+ME4901	866	VV		Undergraduate Research Project	CHAKRAVARTHY BALAJI	3	9			250	0	Yes				Y	Chakravarthy Balaji	CG
+ME5010	867	F		Hybrid and Electric Vehicle Technology	Mayank Mittal	3	9	Nil		30	10	Yes			ICE DIESEL HALL	Y	Raju Sethuraman	CG
+ME5015	868	F		Mathematical Methods in Mechanical Engineering	SAMYA SEN	4	10	None		0	0	No			NAC 2 - 321	Y	Raju Sethuraman	
+ME5020	869	R	S,T	Professional Communication Skills	CHAKRAVARTHY BALAJI	1	3	None		0	0	No			MSB 304	Y	Raju Sethuraman	
+ME5107	870	C	Q	Numerical Methods in Thermal Engg	SREE HARI PERUMANATH DHARMAPALAN	4	10			120	5	Yes			CRC 201, CRC 202	Y	Raju Sethuraman	CG
+ME5107	871	C	Q	Numerical Methods in Thermal Engg	SHALIGRAM TIWARI	4	10			120	5	Yes			CRC 201, CRC 202	N	Raju Sethuraman	CG
+ME5109	872	A	P	Measurement in Thermal Engg	SRIKRISHNA SAHU	4	10	NIL		80	20	Yes			MSB 357	Y	Raju Sethuraman	CG
+ME5115	873	E		Surfaces and Interfaces	Pallab Sinha Mahapatra	3	9			60	20	Yes			NAC 2 - 229	Y	Raju Sethuraman	CG
+ME5130	874	E		Principles of Turbomachinery	DHIMAN CHATTERJEE	3	9	Nil		40	5	Yes			NAC 2 - 321	Y	Raju Sethuraman	CG
+ME5131	875	G		Nanoscale Thermofluidics: Theory and Computation	SREE HARI PERUMANATH DHARMAPALAN	9	9	Basic programming skills (preferably in C++)		30	5	Yes			NAC 2 - 322	Y	Raju Sethuraman	CG
+ME5132	876	F		Refrigeration and  Cryogenics	VENKATARATHNAM G	3	9	NIL		40	0	Yes			NAC 2 - 228	Y	Raju Sethuraman	CG
+ME5162	877	E		Introduction to Nanofluidics in Nanopores and Nanochannels	VISHAL NANDIGANA	9	9			60	20	Yes			MSB 304	Y	Raju Sethuraman	CG
+ME5204	878	A		Finite Element Analysis	NARASIMHAN SWAMINATHAN	3	9	COT		0	0	No			RMN 302	Y	Raju Sethuraman	
+ME5207	879	B		Design with Advanced Engineering Materials	RAGHU PRAKASH V	3	9	COT		0	0	No			MDS 217	Y	Raju Sethuraman	
+ME5228	880	G		Engineering Acoustics	CHANDRAMOULI P	3	9	Consent of Teacher		30	15	Yes			NAC 2 - 321	Y	Raju Sethuraman	CG
+ME5233	881	E		Multibody Dynamics and Applications	MANOJ PANDEY	3	9	Comfortable with MATLAB or GNU/Octave; programming skills desirable		30	15	Yes			NAC 2 - 228	Y	Raju Sethuraman	CG
+ME5235	882	D		Signal Processing of Mechanical Systems	ABHIJIT SARKAR	4	10			60	20	Yes			RJN 301	Y	Raju Sethuraman	CG
+ME5238	883	J		Mechanics and Reliability of Semiconductor Packaging	ANIRUDH UDUPA	3	9	Recommended background: basic solid mechanics, materials science, and heat transfer. No prior fracture mechanics or finite element experience required; essential concepts (fracture, fatigue, viscoplasticity, thin film mechanics) will be introduced qualitatively before packaging-specific applications. No mandatory specialized software; demonstrations will use institute-licensed or free tools (e.g., COMSOL, ANSYS, spreadsheets).		50	30	Yes			NAC 2 - 229	Y	Raju Sethuraman	CG
+ME5280	884	P		Design Practice using CAD tools	Sundararajan Natarajan	3	6	COT		0	0	No			MDS 217	Y	Raju Sethuraman	
+ME5304	885	D		Manufacturing Metrology	ARUNACHALAM N	9	9			60	10	Yes			MES SH	Y	Raju Sethuraman	CG
+ME5308	886	B		Smart Manufacturing	SIVASRINIVASU DEVADULA	10	10			45	5	Yes			MES SH	Y	Raju Sethuraman	CG
+ME5380	887	P		Manufacturing & Precision Engg Lab	MANIVANNAN P V	2	4	NIL		0	0	No			MES LABS	Y	Raju Sethuraman	
+ME5580	888	B		Thermal Desalination Technologies	SATEESH GEDUPUDI	3	9			28	10	Yes			AR HTTP SEMINAR HALL	Y	Raju Sethuraman	CG
+ME6030	889	D		Linear Algebra with applications in Mechanical Engineering	MANISH ANAND	4	10	Students registered for the Ph.D. programme in Mechanical Engineering. With COT for students registered for the MS programme in Mechanical Engineering.		50	20	Yes			NAC 2 - 321	Y	Raju Sethuraman	CG
+ME6121	890	F		Microfluidics and Microsystems	ASHIS KUMAR SEN	3	9	COT		25	10	Yes			NAC 2 - 322	Y	Raju Sethuraman	CG
+ME6122	891	G		Jet Flow and Acoustics	SRINIVASAN K	3	9	COT		50	20	Yes			NAC 2 - 228	Y	Raju Sethuraman	CG
+ME6131	892	G		Boiling Condensation and Two Phase Flow	SARITKUMAR DAS	3	9	COT		30	5	Yes			AR HTTP SEMINAR HALL	Y	Raju Sethuraman	CG
+ME6133	893	E		Convective Heat Transfer	ARVIND PATTAMATTA	3	9	COT		0	0	No			AR HTTP SEMINAR HALL	Y	Raju Sethuraman	
+ME6139	894	C		Simulation of IC Engine Processes	Mayank Mittal	3	9	COT		20	5	Yes			ICE DIESEL HALL	Y	Raju Sethuraman	CG
+ME6148	895	D		Renewable Energy Technology	SRINIVAS REDDY K	3	9	ME2100		80	30	Yes			MSB 357	Y	Raju Sethuraman	CG
+ME6151	896	D		Computational Heat & Fluid Flow	RAGHAVAN V	3	9			100	20	Yes			CRC 103	Y	Raju Sethuraman	CG
+ME6154	897	D		Design & Optimisation of Energy Systems	CHAKRAVARTHY BALAJI	3	9	COT		120	20	Yes			CRC 102	Y	Raju Sethuraman	CG
+ME6162	898	G		IC Engine Combustion and Pollution	ANAND K	3	9	NIL		0	0	No			ICE DIESEL HALL	Y	Raju Sethuraman	
+ME6198	899	UU		MTech Project Phase III (Thermal Stream)	CHAKRAVARTHY BALAJI	13	40			0	0	No				Y	Chakravarthy Balaji	
+ME6222	900	C		Design of Mechanical Transmission systems	RAMKUMAR P	3	9	COT		0	0	No			MDS 217	Y	Raju Sethuraman	
+ME6225	901	F		Failure Analysis and  Design	GNANAMOORTHY R	3	9	COT		40	20	Yes			MDS 217	Y	Raju Sethuraman	CG
+ME6226	902	G		Product Reliability	PIYUSH SHAKYA	3	9	COT		65	15	Yes			MDS 217	Y	Raju Sethuraman	CG
+ME6230	903	D		Mechanics of Human Movement	SUJATHA SRINIVASAN	3	9	COT		40	20	Yes			NAC 2 - 228	Y	Raju Sethuraman	CG
+ME6236	904	H		Mechanics of Slender Structures	RAUSHAN SINGH	9	9	ME5201 (Computational Methods in Engineering) or Equivalent		30	10	Yes			MDS 306	Y	Raju Sethuraman	CG
+ME6298	905	UU		M.Tech Project Phase III (Design Stream)	CHAKRAVARTHY BALAJI	13	40			0	0	No				Y	Chakravarthy Balaji	
+ME6320	906	G		Micro Manufacturing Technology	SAMUEL G L	3	9			60	10	Yes			MES SH	Y	Raju Sethuraman	CG
+ME6331	907	K		Treatment of Material	ANIL KUMAR MEENA	3	9	NIL		30	5	Yes			MES SH	Y	Raju Sethuraman	CG
+ME6333	908	E		Machining Science & Technology	AMITAVA GHOSH	3	9			45	5	Yes			MES SH	Y	Raju Sethuraman	CG
+ME6334	909	A		Advanced Sheet Metal Forming	SUSHANTA KUMAR PANIGRAHI	3	9			60	10	Yes			MES SH	Y	Raju Sethuraman	CG
+ME6355	910	F		Topology optimization	Sourav Rakshit	3	9	Finite element methods/COT		30	10	Yes			MDS 306	Y	Raju Sethuraman	CG
+ME6398	911	UU		M.Tech Project Phase III (Manufacturing Stream)	CHAKRAVARTHY BALAJI	35	35			0	0	No				Y	Chakravarthy Balaji	
+ME6493	912	UU		Project - Phase III	CHAKRAVARTHY BALAJI	40	40			0	0	No				Y	Chakravarthy Balaji	
+ME6593	913	UU		Project - Phase III	CHAKRAVARTHY BALAJI	40	40			0	0	No				Y	Chakravarthy Balaji	
+ME6693	914	UU		Project - Phase III	CHAKRAVARTHY BALAJI	40	40			0	0	No				Y	Chakravarthy Balaji	
+ME7221	915	M		Tribology in Design	VIMAL EDACHERY	3	9	COT		0	0	No			MDS 217	N	Raju Sethuraman	
+ME7221	916	M		Tribology in Design	RAMKUMAR P	3	9	COT		0	0	No			MDS 217	Y	Raju Sethuraman	
+ME7223	917	D		Optimization Methods for Mechanical Design	SHANKAR KRISHNAPILLAI	3	9	COT		50	10	Yes			MSB 242	Y	Raju Sethuraman	CG
+ME7227	918	D		Nonlinear Finite Element Analysis of Solid Continua	RAJU SETHURAMAN	3	9	ME6800 and ME7660 or Equivalent (COT)		0	0	No			MDS 306	Y	Raju Sethuraman	
+ME7234	919	D		Introduction to Fracture Mechanics	RAGHU PRAKASH V	3	9	COT		40	15	Yes			MDS 217	Y	Raju Sethuraman	CG
+ME7790	920	F		Heat and  Fluid Flow in Porous Media	ARUNN NARASIMHAN	3	9	COT		25	10	Yes			AR HTTP SEMINAR HALL	Y	Raju Sethuraman	CG
+MM1003	921	C		Thermodynamics of Materials	Sreeram K. Kalpathy	3	10	None		0	0	No			KCB 204	Y	Balasubramanian M	
+MM2080	922	E		Principles of Extractive Metallurgy	AJAY KUMAR SHUKLA	3	12			0	0	No			KCB 222	Y	Balasubramanian M	
+MM3010	923	B		Physics of Materials	PARASURAMAN SWAMINATHAN	3	9	None		0	0	No			KCB 222	Y	Balasubramanian M	
+MM3014	924	ZZ		Undergraduate Research in Materials - 1	Satyesh	5	5	Listed under Contents.		20	10	Yes			KCB	Y	Subramanya Sarma V	SI
+MM3015	925	Q		Processing Lab	Sreeram K. Kalpathy	2	5			0	0	No			KCB	N	Balasubramanian M	
+MM3015	926	Q		Processing Lab	Satyesh	2	5			0	0	No			KCB	N	Balasubramanian M	
+MM3015	927	Q		Processing Lab	RAVIKUMAR N V	2	5			0	0	No			KCB	N	Balasubramanian M	
+MM3015	928	Q		Processing Lab	UDAY CHAKKINGAL	2	5			0	0	No			KCB	Y	Balasubramanian M	
+MM3020	929	A		Iron Making and Steel Making	K C HARI KUMAR	4	12	None		0	0	No			CRC 201	Y	Lakshman Neelakantan	
+MM3020	930	A		Iron Making and Steel Making	SUBRAMANYA SARMA V	4	12	None		0	0	No			CRC 201	N	Lakshman Neelakantan	
+MM3030	931	D		Materials Characterization	SOMNATH BHATTACHARYYA	3	9			0	0	No			KCB 222	Y	Lakshman Neelakantan	
+MM3041	932	C		Deformation Processing and Forming	BHATTACHARYA S S	3	9			0	0	No			KCB 222	Y	Lakshman Neelakantan	
+MM3070	933	G		Solidification Processing and Casting	HEMAPRABHA E	3	9			50	15	Yes			KCB 222	Y	Lakshman Neelakantan	SI
+MM3100	934	R		Materials Characterisation Lab	HEMAPRABHA E	2	5			0	0	No			KCB 204	N	Balasubramanian M	
+MM3100	935	P		Materials Characterisation Lab	RAVIKUMAR N V	2	5			0	0	No			KCB	Y	Balasubramanian M	
+MM3100	936	R		Materials Characterisation Lab	Pradeep	2	5			0	0	No			KCB 204	Y	Balasubramanian M	
+MM3100	937	R		Materials Characterisation Lab	BHUVANESH SRINIVASAN	2	5			0	0	No			KCB 204	N	Balasubramanian M	
+MM3100	938	P		Materials Characterisation Lab	Sreeram K. Kalpathy	2	5			0	0	No			KCB	N	Balasubramanian M	
+MM3100	939	P		Materials Characterisation Lab	SANKARAN S	2	5			0	0	No			KCB	N	Balasubramanian M	
+MM3100	940	R		Materials Characterisation Lab	SOMNATH BHATTACHARYYA	2	5			0	0	No			KCB 204	N	Balasubramanian M	
+MM3100	941	P		Materials Characterisation Lab	SUBRAMANYA SARMA V	2	5			0	0	No			KCB	N	Balasubramanian M	
+MM3200	942	E		Surface Modifications	SRINIVASA RAO BAKSHI	3	9	None		60	10	Yes			KCB 205	Y	Lakshman Neelakantan	SI
+MM4020	943	YY		Industrial Training	SUBRAMANYA SARMA V	2	0			0	0	No			KCB	N	Subramanya Sarma V	
+MM4020	944	YY		Industrial Training	AJAY KUMAR SHUKLA	2	0			0	0	No			KCB	Y	Subramanya Sarma V	
+MM4030	945	ZZ		Undergraduate Research in Materials - 2	Satyesh	10	10	Undergraduate Research in Materials - 1		10	10	Yes			KCB	Y	Subramanya Sarma V	SI
+MM4120	946	UU		Project II	SUBRAMANYA SARMA V	9	18			40	0	Yes			KCB	N	Subramanya Sarma V	SI
+MM4120	947	UU		Project II	HEMAPRABHA E	9	18			40	0	Yes			KCB	N	Subramanya Sarma V	SI
+MM4120	948	UU		Project II	BHUVANESH SRINIVASAN	9	18			40	0	Yes			KCB	Y	Subramanya Sarma V	SI
+MM5013	949	F		Textures in Materials	SUBRAMANYA SARMA V	3	9			30	10	Yes			KCB 124	Y	Ganesh Sundara Raman	SI
+MM5017	950	H		Electronic materials and devices	SURENDRA BABU ANANTHARAMAN	3	9	COT		10	10	Yes			KCB 204	Y	Bhattacharya S S	SI
+MM5020	951	B		Modern Techniques of Material Characterization	Pradeep	3	9	NIL		0	0	No			KCB 205	Y	Sabita Sarkar	
+MM5021	952	H		Deformation and Failure of Materials at Elevated Temperatures	RAVI SANKAR K	3	9	NIL		0	0	No			KCB 134	Y	Ganesh Sundara Raman	
+MM5022	953	H		Fundamentals of Iron & Steel Making	SABITA SARKAR	3	9	None		0	0	No			KCB 124	Y	Bhattacharya S S	
+MM5030	954	G		Materials in renewable energy technologies	PRATHAP HARIDOSS	3	9			70	30	Yes			CRC 103	Y	Bhattacharya S S	SI
+MM5041	955	K		Medical Materials	SAMPATHKUMAR T S	3	9	Project on biomaterials for final year UG students		0	0	No			KCB 134	Y	Bhattacharya S S	
+MM5090$	956	UU		Project	SABITA SARKAR	3	40			0	0	No			KCB	Y	Subramanya Sarma V	
+MM5090$	957	UU		Project	SUBRAMANYA SARMA V	3	40			0	0	No			KCB	N	Subramanya Sarma V	
+MM5092	958	UU		Dual Degree Project Phase II	SABITA SARKAR	40	40			0	0	No			KCB	Y	Subramanya Sarma V	
+MM5092	959	UU		Dual Degree Project Phase II	SUBRAMANYA SARMA V	40	40			0	0	No			KCB	N	Subramanya Sarma V	
+MM5140	960	A		Metallurgical Failure Analysis	KAMARAJ M	3	9			0	0	No			KCB 205	Y	Sabita Sarkar	
+MM5180	961	K		Non-Destructive Evaluation	RANJIT BAURI	3	9	NIL		70	30	Yes			KCB 124	Y	Bhattacharya S S	SI
+MM5250	962	G		Additive Manufacturing	MURUGAIYAN A	3	9	COT		30	10	Yes			KCB 204	Y	Sabita Sarkar	SI
+MM5290	963	K		Stability of Microstructures	GANDHAM PHANIKUMAR	3	9			0	0	No			KCB 205	Y	Parasuraman Swaminathan	
+MM5320	964	F		Corrosion Engineering	LAKSHMAN NEELAKANTAN	3	9	NIL		0	0	No			KCB 205	Y	Ganesh Sundara Raman	
+MM5410	965	E		Ceramic Science & Technology	BALASUBRAMANIAN M	3	9	NIL		0	0	No			KCB 204	Y	Ganesh Sundara Raman	
+MM5430	966	M		Advanced Powder Processing	BHUVANESH SRINIVASAN	3	9	NIL		15	15	Yes			KCB 205	Y	Parasuraman Swaminathan	SI
+MM5460	967	M		Physical Ceramics	SHOTARO TADA	3	9	NIL		0	0	No			KCB 204	Y	Parasuraman Swaminathan	
+MM5480	968	C		Advanced Phase Transformations	Satyesh	3	9	Core course for MTech		0	0	No			KCB 205	Y	Sabita Sarkar	
+MM5520	969	D		Solidification Phenomena	MANAS MUKHERJEE	3	9	COT		0	0	No			KCB 204	Y	Bhattacharya S S	
+MM5566	970	D		Finite Element Method in Materials Engineering	KANJARLA ANAND KRISHNA	3	9			20	5	Yes			KCB 205	Y	Sabita Sarkar	SI
+MM5640	971	A		Sheet Metal Forming	UDAY CHAKKINGAL	3	9	COT		30	20	Yes			KCB 124	Y	Sabita Sarkar	SI
+MM5740	972	F		Welding Metallurgy	RAVI SANKAR K	3	9	COT		0	0	No			KCB 134	Y	Ganesh Sundara Raman	
+MM5770	973	R		Materials Joining Laboratory	MURUGAIYAN A	2	3	COT		0	0	No			MJL	Y	Parasuraman Swaminathan	
+MM6011	974	F		Field Emission Sciences and Atom Probe Tomography	Pradeep	3	9			0	0	No			KCB 204	Y	Ganesh Sundara Raman	
+MM6020	975	E		Fatigue of Materials	GANESH SUNDARA RAMAN	3	9	Nil		25	10	Yes			KCB 124	Y	Sabita Sarkar	SI
+MM6021	976	ZZ		Introduction to Research	SRINIVASA RAO BAKSHI	2	0	NIL		0	0	No			KCB	Y	Subramanya Sarma V	
+MM6021	977	ZZ		Introduction to Research	HEMAPRABHA E	2	0	NIL		0	0	No			KCB	N	Subramanya Sarma V	
+MM6999	978	XX		Special Topics in Metallurgical and Materials Engineering	SUBRAMANYA SARMA V	3	6			0	0	No			KCB	Y	Subramanya Sarma V	
+MM7999	979	YY		Special Topics in Metallurgical and Materials Engineering	SUBRAMANYA SARMA V	3	6			0	0	No			KCB	Y	Subramanya Sarma V	
+MS3530	980	G		Advanced Operations Research	SRINIVASAN G	3	9			40	40	Yes			CRC 201	Y	Srinivasan G	SI
+MS3710	981	G		Marketing Management	Vaibhav Chawla	3	9	Nil		100	100	Yes			CRC 101	N	Srinivasan G	SI
+MS3710	982	G		Marketing Management	PRATHAMESH VIVEK KITTUR	3	9	Nil		100	100	Yes			CRC 101	Y	Srinivasan G	SI
+MS4810	983	YY		Marketing for Successful Startups	RICHA AGRAWAL	9	9			100	100	Yes			CRC 102	Y	Srinivasan G	SI
+MS5010	984	RR		Macroeconomics	SAJI MATHEW	2	6	---		0	0	No				Y	Srinivasan G	
+MS5011	985	UU		Strategic Human Resource Management	LATA DYARAM	4	8			0	0	No				Y	Srinivasan G	
+MS5032	986	ZZ		Financial Markets and Derivatives	KRISHNA PRASANA P	3	12			0	0	No				Y	Srinivasan G	
+MS5112	987	VV		Sustainable Operations	VIPIN B	2	6			0	0	No				Y	Srinivasan G	
+MS5171	988	SS		Managerial Communication	SRINIVASAN S	1	3			0	0	No				Y	Srinivasan G	
+MS5221	989	XX		Group Processes in Organisations	VIJAYALAKSHMI V	2	6			0	0	No				N	Srinivasan G	
+MS5221	990	XX		Group Processes in Organisations	SRINIVASAN S	2	6			0	0	No				Y	Srinivasan G	
+MS5230	991	QQ		Operations Management	AMIT R K	2	6	NIL		0	0	No				Y	Srinivasan G	
+MS5241	992	UU		Financial Management-I	THILLAI RAJAN A	2	6			0	0	No				Y	Srinivasan G	
+MS5242	993	VV		Financial Analysis Applications	THENMOZHI M	1	3			0	0	No				Y	Srinivasan G	
+MS5251	994	WW		Research for Marketing Decisions	Vaibhav Chawla	2	6			0	0	No				Y	Srinivasan G	
+MS5251	995	WW		Research for Marketing Decisions	PRATHAMESH VIVEK KITTUR	2	6			0	0	No				N	Srinivasan G	
+MS5320	996	VV		Human Resource Management	SRINIVASAN S	2	6	NIL		0	0	No				Y	Srinivasan G	
+MS5330	997	PP		Supply Chain Management	SRINIVASAN G	2	6	NIL		0	0	No				Y	Srinivasan G	
+MS5341	998	UU		Financial Management-II	THENMOZHI M	2	6			0	0	No				Y	Srinivasan G	
+MS5350	999	WW		Business Research Methodology	IMON CHAKRABORTY	2	6	NIL		0	0	No				Y	Srinivasan G	
+MS5550	1000	PP		Operations Research Applications	USHA MOHAN	2	6	NIL		0	0	No				Y	Srinivasan G	
+MS5561	1001	XX		Information Systems Analysis	SAJI MATHEW	2	6			0	0	No				Y	Srinivasan G	
+MS5642	1002	VV		Managing the future: AI, Cyber Security and the Innovative Leader	DR. KANDASWAMY PARAMASIVAN	6	6			0	0	No				Y	Srinivasan G	
+MS5680	1003	TT		International Finance	MADHUMATHI R	2	6	NIL		0	0	No				Y	Srinivasan G	
+MS5715	1004	SS		Marketing at the Bottom of the Pyramid (BoP)	VARISHA REHMAN	2	6	Marketing Management		0	0	No				Y	Srinivasan G	
+MS5729	1005	XX		Social Media Computing	Nargis Pervin	2	6	None		0	0	No				Y	Srinivasan G	
+MS5754	1006	RR		Nurturing the Inner You: Developing Positive Capacities	VIJAYALAKSHMI V	2	6			0	0	No				Y	Srinivasan G	
+MS6010	1007	QQ		Strategic Management	PRAKASH SAI L	2	6	NIL		0	0	No				Y	Srinivasan G	
+MS6015	1008	G		Multivariate Statistical Methods for Business	USHA MOHAN	4	12	Univariate Methods in Statistics		0	0	No				Y	Srinivasan G	
+MS6310	1009	QQ		Contemporary Issues in Management	PRAKASH SAI L	2	6	NIL		0	0	No				Y	Srinivasan G	
+MS6590	1010	WW		Customer Relationship Marketing	RICHA AGRAWAL	2	6	NIL		0	0	No				Y	Srinivasan G	
+MS6621	1011	E		Corporate Finance	MADHUMATHI R	4	12			0	0	No				N	Srinivasan G	
+MS6621	1012	E		Corporate Finance	KRISHNA PRASANA P	4	12			0	0	No				Y	Srinivasan G	
+MS6710	1013	WW		Financial Risk Management	KRISHNA PRASANA P	2	6	NIL		0	0	No				Y	Srinivasan G	
+MS6930	1014	ZZ		Enterpreneurship	SAJI MATHEW	2	6	NIL		0	0	No				Y	Srinivasan G	
+MS6990	1015	SS		Management Research Project	SAJI MATHEW	2	6	Nil		0	0	No				Y	Srinivasan G	
+MS6991	1016	PP		Management Research Project II	SAJI MATHEW	4	12			0	0	No				Y	Srinivasan G	
+MS6999	1017	YY		Special Topics in Management Studies	SAJI MATHEW	3	6			0	0	No				Y	Srinivasan G	
+MS7999	1018	XX		Special Topics in Management Studies	SAJI MATHEW	3	6			0	0	No				Y	Srinivasan G	
+MS8020	1019	XX		Empirical research -1	THENMOZHI M	2	6			0	0	No				Y	Srinivasan G	
+MS8021	1020	RR		Empirical research -2	ARUN KUMAR G	2	6			0	0	No				Y	Srinivasan G	
+OB2201	1021	NT		Database Management Systems	VIGNESH MUTHUVIJAYAN	12	12			999	999	Yes				Y	Vignesh	SI
+OB2202	1022	NT		Programming, Data Structures and Algorithms using Python	VIGNESH MUTHUVIJAYAN	12	12			999	999	Yes				Y	Vignesh	SI
+OB2203	1023	NT		Modern Application Development I	VIGNESH MUTHUVIJAYAN	12	12			999	999	Yes				Y	Vignesh	SI
+OB2204	1024	NT		Machine Learning Foundations	VIGNESH MUTHUVIJAYAN	12	12			999	999	Yes				Y	Vignesh	SI
+OB2205	1025	NT		Programming Concepts using Java	VIGNESH MUTHUVIJAYAN	12	12			999	999	Yes				Y	Vignesh	SI
+OB2206	1026	NT		Modern Application Development II	VIGNESH MUTHUVIJAYAN	12	12			999	999	Yes				Y	Vignesh	SI
+OB2207	1027	NT		Machine Learning Techniques	VIGNESH MUTHUVIJAYAN	12	12			999	999	Yes				Y	Vignesh	SI
+OB2208	1028	NT		Machine Learning Practice	VIGNESH MUTHUVIJAYAN	12	12			999	999	Yes				Y	Vignesh	SI
+OB2502	1029	NT		Business Analytics	VIGNESH MUTHUVIJAYAN	12	12			999	999	Yes				Y	Vignesh	SI
+OB3201	1030	NT		Software Engineering	VIGNESH MUTHUVIJAYAN	12	12			999	999	Yes				Y	Vignesh	SI
+OB3202	1031	NT		Software Testing	VIGNESH MUTHUVIJAYAN	12	12			999	999	Yes				Y	Vignesh	SI
+OB3203	1032	NT		AI: Search Methods for Problem Solving	VIGNESH MUTHUVIJAYAN	12	12			999	999	Yes				Y	Alagappan Ponnalagu	SI
+OB3204	1033	NT		Deep Learning	VIGNESH MUTHUVIJAYAN	12	12			999	999	Yes				Y	Vignesh	SI
+OB3205	1034	NT		Introduction to Big Data	VIGNESH MUTHUVIJAYAN	12	12			999	999	Yes				Y	Vignesh	SI
+OB3210	1035	NT		Advanced Algorithms	VIGNESH MUTHUVIJAYAN	4	12	N/A		999	999	Yes				Y	Vignesh	SI
+OB3212	1036	NT		Special topics in ML (Reinforcement Learning)	VIGNESH MUTHUVIJAYAN	4	12			999	999	Yes				Y	Vignesh	SI
+OB3215	1037	NT		Managerial Economics	VIGNESH MUTHUVIJAYAN	4	12			999	999	Yes				Y	Vignesh	SI
+OB3502	1038	NT		Market Research	VIGNESH MUTHUVIJAYAN	9	12			999	999	Yes				Y	Vignesh	SI
+OB3801	1039	NT		Strategies for Professional Growth	VIGNESH MUTHUVIJAYAN	12	12			999	999	Yes				Y	Vignesh	SI
+OB4501	1040	NT		Industry 4.0	VIGNESH MUTHUVIJAYAN	12	12			999	999	Yes				Y	Vignesh	SI
+OB4601	1041	NT		Algorithmic Thinking in Bioinformatics	VIGNESH MUTHUVIJAYAN	12	12			999	999	Yes				Y	Vignesh	SI
+OE1012	1042	A		Ship Hydrostatics and Stability	ARJUN JAGANNATHAN	3	9			100	0	Yes			NAC-2-201	Y	Sannasiraj S A	SI
+OE1100	1043	B		Modern scientific computing in programming language	RAJIV SHARMA	4	12	COT		100	0	Yes			NAC-2-201	Y	Panneer Selvam R	SI
+OE2014	1044	D		Marine Engineering	NARENDRAN K	4	10			100	0	Yes			NAC-2-201	Y	Suresh Kumar G	SI
+OE2024	1045	C		Analysis of Structures	BITHIN GHORAI	3	9	nothing		100	0	Yes			NAC-2-201	Y	Suresh Kumar G	SI
+OE2034	1046	F		Ship Resistance and Propulsion	Vijayakumar R	5	11			100	0	Yes			NAC-2-201	Y	Suresh Kumar G	SI
+OE2054	1047	E		Ocean Wave Hydrodynamics	SRIRAM V	4	10			100	0	Yes			NAC-2-201	Y	Suresh Kumar G	SI
+OE3026	1048	YY		Shipyard Training	Vijayakumar R	2	6			100	0	Yes				Y	Panneer Selvam R	SI
+OE3036	1049	B		Manoeuvring and Control of Marine Vehicles	Abhilash	4	10			90	10	Yes			NAC-2-202	Y	Panneer Selvam R	SI
+OE3046	1050	A		Ship Structural Design	SURESH	3	10			100	0	Yes			NAC-2-202	Y	Panneer Selvam R	SI
+OE4052	1051	XX		Naval Architecture and Ocean Engineering BTech Project - Phase II	ARJUN JAGANNATHAN	6	18			80	0	Yes				N	Nallayarasu S	SI
+OE4052	1052	XX		Naval Architecture and Ocean Engineering BTech Project - Phase II	NARENDRAN K	6	18			80	0	Yes				N	Nallayarasu S	SI
+OE4052	1053	XX		Naval Architecture and Ocean Engineering BTech Project - Phase II	Vijayakumar R	6	18			80	0	Yes				N	Nallayarasu S	SI
+OE4052	1054	XX		Naval Architecture and Ocean Engineering BTech Project - Phase II	SURESH	6	18			80	0	Yes				Y	Nallayarasu S	SI
+OE4300	1055	E		Ocean Energy	POGULURI SUNNY KUMAR	3	9			80	0	Yes			NAC-2-202	Y	Shanmugam P	SI
+OE4912	1056	XX		BTech/ DD Undergraduate Research Project -II	POGULURI SUNNY KUMAR	3	9			70	0	Yes				Y	Nallayarasu S	SI
+OE5005	1057	F		Marine Autonomous Vehicles	Abhilash	3	10	Programming		30	10	Yes			NAC-2-207	Y	Nallayarasu S	SI
+OE5011	1058	G		Marine Robotics	RAJIV SHARMA	4	11	Consent of teacher		80	10	Yes			NAC-2-201	Y	Nallayarasu S	SI
+OE5012	1059	G		Deep Sea Technology	VIJAY K G	3	9	Consent of teacher		30	10	Yes			NAC-2-207	Y	Nallayarasu S	SI
+OE5080	1060	C		Marine Instrumentation	ABDUS SAMAD	3	9	NIL		10	10	Yes			NAC-2-207	Y	Nallayarasu S	SI
+OE5300	1061	E		Advanced Dynamics of Floating Bodies	PANNEER SELVAM R	3	9	Nil		30	10	Yes			NAC-2-208	Y	Nallayarasu S	SI
+OE5340	1062	D		Ocean Environment Policy &  Coastal Zone Mgmt.	SHANMUGAM P	3	9	NIL		30	10	Yes			NAC-2-208	Y	Nallayarasu S	SI
+OE5373	1063	XX		Naval Architecture and Ocean Engineering DD Project - Phase III	Abhilash	40	40			30	0	Yes				N	Nilanjan Saha	SI
+OE5373	1064	XX		Naval Architecture and Ocean Engineering DD Project - Phase III	DEEPAK KUMAR	40	40			30	0	Yes				Y	Nilanjan Saha	SI
+OE5373	1065	XX		Naval Architecture and Ocean Engineering DD Project - Phase III	SRIRAM V	40	40			30	0	Yes				N	Nilanjan Saha	SI
+OE5400	1066	D		Port and  Harbour Structures	NILANJAN SAHA	3	9	CoT for non OE students		30	10	Yes			NAC-2-207	Y	Nallayarasu S	SI
+OE5450	1067	E		Numerical Techniques in Ocean Hydrodynamics	MURALI K	4	10	Nil		30	10	Yes			NAC-2-203	Y	Nallayarasu S	SI
+OE5500	1068	C		FEM Applied to Ocean Engineering	SANNASIRAJ S A	3	9			50	10	Yes			NAC-2-202	Y	Nallayarasu S	SI
+OE5525	1069	B		Basics of Ocean Engineering	MURALI K	3	9	Nil		0	0	No			NAC-2-203	Y	Nallayarasu S	
+OE5525	1070	B		Basics of Ocean Engineering	SHANMUGAM P	3	9	Nil		0	0	No			NAC-2-203	N	Nallayarasu S	
+OE5546	1071	F		Underwater Acoustics and Instruments	Tarun K Chandrayadula	3	9	Background in vibration or wave propagation preferred but not required		30	10	Yes			NAC-2-206	Y	Nallayarasu S	SI
+OE5555	1072	Z		Summer training in computer modeling and simulation	NARENDRAN K	10	10			0	0	No				N	Nallayarasu S	
+OE5555	1073	Z		Summer training in computer modeling and simulation	POGULURI SUNNY KUMAR	10	10			0	0	No				Y	Nallayarasu S	
+OE5555	1074	Z		Summer training in computer modeling and simulation	VIJAY K G	10	10			0	0	No				N	Nallayarasu S	
+OE5800	1075	G		Coastal Engineering	SANNASIRAJ S A	3	9	Consent of teacher		30	10	Yes			NAC-2-202	Y	Nallayarasu S	SI
+OE6001	1076	F		Materials and fabrication of ship and offshore structures	PANNEER SELVAM R	3	9	Nil		30	10	Yes			NAC-2-208	Y	Nallayarasu S	SI
+OE6002	1077	G		Installation of Offshore Structures	THEJESH KUMAR GARALA	3	9	Consent of teacher		30	10	Yes			NAC-2-206	Y	Nallayarasu S	SI
+OE6004	1078	E		Numerical Modelling of Offshore Structures	DEEPAK KUMAR	4	9			30	10	Yes			NAC-2-206	Y	Nallayarasu S	SI
+OE6200	1079	A		Design of Fixed Offshore Structures	NALLAYARASU S	4	10	Nil		40	10	Yes			NAC-2-203	Y	Nallayarasu S	SI
+OE6330	1080	G		Seakeeping and Maneuvering of Marine Vehicles	ANANTHAKRISHNAN P	3	9	Consent of teacher		0	0	No			NAC-2-203	Y	Nallayarasu S	
+OE6906	1081	XX		M. Tech ocean Structures project - Phase II	ARJUN JAGANNATHAN	40	40			0	0	No				N	Abdus Samad	
+OE6906	1082	X		M. Tech ocean Structures project - Phase II	Vijayakumar R	40	40			0	0	No				N	Abdus Samad	
+OE6906	1083	X		M. Tech ocean Structures project - Phase II	NARENDRAN K	40	40			0	0	No				N	Abdus Samad	
+OE6906	1084	XX		M. Tech ocean Structures project - Phase II	DEEPAK KUMAR	40	40			0	0	No				N	Abdus Samad	
+OE6906	1085	X		M. Tech ocean Structures project - Phase II	NILANJAN SAHA	40	40			0	0	No				N	Abdus Samad	
+OE6906	1086	X		M. Tech ocean Structures project - Phase II	POGULURI SUNNY KUMAR	40	40			0	0	No				Y	Abdus Samad	
+OE6906	1087	XX		M. Tech ocean Structures project - Phase II	Abhilash	40	40			0	0	No				N	Abdus Samad	
+OE6906	1088	X		M. Tech ocean Structures project - Phase II	SURESH	40	40			0	0	No				N	Abdus Samad	
+OE6906	1089	XX		M. Tech ocean Structures project - Phase II	VIJAY K G	40	40			0	0	No				N	Abdus Samad	
+OE6906	1090	XX		M. Tech ocean Structures project - Phase II	BITHIN GHORAI	40	40			0	0	No				Y	Abdus Samad	
+OE6912	1091	XX		MTech Ocean Technology Project - Phase II	THEJESH KUMAR GARALA	40	40			0	0	No				N	Abdus Samad	
+OE6912	1092	XX		MTech Ocean Technology Project - Phase II	RAJIV SHARMA	40	40			0	0	No				Y	Abdus Samad	
+OE6999	1093	ZZ		Special Topics in Ocean Engineering	SRIRAM V	2	6	COT		0	0	No				Y	Murali K	
+OE7999	1094	YY		Special Topics in Ocean Engineering	SRIRAM V	2	6	COT		0	0	No				Y	Murali K	
+PC0022	1095	VV		Physics	SANTHOSH PN	1	0			0	0	No				N	Santhosh P N	
+PC0022	1096	VV		Physics	SETHUPATHI K	1	0			0	0	No				Y	Santhosh P N	
+PC0022*	1097	WW		Physics Lab	SETHUPATHI K	1	0			0	0	No				Y	Santhosh P N	
+PE5030	1098	B		Artificial Lift Technologies for Oil and Gas Production	ABDUS SAMAD	3	9	Consent of teacher		0	0	No			NAC-2-207	Y	Nallayarasu S	
+PE5100	1099	F		Petroleum Production Engineering and Flow Assurance	BARASHA DEKA	3	9			0	0	No			NAC-2-202	Y	Nallayarasu S	
+PE6031	1100	D		Reservoir Simulation	SURESH KUMAR G	3	9	Reservoir Engineering		0	0	No			NAC-2-206	Y	Nallayarasu S	
+PE6040	1101	C		Advanced Seismic data analysis and Interpretation	RAJESH R NAIR	3	10	NIL		0	0	No			NAC-2-206	Y	Nallayarasu S	
+PE6203	1102	X		MTech Petroleum Engineering Project - Phase III	SHANMUGAM P	40	40			0	0	No				N	Abdus Samad	
+PE6203	1103	X		MTech Petroleum Engineering Project - Phase III	SURESH KUMAR G	40	40			0	0	No				Y	Abdus Samad	
+PE6203	1104	X		MTech Petroleum Engineering Project - Phase III	BARASHA DEKA	40	40			0	0	No				N	Abdus Samad	
+PE6312	1105	A		Enhanced Oil Recovery	SURESH KUMAR G	3	9	Reservoir Engineering		0	0	No			NAC-2-206	Y	Nallayarasu S	
+PH1010	1106	D		Physics I	IPSITA SAHA	3	10			0	0	No				Y	Nandita Das Gupta	
+PH1010	1107	D		Physics I	RAHUL VAIJANATH SAWANT	3	10			0	0	No				N	Nandita Das Gupta	
+PH1010	1108	D		Physics I	SAMIR CHOUDHURI	3	10			0	0	No				N	Nandita Das Gupta	
+PH1010	1109	D		Physics I	PRASANTA KUMAR MUDULI	3	10			0	0	No				N	Nandita Das Gupta	
+PH1010	1110	D		Physics I	SOMNATH CHANDA ROY	3	10			0	0	No				N	Nandita Das Gupta	
+PH1020	1111	D		Physics II	NIRMALA R	3	10	None		65	65	Yes				N	Nandita Das Gupta	SI
+PH1020	1112	D		Physics II	PREM B BISHT	3	10	None		65	65	Yes				N	Nandita Das Gupta	SI
+PH1020	1113	D		Physics II	MAHAVEER KUMAR JAIN	3	10	None		65	65	Yes				N	Nandita Das Gupta	SI
+PH1020	1114	D		Physics II	RAJESH NARAYANAN	3	10	None		65	65	Yes				Y	Nandita Das Gupta	SI
+PH1020	1115	D		Physics II	VAIBHAV MADHOK	3	10	None		65	65	Yes				N	Nandita Das Gupta	SI
+PH1030	1116	P1	Q1, Q2, R1, S1, T1	Physics Laboratory I	SUNIL KUMAR P B	2	4			0	0	No			HSB 324	N	Nandita Das Gupta	
+PH1030	1117	P1	Q1, Q2, R1, S1, T1	Physics Laboratory I	JIM LIBBY	2	4			0	0	No			HSB 324	Y	Nandita Das Gupta	
+PH1030	1118	P1	Q1, Q2, R1, S1, T1	Physics Laboratory I	ATHREYA SHANKAR	2	4			0	0	No			HSB 324	N	Nandita Das Gupta	
+PH1030	1119	P1	Q1, Q2, R1, S1, T1	Physics Laboratory I	TITAS CHANDA	2	4			0	0	No			HSB 324	N	Nandita Das Gupta	
+PH1030	1120	P1	Q1, Q2, R1, S1, T1	Physics Laboratory I	PRAHALLAD PADHAN	2	4			0	0	No			HSB 324	N	Nandita Das Gupta	
+PH1030	1121	P1	Q1, Q2, R1, S1, T1	Physics Laboratory I	SIDDHARTH DATTATRAYA DHOMKAR	2	4			0	0	No			HSB 324	N	Nandita Das Gupta	
+PH1030	1122	P1	Q1, Q2, R1, S1, T1	Physics Laboratory I	YASIR	2	4			0	0	No			HSB 324	N	Nandita Das Gupta	
+PH1040	1123	R1		Physics Laboratory II	PRANAY MAHESH PATIL	2	4	NULL		30	10	Yes				N	Santhosh P N	SI
+PH1040	1124	R1		Physics Laboratory II	SHANTANU MUKHERJEE	2	4	NULL		30	10	Yes				Y	Santhosh P N	SI
+PH2070	1125	XX		Introduction to Biological Physics	SUNIL KUMAR P B	3	9	PH1010,PH1080		60	30	Yes			HSB 210	Y	Santhosh P N	SI
+PH2080	1126	R	S	Physics Lab IV	PRAFULLA KUMAR BEHERA	4	8	None		30	10	Yes				N	Santhosh P N	SI
+PH2080	1127	R	S	Physics Lab IV	RAJESH SINGH	4	8	None		30	10	Yes				Y	Santhosh P N	SI
+PH4999	1128	ZZ		Undergraduate Research Project	ATHREYA SHANKAR	3	9	COT		0	0	No				Y	Santhosh P N	
+PH5020	1129	C		Electromagnetic Theory	ARAVIND G	4	10	NULL		65	25	Yes			HSB 310	Y	Santhosh P N	SI
+PH5080	1130	F		Statistical Physics	ASHWIN JOY	4	10	A first course in quantum mechanics, say PH5100 or PH3520		0	0	No			HSB 310	Y	Santhosh P N	
+PH5120	1131	R	S	Physics Lab II (PG)	MAHAVEER KUMAR JAIN	4	9	NULL		0	0	No				N	Santhosh P N	
+PH5120	1132	R	S	Physics Lab II (PG)	HARISH KUMAR N	4	9	NULL		0	0	No				Y	Santhosh P N	
+PH5120	1133	R	S	Physics Lab II (PG)	Vidya Praveen Bhallamudi	4	9	NULL		0	0	No				N	Santhosh P N	
+PH5120	1134	R	S	Physics Lab II (PG)	BASUDEV ROY	4	9	NULL		0	0	No				N	Santhosh P N	
+PH5120	1135	R	S	Physics Lab II (PG)	Chandra Kant Mishra	4	9	NULL		0	0	No				N	Santhosh P N	
+PH5120	1136	R	S	Physics Lab II (PG)	Panchanana Khuntia	4	9	NULL		0	0	No				N	Santhosh P N	
+PH5160	1137	B		Condensed Matter Physics I	PATTABIRAMAN M	4	10	NULL		50	20	Yes			HSB 310	Y	Santhosh P N	SI
+PH5170	1138	E		Quantum Mechanics II	SUNETHRA RAMANAN	3	9	PH5100: Quantum Mechanics I		60	20	Yes			HSB 310	Y	Santhosh P N	SI
+PH5221	1139	UU		Summer Project	RAJESH NARAYANAN	5	19			0	0	No				Y	Santhosh P N	
+PH5223	1140	ZZ		Project	RAJESH NARAYANAN	40	40			0	0	No				Y	Santhosh P N	
+PH5230	1141	YY		Seminar	Chandra Kant Mishra	1	3	NULL		0	0	No				Y	Santhosh P N	
+PH5240	1142	ZZ		Viva Voce	Jayeeta Bhattacharyya	2	6	NULL		0	0	No				Y	Santhosh P N	
+PH5250	1143	A		Advanced Electronics & Lab	PRAFULLA KUMAR BEHERA	6	12			20	10	Yes				Y	Santhosh P N	SI
+PH5292	1144	XX		Project II	Chandra Kant Mishra	6	18			0	0	No				Y	Santhosh P N	
+PH5340	1145	G		Dielectric,Magnetic &Optical Materials	MURUGAVEL P	3	9	NULL		20	10	Yes			HSB 217	Y	Santhosh P N	SI
+PH5350	1146	R		Laboratory for Physical Property Measurement and Transducer / Sensor Element Characteristics of Func	DILLIP KUMAR SATAPATHY	6	12			20	10	Yes				Y	Santhosh P N	SI
+PH5362	1147	YY		Project II	SOMNATH CHANDA ROY	6	20			0	0	No				Y	Santhosh P N	
+PH5363	1148	YY		Project III	HARISH KUMAR N	14	40			0	0	No				Y	Santhosh P N	
+PH5380	1149	ZZ		Seminar	SOMNATH CHANDA ROY	1	3	NULL		0	0	No				Y	Santhosh P N	
+PH5400	1150	ZZ		Viva Voce	JIM LIBBY	1	3			0	0	No				Y	Santhosh P N	
+PH5400+	1151	XX		Comprehensive Viva Voce	RAJESH NARAYANAN	4	4			0	0	No				Y	Santhosh P N	
+PH5462	1152	F		Magnetism in Solids	Panchanana Khuntia	3	9	NULL		20	10	Yes			HSB 211	Y	Santhosh P N	SI
+PH5481	1153	H		Quantum Field Theory 2	TITAS CHANDA	3	9	PH5480, PH5030, PH5020		60	10	Yes			HSB 310	Y	Santhosh P N	SI
+PH5590	1154	G		Microwave Physics	SUBRAMANIAN V	3	9	NULL		20	10	Yes			HSB 211	Y	Santhosh P N	SI
+PH5620	1155	F		Coherent and  Quantum Optics	ATHREYA SHANKAR	3	9	Quantum Mechanics 1		50	20	Yes			HSB 263	Y	Santhosh P N	SI
+PH5680	1156	B		Superconductivity & Its Applications	SHANTANU MUKHERJEE	3	9	NIL		30	10	Yes			HSB 317	Y	Santhosh P N	SI
+PH5720	1157	A	P	Numerical Methods and Programming Lab	Prabhat	5	12			80	20	Yes			HSB 310	Y	Santhosh P N	SI
+PH5730	1158	UU		Methods of Computational Physics	YASIR	3	9	NULL		20	10	Yes				Y	Santhosh P N	SI
+PH5810	1159	F		Introduction to Softmatter Physics	BASUDEV ROY	3	9			30	10	Yes			HSB 317	Y	Santhosh P N	SI
+PH5811	1160	C		Advanced Particle Physics	RAGHUVEER GARANI RAMESH	3	9	NULL		30	10	Yes			HSB 317	Y	Santhosh P N	SI
+PH5813	1161	G		Principles of Nanophotonics	Jayeeta Bhattacharyya	3	9	COT, basic courses on Electromagnatic Theory and Quantum Mechanics		30	10	Yes			HSB 210	Y	Santhosh P N	SI
+PH5816	1162	L		Physics of Active and Living Matter (PALM)	RAJESH SINGH	3	9			50	30	Yes			HSB 210	Y	Santhosh P N	SI
+PH5820	1163	E		Classical Physics	DILLIP KUMAR SATAPATHY	3	9			0	0	No			HSB 263	Y	Santhosh P N	
+PH5825	1164	G		Quantum Physics	JIM LIBBY	3	9			35	20	Yes			HSB 263	Y	Santhosh P N	SI
+PH5842	1165	G		Advanced topics in Quantum Computation and Quantum Information	Prabha Mandayam	3	9	PH5840: Quantum Computation and Quantum Information		30	10	Yes			HSB 217	Y	Santhosh P N	SI
+PH5875	1166	F		Advanced General Relativity	Chandra Kant Mishra	3	9	PH5870: Introduction to General Relativity		30	10	Yes			HSB 211	Y	Santhosh P N	SI
+PH5890	1167	E		Ultrafast lasers and Applications	S.Sivaramakrishnan	3	9	COT		30	10	Yes			HSB 217	Y	Santhosh P N	SI
+PH5910	1168	VV		Mini Project	JIM LIBBY	2	9			0	0	No				Y	Santhosh P N	
+PH6011	1169	D		Nanomaterials and Nanotechnology	RAMACHANDRA  RAO MS	3	9			60	10	Yes			HSB 210	Y	Santhosh P N	SI
+PH6012	1170	F		Fundamentals of Semiconductor Physics and Devices	Abhishek Misra	3	9	Basic solid state physics, Familiarity with Band s		40	20	Yes			HSB 210	Y	Santhosh P N	SI
+PH6013	1171	C		Functional Materials Sensors and Transducers	HARISH KUMAR N	3	9			20	10	Yes			HSB 211	Y	Santhosh P N	SI
+PH6015	1172	R		Advanced Materials and Nanotechnology Lab	Abhishek Misra	4	8			20	10	Yes			HSB 211	Y	Santhosh P N	SI
+PH6015	1173	R		Advanced Materials and Nanotechnology Lab	MURUGAVEL P	4	8			20	10	Yes			HSB 211	N	Santhosh P N	SI
+PH6021	1174	ZZ		Introduction to Research	DAWOOD KOTHAWALA	2	0	NIL		0	0	No			HSB 263	Y	Santhosh P N	
+PH6999	1175	XX		Special Topics in Physics	MAHAVEER KUMAR JAIN	3	6			0	0	No				Y	Santhosh P N	
+PH7080	1176	C		Foundations in Theoretical Physics	SRIRAMKUMAR L	4	12	NULL		0	0	No			HSB 263	Y	Santhosh P N	
+PH7090	1177	B		Foundations in Experiemntal Physics	MANU JAISWAL	4	12	NULL		0	0	No			HSB 263	Y	Santhosh P N	
+PH7999	1178	YY		Special Topics in Physics	MAHAVEER KUMAR JAIN	3	6			0	0	No				Y	Santhosh P N	
+WS1302	1179	UU		Workshop-II	SHANKAR KRISHNAPILLAI	2	3	NULL		0	0	No				Y	Chakravarthy Balaji	
+TA-E		E		-	-	0	0	-	-	-	-	Yes						
