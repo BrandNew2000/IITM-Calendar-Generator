@@ -145,13 +145,15 @@ async function import_gcal(){
     message_field = document.getElementById('gcal_import_mesg');
     data = gen_gcal();
     message_field.innerHTML = `<b>Status:</b> Running import. Please wait ... <br>`
-    result = await importICSgcal(data);
-    if (result){
+    let result = await importICSgcal(data);
+    if (result == true){
         message_field.innerHTML = `<b>Status:</b> Successfully imported! <br>`
     }
-    else {
+    else if (result == false) {
         message_field.innerHTML = `<b>Status:</b> Failed to import! <br>`
     }
+    console.log(result)
+    console.log("Hix2")
 }
 
 function parseInputs(){

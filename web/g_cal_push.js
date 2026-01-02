@@ -13,20 +13,20 @@ let token = null;
 =========================================== */
 
 async function importICS(icsText) {
-    await loadGapi();
-    await authenticate();
-
-    const events = parseICS(icsText);
-
-    const calendarId = await createCalendar("Time Table");
-
     try{
+      await loadGapi();
+      await authenticate();
+
+      const events = parseICS(icsText);
+
+      const calendarId = await createCalendar("Time Table");
+
       await insertEvents(calendarId, events);
-      return True
+      return true
     } 
     catch(err) {
       console.error(err);
-      return False
+      return false
     }
 }
 

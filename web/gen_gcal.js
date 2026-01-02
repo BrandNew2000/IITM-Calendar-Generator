@@ -156,7 +156,7 @@ function downloadICS(schedule){
   document.body.removeChild(link);
 }
 
-function importICSgcal(schedule){
+async function importICSgcal(schedule){
   icsContent = generateICS(schedule);
-  importICS(icsContent);
+  return importICS(icsContent);
 }
