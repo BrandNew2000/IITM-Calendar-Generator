@@ -1,160 +1,239 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="light">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Timetable Generator</title>
+
   <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
   <script src="gen_gcal.js"></script>
   <script src="script.js"></script>
   <script src="https://accounts.google.com/gsi/client" async defer></script>
   <script src="https://apis.google.com/js/api.js"></script>
   <script src="g_cal_push.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <title>Timetable Generator</title>
   <link rel="stylesheet" media="all" href="style.css">
 
-<style>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --bg: #ffffff;
+      --text: #222;
+      --border: #d0d0d0;
+      --card-bg: #fafafa;
+      --accent: #4a6fa5;
+      --gray-light: #f2f2f2;
+
+      /* Dark mode */
+      --bg-dark: #121212;
+      --text-dark: #e4e4e4;
+      --card-dark: #1e1e1e;
+      --border-dark: #333;
+    }
+
+    html.light body {
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    html.dark body {
+      background: var(--bg-dark);
+      color: var(--text-dark);
+    }
+
+    body {
+      font-family: "Roboto", sans-serif;
+      margin: 20px;
+      max-width: 100vw;
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    h1, h3 {
+      font-weight: 500;
+      text-align: center;
+    }
+
+    .section-card {
+      background: var(--card-bg);
+      padding: 15px;
+      margin: 20px auto;
+      border-radius: 12px;
+      max-width: 900px;
+      border: 1px solid var(--border);
+      transition: background 0.3s ease, border 0.3s ease;
+    }
+
+    html.dark .section-card {
+      background: var(--card-dark);
+      border: 1px solid var(--border-dark);
+    }
+
+    button {
+      padding: 8px 16px;
+      background: var(--accent);
+      border: none;
+      color: white;
+      cursor: pointer;
+      border-radius: 6px;
+      margin: 5px;
+      transition: opacity 0.2s;
+    }
+
+    button:hover {
+      opacity: 0.8;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+      font-variant: small-caps;
+      font-size: 0.85rem;
+    }
+
+    th, td {
+      border: 1px solid var(--border);
+      padding: 6px;
+      text-align: center;
+      transition: background 0.3s ease;
+    }
+
+    html.dark th, html.dark td {
+      border-color: var(--border-dark);
+    }
+
+    .gray_light { background: #e8e8e8; }
+    html.dark .gray_light { background: #2a2a2a; }
+
+    /* Responsive table */
+    @media (max-width: 900px) {
+      table {
+        font-size: 0.7rem;
+      }
+    }
+
+    @media (max-width: 600px) {
+      table {
+        font-size: 0.55rem;
+      }
+    }
+
+    @media print {
+      .no-print { display: none !important; }
+      .only-print { display: block; }
+      body { margin: 0; padding: 0; }
+      table { width: 100%; }
+          
+          /* Modernize dynamic tt-data controls without altering HTML */
+      .tt-data {
+      display: grid;
+      gap: 10px;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      padding: 10px;
+      background: var(--surface);
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      margin-top: 10px;
+      }
 
 
-.gray_light { background: #e8e8e8; }
-html.dark .gray_light { background: #2a2a2a; }
+      .tt-data select,
+      .tt-data input {
+      appearance: none;
+      padding: 10px 14px;
+      border-radius: 10px;
+      border: 1px solid var(--border-color);
+      font-size: 0.95rem;
+      background: var(--background);
+      transition: 0.25s ease;
+      width: 100%;
+      }
 
 
-/* Responsive table */
-@media (max-width: 900px) {
-table {
-font-size: 0.7rem;
-}
-}
+      .tt-data select:hover,
+      .tt-data input:hover {
+      background: var(--hover);
+      }
 
 
-@media (max-width: 600px) {
-table {
-font-size: 0.55rem;
-}
-}
+      .tt-data select:focus,
+      .tt-data input:focus {
+      outline: none;
+      background: var(--surface);
+      border-color: var(--accent-color);
+      box-shadow: 0 0 0 3px var(--accent-color-fade);
+      }
 
 
-@media print {
-.no-print { display: none !important; }
-.only-print { display: block; }
-body { margin: 0; padding: 0; }
-table { width: 100%; }
-}
-/* Modern form controls */
-.tt-data select,
-.tt-data input {
-appearance: none;
-padding: 8px 12px;
-border: 1px solid var(--border-color);
-border-radius: 8px;
-background: var(--surface);
-font-size: 0.9rem;
-transition: 0.2s border, 0.2s background;
-width: 100%;
-}
+      /* Custom select arrow */
+      .tt-data select {
+      background-image: linear-gradient(45deg, transparent 50%, var(--border-color) 50%),
+      linear-gradient(135deg, var(--border-color) 50%, transparent 50%);
+      background-position: calc(100% - 18px) calc(50% - 4px), calc(100% - 12px) calc(50% - 4px);
+      background-size: 6px 6px;
+      background-repeat: no-repeat;
+      }
 
 
-.tt-data select:focus,
-.tt-data input:focus {
-outline: none;
-border-color: var(--accent-color);
-background: var(--hover);
-}
-
-
-.tt-data {
-display: grid;
-gap: 8px;
-grid-template-columns: repeat(auto-fit, minmax(140px,1fr));
-margin-top: 8px;
-}
-
-
-.close-btn {
-cursor: pointer;
-font-size: 1.3rem;
-padding: 4px 10px;
-color: var(--danger-color);
-transition: 0.2s;
-}
-
-
-.close-btn:hover {
-transform: scale(1.2);
-}
-
-
-/* Restore table colours */
-table tt, table td, table th {
-background: var(--surface);
-border: 1px solid var(--border-color);
-}
-
-
-table th {
-background: var(--accent-color);
-color: white;
-}
-
-
-table tr:nth-child(even) td {
-background: var(--hover);
-}
-</style>
-
+      /* Close button */
+      .close-btn {
+      font-size: 1.4rem;
+      margin-left: 8px;
+      cursor: pointer;
+      color: var(--danger-color);
+      transition: transform 0.2s ease;
+      }
+      .close-btn:hover {
+      transform: scale(1.15);
+      }
+    
+    }
+  </style>
 </head>
+
 <body>
+  <h1 class="no-print">Timetable Generator</h1>
+  <h1 class="only-print" style="display:none">Timetable</h1>
 
-  <h1 class="no-print" style="text-align: center;">Timetable Generator</h1>
-  <h1 class="only-print" style="text-align: center;">Timetable</h1>
-
-  <!-- Add Slot Section -->
-  <div class="form-section no-print">
-    <h3 style="margin-bottom: 1px;">Add Slot</h3>
+  <div class="section-card no-print">
+    <h3>Add Slot</h3>
     <p>Add your courses here with the corresponding slot, course number, name and venue.</p>
-    <div id="slotInputs">
-    </div>
+    <div id="slotInputs"></div>
     <button onclick="addSlotRow()">+ Add Slot</button>
     <button onclick="clearSlotRows()">Clear Slots</button>
   </div>
 
-  <!-- Override Section -->
-  <div class="form-section no-print">
+  <div class="section-card no-print">
     <h3>Manual Override</h3>
-    <p>Add an override for a particular day-slot. </p><p> <i>Tip: Leave the fields blank to delete the particular day-slot.</i></p>
-    <div id="overrideInputs">
-    </div>
+    <p>Add an override for a particular day-slot.</p>
+    <p><i>Leave fields blank to delete that day-slot.</i></p>
+    <div id="overrideInputs"></div>
     <button onclick="addOverrideRow()">+ Add Override</button>
     <button onclick="clearOverrideRows()">Clear Overrides</button>
   </div>
 
-  <!-- Load Data Section -->
-  <div class="form-section no-print">
-    <h3 style="margin-bottom: 1px;">Save/Load previously generated data</h3>
-    <p>You may save your current timetable or load a previously saved timetable.</p>
-    <p><i>Warning: Making modifications to the downloaded file might lead to unpredictable results!</i></p>
-    <button onclick="download_data()">Save Data</button>
-    <button onclick="upload_saved_data_file()">Load Data</button>
-    <input id='upload_cal_save' type='file' hidden/>
+  <div class="section-card no-print">
+    <h3>Save / Load</h3>
+    <p>You may save your current timetable or load a previously saved one.</p>
+    <button onclick="download_data()">Save</button>
+    <button onclick="upload_saved_data_file()">Load</button>
+    <input id="upload_cal_save" type="file" hidden />
   </div>
 
-  <div class="no-print">
+  <div class="section-card no-print">
     <h3>Import into your Calendar</h3>
-    <p>Dowload an .ics calendar file compatible with all Calendars. Refer <a href="https://support.google.com/calendar/answer/37118" target="_blank">here</a> for an .ics import guide for Google Calendar.</p>
-    <p><i>Tip: Make a new calendar while importing the file to allow for easy modification/deletion later.</i></p>
-    <p><i><b>Experimental:</b></i> There is now an option to directly import to Google Calendar. This is not guranteed to work. Bear in mind that this takes a while with no progress indication. Once the import is done an alert should appear on the screen.</p>
-
-    <button onclick="download_gcal()">Download .ics file</button>
+    <p>Download an .ics file or directly import to Google Calendar.</p>
+    <button onclick="download_gcal()">Download .ics</button>
     <button onclick="import_gcal()">Import to Google Calendar</button>
   </div>
 
-  <!-- Display Timetable -->
-  <br><br>
-  <div style="">
+  <div class="section-card">
     <button class="no-print" onclick="generateTable()">Generate Timetable</button>
-    <button class="no-print print-btn" onclick="window.print()">Print PDF</button>
-    <button class="no-print print-btn" onclick="download_tt()">Download Image</button>
+    <button class="no-print" onclick="window.print()">Print PDF</button>
+    <button class="no-print" onclick="download_tt()">Download Image</button>
+
 
 
       <table class="timetable" id="timetable" style="height: 100%;">
@@ -254,11 +333,17 @@ background: var(--hover);
       </table>
   </div>
 
-  <div id="timetableContainer"></div>
- <footer class="no-print">
-  <br>
-  <p>Feel free to drop me a mail at <a href="mailto:ar@smail.iitm.ac.in">ar@smail.iitm.ac.in</a> regarding any bugs/issues!</p>
-  <p><b><i>Designed by Achintya Raghavan</i></b></p>
-</footer> 
+  <footer class="no-print" style="text-align:center; margin-top:40px; opacity:0.7;">
+    <p>Contact: <a href="mailto:ar@smail.iitm.ac.in">ar@smail.iitm.ac.in</a></p>
+    <p><b><i>Designed by Achintya Raghavan</i></b></p>
+  </footer>
+
+  <script>
+    // Simple dark/light toggle
+    const toggleMode = () => {
+      document.documentElement.classList.toggle('dark');
+      document.documentElement.classList.toggle('light');
+    };
+  </script>
 </body>
 </html>
