@@ -78,18 +78,63 @@ async function createCalendar(name) {
     return res.result.id;
 }
 
+// /* ===========================================
+//    INSERT EVENTS
+// =========================================== */
+
+// async function insertEvents(calendarId, events) {
+//     for (const ev of events) {
+//         await gapi.client.calendar.events.insert({
+//             calendarId,
+//             resource: ev
+//         });
+//     }
+// }
+
 /* ===========================================
-   INSERT EVENTS
+   INSERT EVENTS (BATCHED + CHUNKED)
 =========================================== */
 
+function slimEvent(ev) {
+    return {
+        summary: ev.summary,
+        start: ev.start,
+        end: ev.end,
+        location: ev.location,
+        description: ev.description,
+        recurrence: ev.recurrence
+    };
+}
+
 async function insertEvents(calendarId, events) {
-    for (const ev of events) {
-        await gapi.client.calendar.events.insert({
-            calendarId,
-            resource: ev
+    const BATCH_SIZE = 800;
+
+    // Sort for better backend performance
+    events.sort((a, b) =>
+        new Date(a.start.dateTime || a.start.date) -
+        new Date(b.start.dateTime || b.start.date)
+    );
+
+    for (let i = 0; i < events.length; i += BATCH_SIZE) {
+        const batch = gapi.client.newBatch();
+        const chunk = events.slice(i, i + BATCH_SIZE);
+
+        chunk.forEach((ev, idx) => {
+            batch.add(
+                gapi.client.calendar.events.insert({
+                    calendarId,
+                    resource: slimEvent(ev),
+                    sendUpdates: "none",
+                    supportsAttachments: false
+                }),
+                { id: `event-${i + idx}` }
+            );
         });
+
+        await batch;
     }
 }
+
 
 /* ===========================================
    ICS PARSER
