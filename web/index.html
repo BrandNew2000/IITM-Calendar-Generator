@@ -157,14 +157,16 @@
     <h3>Import into your Calendar</h3>
     <p>Dowload an .ics calendar file compatible with all Calendars. Refer <a href="https://support.google.com/calendar/answer/37118" target="_blank">here</a> for an .ics import guide for Google Calendar.</p>
     <p><i>Tip: Make a new calendar while importing the file to allow for easy modification/deletion later.</i></p>
-    <p><i><b>Experimental:</b></i> There is now an option to directly import to Google Calendar. This is not guranteed to work. Bear in mind that this takes a while with no progress indication. Once the import is done an alert should appear on the screen.</p>
+    <p><i><b>Experimental:</b></i> There is now an option to directly import to Google Calendar. This is not guranteed to work. Bear in mind that this will take a while and the only progress indicator is the below status text which will indicate success/failure.</p>
 
     <button onclick="download_gcal()">Download .ics file</button>
     <button onclick="import_gcal()">Import to Google Calendar</button>
+    <br><br>
+    <div id="gcal_import_mesg"></div>
   </div>
 
   <!-- Display Timetable -->
-  <br><br>
+  <br>
   <div style="">
     <button class="no-print" onclick="generateTable()">Generate Timetable</button>
     <button class="no-print print-btn" onclick="window.print()">Print PDF</button>

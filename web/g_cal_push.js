@@ -20,9 +20,14 @@ async function importICS(icsText) {
 
     const calendarId = await createCalendar("Time Table");
 
-    await insertEvents(calendarId, events);
-
-    alert("Done! Imported!");
+    try{
+      await insertEvents(calendarId, events);
+      return True
+    } 
+    catch(err) {
+      console.error(err);
+      return False
+    }
 }
 
 /* ===========================================

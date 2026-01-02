@@ -141,9 +141,17 @@ function download_gcal(){
 }
 
 
-function import_gcal(){
+async function import_gcal(){
+    message_field = document.getElementById('gcal_import_mesg');
     data = gen_gcal();
-    importICSgcal(data);
+    message_field.innerHTML = `<b>Status:</b> Running import. Please wait ... <br>`
+    result = await importICSgcal(data);
+    if (result){
+        message_field.innerHTML = `<b>Status:</b> Successfully imported! <br>`
+    }
+    else {
+        message_field.innerHTML = `<b>Status:</b> Failed to import! <br>`
+    }
 }
 
 function parseInputs(){
