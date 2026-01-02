@@ -152,8 +152,6 @@ async function import_gcal(){
     else if (result == false) {
         message_field.innerHTML = `<b>Status:</b> Failed to import! <br>`
     }
-    console.log(result)
-    console.log("Hix2")
 }
 
 function parseInputs(){
