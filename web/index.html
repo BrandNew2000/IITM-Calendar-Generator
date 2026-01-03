@@ -13,15 +13,30 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
+
   <title>Timetable Generator</title>
-  <link rel="stylesheet" media="all" href="style.css">
+
+  <link id="main-style" rel="stylesheet" media="all" href="style.css">
+
+  <script>
+    (function () {
+      const params = new URLSearchParams(window.location.search);
+      const style = params.get("style");
+
+      if (style === "classic") {
+        const link = document.getElementById("main-style");
+        link.href = "classic.css";
+      }
+    })();
+  </script>
+
   <link rel="icon" href="data:,">
 </head>
 
 <body>
 
   <h1 class="no-print" style="text-align: center;">Timetable Generator</h1>
-  <h3 class="no-print" style="text-align: center;">Semester: Jan-May 2026</h3>
+  <h3 class="no-print" style="text-align: center; padding-bottom: 10px;">Semester: Jan-May 2026</h3>
   <h1 class="only-print" style="text-align: center;">Timetable</h1>
 
   <!-- Add Slot Section -->
@@ -208,7 +223,7 @@
 
   <br>
   <footer class="no-print">
-    <div class="theme-toggle no-print">
+    <div class="theme-toggle no-print" id="themeToggle">
       <label class="theme-switch">
         <input type="checkbox" id="darkModeToggle">
         <span class="slider">
@@ -222,6 +237,17 @@
       <b><i>Created by Achintya Raghavan</i></b>
     </p>
   </footer>
+
+  <script>
+    (function () {
+      const params = new URLSearchParams(window.location.search);
+      const style = params.get("style");
+
+      if (style === "classic") {
+        document.getElementById("themeToggle").hidden = true;
+      }
+    })();
+  </script>
 </body>
 
 </html>

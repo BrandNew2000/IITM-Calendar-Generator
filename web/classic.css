@@ -97,3 +97,102 @@
     color: #c00404 !important;
     text-transform: uppercase;
 }
+
+
+/* Responsive table */
+@media (max-width: 900px) {
+table {
+font-size: 0.7rem;
+}
+}
+
+
+@media (max-width: 600px) {
+table {
+font-size: 0.55rem;
+}
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 20pt;
+    padding: 0px;
+    max-width: 100%;
+}
+body{
+    -webkit-print-color-adjust:exact !important;
+    print-color-adjust:exact !important;
+}
+
+.close-btn {
+    position: relative;
+    top: 5px;
+    right: 0px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    color: #888;
+}
+
+
+table {
+    border-collapse: collapse;
+    margin-top: 1rem;
+    font-variant: small-caps;
+    font-size: small;
+    width: 100%;
+    max-width: 1000pt;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 5px;
+    text-align: center;
+}
+
+.form-section {
+    margin-bottom: 20px;
+}
+
+.form-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.form-row input, .form-row select {
+    padding: 5px;
+}
+
+button {
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+.print-btn {
+    margin-top: 20px;
+}
+
+.only-print {
+    display: none;
+}
+
+@media print {
+    .only-print {
+    display: block;
+    }
+    .no-print {
+    display: none;
+    }
+    body {
+    margin: 0px;
+    padding: 0px;
+    }
+
+    table {
+    height: 100%;
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    }
+}
