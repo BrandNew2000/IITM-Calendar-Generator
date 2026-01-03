@@ -261,68 +261,24 @@
     }
 
     /* =====================
-    COLOR CLASSES (UNCHANGED SEMANTICS)
-    Only softened slightly
+    COLOR CLASSES
     ===================== */
-    .gray_light {
-        background: #f1f1f1;
-    }
 
-    .gray {
-        background: #9e9e9e;
-    }
-
-    .white_text {
-        color: #fff;
-    }
-
-    .lite_green {
-        background: #c8e6c9;
-    }
-
-    .lavender {
-        background: #e1bee7;
-    }
-
-    .sky {
-        background: #b3e5fc;
-    }
-
-    .orange {
-        background: #ffe0b2;
-    }
-
-    .mossgreen {
-        background: #dcedc8;
-    }
-
-    .sandal {
-        background: #f5deb3;
-    }
-
-    .pink {
-        background: #f8bbd0;
-    }
-
-    .green {
-        background: #a5d6a7;
-    }
-
-    .lite_blue {
-        background: #bbdefb;
-    }
-
-    .red {
-        background: #ef9a9a;
-    }
-
-    .yellow {
-        background: #fff59d;
-    }
-
-    .blue {
-        background: #90caf9;
-    }
+    .yellow       { background: #fff59a; }
+    .orange       { background: #ffc48a; }
+    .lavender     { background: #c1b0e0; }
+    .sky          { background: #b7dfea; }
+    .pink         { background: #f6d8c6; }
+    .gray         { background: #d2b5b4; }
+    .lite_green   { background: #dfe8c8; }
+    .green        { background: #bfe3b8; }
+    .lite_blue    { background: #d3edf6; }
+    .blue         { background: #b7c9e8; }
+    .mossgreen    { background: #d2cc9f; }
+    .red          { background: #e4b1af; }
+    .sandal       { background: #fff6df; }
+    .lite_yellow  { background: #fff6b3; }
+    .gray_light   { background: #f4f1ee; }
 
     /* =====================
     PRINT STYLES
@@ -462,74 +418,22 @@
         body:not(.light-mode) td {
             border-color: #3a3a3a;
         }
-
-        body:not(.light-mode) .gray_light {
-            background: #2a2a2a;
-        }
-
-        body:not(.light-mode) .gray {
-            background: #555;
-        }
-
-        body:not(.light-mode) .lite_green {
-            background: #2e7d32;
-            color: #e8f5e9;
-        }
-
-        body:not(.light-mode) .green {
-            background: #388e3c;
-            color: #e8f5e9;
-        }
-
-        body:not(.light-mode) .lavender {
-            background: #5e548e;
-            color: #f3e8ff;
-        }
-
-        body:not(.light-mode) .sky {
-            background: #0277bd;
-            color: #e1f5fe;
-        }
-
-        body:not(.light-mode) .lite_blue {
-            background: #1565c0;
-            color: #e3f2fd;
-        }
-
-        body:not(.light-mode) .blue {
-            background: #0d47a1;
-            color: #e3f2fd;
-        }
-
-        body:not(.light-mode) .orange {
-            background: #ef6c00;
-            color: #fff3e0;
-        }
-
-        body:not(.light-mode) .yellow {
-            background: #f9a825;
-            color: #fffde7;
-        }
-
-        body:not(.light-mode) .pink {
-            background: #ad1457;
-            color: #fce4ec;
-        }
-
-        body:not(.light-mode) .red {
-            background: #c62828;
-            color: #ffebee;
-        }
-
-        body:not(.light-mode) .mossgreen {
-            background: #33691e;
-            color: #f1f8e9;
-        }
-
-        body:not(.light-mode) .sandal {
-            background: #8d6e63;
-            color: #efebe9;
-        }
+        
+        body:not(.light-mode) .yellow       { background: #bfae1a; color: #1a1a1a; }
+        body:not(.light-mode) .orange       { background: #b76a2f; color: #fff3e0; }
+        body:not(.light-mode) .lavender     { background: #5f4a7a; color: #f3e8ff; }
+        body:not(.light-mode) .sky          { background: #2f6f85; color: #e1f5fe; }
+        body:not(.light-mode) .pink         { background: #9b6b4d; color: #fce4ec; }
+        body:not(.light-mode) .gray         { background: #4e1e1b; color: #f0f0f0; }
+        body:not(.light-mode) .lite_green   { background: #4e6a3a; color: #e8f5e9; }
+        body:not(.light-mode) .green        { background: #275822; color: #e8f5e9; }
+        body:not(.light-mode) .lite_blue    { background: #254d58; color: #e3f2fd; }
+        body:not(.light-mode) .blue         { background: #00163f; color: #e3f2fd; }
+        body:not(.light-mode) .mossgreen    { background: #5a5430; color: #f1f8e9; }
+        body:not(.light-mode) .red          { background: #8f1713; color: #ffebee; }
+        body:not(.light-mode) .sandal       { background: #4a4434; color: #efebe9; }
+        body:not(.light-mode) .lite_yellow  { background: #6b641e; color: #fffde7; }
+        body:not(.light-mode) .gray_light   { background: #2a2a2a; }
     }
 
 
