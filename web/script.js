@@ -33,19 +33,129 @@ var MtechData = {}
 
 ACADS_COURSES = {}; // Add courses after pulling from file
 
-async function download_tt(){
-    var link = document.createElement('a');
-    link.download = 'timetable.png';
-    canvas = await html2canvas(document.getElementById('timetable'), {scale: 10});
-    link.href = canvas.toDataURL();
-    link.click();
+function printTimetable() {
+    captureFullTimetable((wrapper) => {
+        const printWindow = window.open("", "_blank");
+
+        // Collect all same-origin styles
+        let styles = "";
+        Array.from(document.styleSheets).forEach(sheet => {
+            try {
+                Array.from(sheet.cssRules).forEach(rule => {
+                    styles += rule.cssText;
+                });
+            } catch (e) { }
+        });
+
+        // Measure natural size
+        const table = wrapper.querySelector("table");
+        const tableWidth = table.scrollWidth;
+        const tableHeight = table.scrollHeight;
+
+        // A4 landscape printable area (approx, in px @96dpi)
+        const PAGE_WIDTH = 1120;   // A4 landscape width minus margins
+        const PAGE_HEIGHT = 780;   // A4 landscape height minus margins
+
+        const scale = Math.min(
+            PAGE_WIDTH / tableWidth,
+            PAGE_HEIGHT / tableHeight,
+            1
+        );
+
+        printWindow.document.write(`
+      <html>
+        <head>
+          <title>Timetable</title>
+          <style>
+            ${styles}
+
+            * {
+              -webkit-print-color-adjust: exact !important;
+              print-color-adjust: exact !important;
+            }
+
+            @page {
+              size: A4 landscape;
+              margin: 10mm;
+            }
+
+            html, body {
+              margin: 0;
+              padding: 0;
+            }
+
+            .print-scale {
+              transform: scale(${scale});
+              transform-origin: top left;
+              width: ${tableWidth}px;
+            }
+          </style>
+        </head>
+        <body>
+          <div class="print-scale">
+            ${wrapper.innerHTML}
+          </div>
+        </body>
+      </html>
+    `);
+
+        printWindow.document.close();
+        printWindow.focus();
+
+        printWindow.onload = () => {
+            printWindow.print();
+            printWindow.close();
+        };
+    });
+}
+
+
+function captureFullTimetable(callback) {
+    const table = document.getElementById("timetable");
+
+    // Clone the table
+    const clone = table.cloneNode(true);
+
+    // Wrapper that expands to full scroll width
+    const wrapper = document.createElement("div");
+    wrapper.style.position = "fixed";
+    wrapper.style.top = "-99999px";
+    wrapper.style.left = "0";
+    wrapper.style.width = table.scrollWidth + "px";
+    wrapper.style.background = "white";
+    wrapper.style.overflow = "visible";
+    wrapper.appendChild(clone);
+
+    document.body.appendChild(wrapper);
+
+    // Let browser finish layout
+    requestAnimationFrame(() => {
+        callback(wrapper, clone);
+
+        // Cleanup
+        document.body.removeChild(wrapper);
+    });
+}
+
+function download_tt() {
+    captureFullTimetable((wrapper) => {
+        html2canvas(wrapper, {
+            scale: 10,
+            windowWidth: wrapper.scrollWidth
+        }).then(canvas => {
+            const link = document.createElement("a");
+            link.download = "timetable.png";
+            link.href = canvas.toDataURL("image/png");
+            link.click();
+        });
+    });
 }
 
 function addSlotRow(slot = "", course_num = "", course_name = "", venue = "") {
     const container = document.getElementById("slotInputs");
     const div = document.createElement("div");
-    function get_selected_slot(check_slot){
-        if (slot == check_slot){
+    function get_selected_slot(check_slot) {
+        if (slot == check_slot) {
             return "selected";
         }
         return "";
@@ -85,14 +195,14 @@ function addSlotRow(slot = "", course_num = "", course_name = "", venue = "") {
 function addOverrideRow(day = "", slot = "", course_num = "", course_name = "", venue = "") {
     const container = document.getElementById("overrideInputs");
     const div = document.createElement("div");
-    function get_selected_day(check_day){
-        if (day == check_day){
+    function get_selected_day(check_day) {
+        if (day == check_day) {
             return "selected";
         }
         return "";
     }
-    function get_selected_slot(check_slot){
-        if (slot == check_slot){
+    function get_selected_slot(check_slot) {
+        if (slot == check_slot) {
             return "selected";
         }
         return "";
@@ -143,110 +253,110 @@ function gen_gcal() {
     parseInputs();
     let data = {}
     Object.keys(slotLayout).forEach(day => {
-    slotLayout[day].forEach(slot => {
-        const key = `${day}-${slot}`;
-        data[key] = overrideData[key] || slotData[slot];
-        if (data[key] != null){
-            if (data[key].courseNo == "" && data[key].name == "" && data[key].venue == ""){
-                data[key] = null;
+        slotLayout[day].forEach(slot => {
+            const key = `${day}-${slot}`;
+            data[key] = overrideData[key] || slotData[slot];
+            if (data[key] != null) {
+                if (data[key].courseNo == "" && data[key].name == "" && data[key].venue == "") {
+                    data[key] = null;
+                }
             }
-        }
+        });
     });
-    });
-    
+
     return data;
 }
 
-function download_gcal(){
+function download_gcal() {
     data = gen_gcal();
     downloadICS(data, MtechData);
 }
 
 
-async function import_gcal(){
+async function import_gcal() {
     message_field = document.getElementById('gcal_import_mesg');
     data = gen_gcal();
-    message_field.innerHTML = `<b>Status:</b> Running import. Please wait ... <br>`
+    message_field.innerHTML = `<br><b>Status:</b> Running import. Please wait ... <br>`
     let result = await importICSgcal(data, MtechData);
-    if (result == true){
-        message_field.innerHTML = `<b>Status:</b> Successfully imported! <br>`
+    if (result == true) {
+        message_field.innerHTML = `<br><b>Status:</b> Successfully imported! <br>`
     }
     else if (result == false) {
-        message_field.innerHTML = `<b>Status:</b> Failed to import! <br>`
+        message_field.innerHTML = `<br><b>Status:</b> Failed to import! <br>`
     }
 }
 
 function setMtechInputs() {
     document.getElementById("use_mtech_slot")
-    .querySelectorAll('input[type="checkbox"]')
-    .forEach(cb => {
-    const day = cb.value;
-    if (MtechData[day]) {
-        cb.checked = !!MtechData[day].value;
-    }
-    });
+        .querySelectorAll('input[type="checkbox"]')
+        .forEach(cb => {
+            const day = cb.value;
+            if (MtechData[day]) {
+                cb.checked = !!MtechData[day].value;
+            }
+        });
 }
 
 function readMtechInputs() {
-    MtechData = {"Monday": {"slot": "G", value: false}, "Tuesday": {"slot": "A", value: false}, "Wednesday": {"slot": "B", value: false}, "Thursday": {"slot": "D", value: false}, "Friday": {"slot": "C", value: false}};
+    MtechData = { "Monday": { "slot": "G", value: false }, "Tuesday": { "slot": "A", value: false }, "Wednesday": { "slot": "B", value: false }, "Thursday": { "slot": "D", value: false }, "Friday": { "slot": "C", value: false } };
     document.getElementById("use_mtech_slot")
-    .querySelectorAll('input[type="checkbox"]:checked')
-    .forEach(cb => {
-    const day = cb.value;
-    if (MtechData[day]) {
-        MtechData[day].value = true;
-    }
-    });
+        .querySelectorAll('input[type="checkbox"]:checked')
+        .forEach(cb => {
+            const day = cb.value;
+            if (MtechData[day]) {
+                MtechData[day].value = true;
+            }
+        });
 }
 
-function parseInputs(){
+function parseInputs() {
     // Parse Slots
     slotData = {}
     overrideData = {}
     document.querySelectorAll("#slotInputs .tt-data").forEach(row => {
-    var [slot, courseNo, name, venue] = Array.from(row.children).map(el => el.value.trim());
-    if (slot == "Lunch"){
-        slot = "PG";
-    }
-    if (slot) {
-        slotData[slot] = { courseNo, name, venue };
-    }
+        var [slot, courseNo, name, venue] = Array.from(row.children).map(el => el.value.trim());
+        if (slot == "Lunch") {
+            slot = "PG";
+        }
+        if (slot) {
+            slotData[slot] = { courseNo, name, venue };
+        }
     });
 
     // Parse Overrides
     document.querySelectorAll("#overrideInputs .tt-data").forEach(row => {
-    const [daySel, slot, courseNo, name, venue] = Array.from(row.children);
-    const day = daySel.value;
-    var slotVal = slot.value.trim();
-    if (slotVal == "Lunch"){
-        slotVal = "PG";
-    }
-    if (day && slotVal) {
-        overrideData[`${day}-${slotVal}`] = {
-        courseNo: courseNo.value.trim(),
-        name: name.value.trim(),
-        venue: venue.value.trim()
-        };
-    }
+        const [daySel, slot, courseNo, name, venue] = Array.from(row.children);
+        const day = daySel.value;
+        var slotVal = slot.value.trim();
+        if (slotVal == "Lunch") {
+            slotVal = "PG";
+        }
+        if (day && slotVal) {
+            overrideData[`${day}-${slotVal}`] = {
+                courseNo: courseNo.value.trim(),
+                name: name.value.trim(),
+                venue: venue.value.trim()
+            };
+        }
     });
 
     readMtechInputs();
 }
 
-async function fetch_courses_json(){
+async function fetch_courses_json() {
     data = await fetch('./courses.json')
-    .then(response => {
-        if (!response.ok) {
-            throw new Error(`HTTP error! Status: ${response.status}`);
-        }
-        return response.json();
-    })
-    .catch(error => console.error('Failed to course data:', error)); 
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! Status: ${response.status}`);
+            }
+            return response.json();
+        })
+        .catch(error => console.error('Failed to course data:', error));
 
     return data
 }
 
-function getCourseDataAcads(courseNo){
+function getCourseDataAcads(courseNo) {
 
     let course = {
         slot: "Slot",
@@ -259,27 +369,27 @@ function getCourseDataAcads(courseNo){
     return course
 }
 
-function populateData(){
+function populateData() {
     slotData = {}
     overrideData = {}
     document.querySelectorAll("#slotInputs .tt-data").forEach(row => {
-    courseNo = row.getElementsByClassName("row_course_number")[0].value.toUpperCase();
-    if (courseNo) {
-        course_data = getCourseDataAcads(courseNo);
-        elements = {slot: row.getElementsByClassName("row_slot")[0], courseNo: row.getElementsByClassName("row_course_number")[0], name: row.getElementsByClassName("row_course_name")[0], venue: row.getElementsByClassName("row_venue")[0]};
-        if (elements.slot.value == "Slot"){
-            elements.slot.value = "";
-        }
-        for (let [key, element] of Object.entries(elements)){
-            if (!element.value) {
-                element.value = course_data[key];
+        courseNo = row.getElementsByClassName("row_course_number")[0].value.toUpperCase();
+        if (courseNo) {
+            course_data = getCourseDataAcads(courseNo);
+            elements = { slot: row.getElementsByClassName("row_slot")[0], courseNo: row.getElementsByClassName("row_course_number")[0], name: row.getElementsByClassName("row_course_name")[0], venue: row.getElementsByClassName("row_venue")[0] };
+            if (elements.slot.value == "Slot") {
+                elements.slot.value = "";
+            }
+            for (let [key, element] of Object.entries(elements)) {
+                if (!element.value) {
+                    element.value = course_data[key];
+                }
             }
         }
-    }
     });
 }
 
-async function upload_saved_data_file(){
+async function upload_saved_data_file() {
     const upload_field = document.getElementById('upload_cal_save');
 
     // Return a Promise that resolves when the file is selected
@@ -300,7 +410,7 @@ async function upload_saved_data_file(){
     GetFile.onloadend = load_saved_data;
 }
 
-function load_saved_data(event){
+function load_saved_data(event) {
 
     clear_tables();
     let jsondata = event.target.result;
@@ -308,7 +418,7 @@ function load_saved_data(event){
 
 }
 
-function process_saved_data(jsondata){
+function process_saved_data(jsondata) {
 
     // jsondata = '{"slotData":{"A":{"courseNo":"asas","name":"aaa","venue":"aaa"}},"overrideData":{}}'
 
@@ -316,7 +426,7 @@ function process_saved_data(jsondata){
     slotData = data.slotData;
     overrideData = data.overrideData;
     MtechData = data.MtechData;
-    
+
     Object.keys(slotData).forEach(slot => {
         addSlotRow(slot, slotData[slot].courseNo, slotData[slot].name, slotData[slot].venue);
     })
@@ -331,7 +441,7 @@ function process_saved_data(jsondata){
 
 }
 
-function download_data(){
+function download_data() {
     jsondata = save_data();
     const blob = new Blob([jsondata], { type: "text/json;charset=utf-8" });
     const link = document.createElement("a");
@@ -342,20 +452,20 @@ function download_data(){
     document.body.removeChild(link);
 }
 
-function save_data(){
-    data = {slotData: slotData, overrideData: overrideData, MtechData: MtechData};
+function save_data() {
+    data = { slotData: slotData, overrideData: overrideData, MtechData: MtechData };
     return JSON.stringify(data);
 }
 
 
-function save_to_cookie(){
+function save_to_cookie() {
     jsondata = save_data();
     // Build the expiration date string:
     var expiration_date = new Date();
     var cookie_string = '';
     expiration_date.setFullYear(expiration_date.getFullYear() + 1);
     // Build the set-cookie string:
-    cookie_string = "save_data=" + jsondata +"; path=/; expires=" + expiration_date.toUTCString();
+    cookie_string = "save_data=" + jsondata + "; path=/; expires=" + expiration_date.toUTCString();
     // Create or update the cookie:
     document.cookie = cookie_string;
 }
@@ -363,16 +473,16 @@ function save_to_cookie(){
 function RunMtechCheck(key) {
     [day, slot] = key.split("-")
     if (slot == "PG") {
-        if (MtechData[day]["value"] == true){
+        if (MtechData[day]["value"] == true) {
             return `${day}-${MtechData[day]["slot"]}-B`;
-        } else if (MtechData[day]["value"] == false){
+        } else if (MtechData[day]["value"] == false) {
             return `${day}-${MtechData[day]["slot"]}-M`;
         }
     }
 
-    if (MtechData[day]["slot"] == slot && MtechData[day]["value"] == true){
+    if (MtechData[day]["slot"] == slot && MtechData[day]["value"] == true) {
         return `${key}-M`;
-    } else if (MtechData[day]["slot"] == slot && MtechData[day]["value"] == false){
+    } else if (MtechData[day]["slot"] == slot && MtechData[day]["value"] == false) {
         return `${key}-B`;
     } else {
         return key;
@@ -385,69 +495,100 @@ function generateTable() {
     // Generate Table
 
     Object.keys(slotLayout).forEach(day => {
-    slotLayout[day].forEach(slot => {
-        const key = `${day}-${slot}`;
-        let data = overrideData[key] || slotData[slot] || null;
+        slotLayout[day].forEach(slot => {
+            const key = `${day}-${slot}`;
+            let data = overrideData[key] || slotData[slot] || null;
 
-        if (data != null){
-            if (data.courseNo == "" && data.name == "" && data.venue == ""){
-                data = null;
+            if (data != null) {
+                if (data.courseNo == "" && data.name == "" && data.venue == "") {
+                    data = null;
+                }
             }
-        }
 
-        element = document.getElementById(`${RunMtechCheck(key)}`);
+            element = document.getElementById(`${RunMtechCheck(key)}`);
 
-        if (data == null){
-            element.innerHTML = `<br>`;
-        } else {
-            element.innerHTML = `(${slot}) <br> <strong> ${data.courseNo} </strong><br>${data.name}<br> <span style="font-size: x-small">${data.venue}</span>`;
-        }
-        element.classList.replace(element.classList.item(0), colorList[slot]);
+            if (data == null) {
+                element.innerHTML = `<br>`;
+            } else {
+                element.innerHTML = `(${slot}) <br> <strong> ${data.courseNo} </strong><br>${data.name}<br> <span style="font-size: x-small">${data.venue}</span>`;
+            }
+            element.classList.replace(element.classList.item(0), colorList[slot]);
 
 
-    });
+        });
     });
 
     save_to_cookie();
-    
+
 }
 
-function clear_element(id){
+function clear_element(id) {
     const ele = document.getElementById(id);
     ele.innerHTML = "";
 }
 
-function clearSlotRows(){
+function clearSlotRows() {
     clear_element("slotInputs");
 }
 
-function clearOverrideRows(){
+function clearOverrideRows() {
     clear_element("overrideInputs");
 }
 
-function clear_tables(){
+function clear_tables() {
     clearSlotRows();
     clearOverrideRows();
 }
 
-function load_from_cookie(){
+function load_from_cookie() {
     cookies = document.cookie.split(";");
 
-    if (cookies.length == 0){
+    if (cookies.length == 0) {
         return;
     }
 
-    for (let i = 0; i < cookies.length; i++){
+    for (let i = 0; i < cookies.length; i++) {
         let cookie = cookies[i].replace(/^\s+|\s+$/g, "");
-        if (cookie.slice(0,9)=="save_data"){
+        if (cookie.slice(0, 9) == "save_data") {
             console.log((cookie).slice(10));
             process_saved_data((cookie).slice(10));
         }
     }
 }
 
+function setupDarkMode() {
+    const toggle = document.getElementById("darkModeToggle");
+    const savedTheme = localStorage.getItem("theme");
 
-document.addEventListener("DOMContentLoaded", async function() {
-  load_from_cookie();
-  ACADS_COURSES = await fetch_courses_json();
+    // Apply saved preference
+    if (savedTheme === "dark") {
+        document.body.classList.add("dark-mode");
+        toggle.checked = true;
+    } else if (savedTheme === "light") {
+        document.body.classList.add("light-mode");
+        toggle.checked = false;
+    } else {
+        // No saved preference → follow system
+        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        toggle.checked = prefersDark;
+    }
+
+    toggle.addEventListener("change", () => {
+        document.body.classList.remove("dark-mode", "light-mode");
+
+        if (toggle.checked) {
+            document.body.classList.add("dark-mode");
+            localStorage.setItem("theme", "dark");
+        } else {
+            document.body.classList.add("light-mode");
+            localStorage.setItem("theme", "light");
+        }
+    });
+}
+
+
+document.addEventListener("DOMContentLoaded", async function () {
+    load_from_cookie();
+    ACADS_COURSES = await fetch_courses_json();
+    setupDarkMode();
 });
