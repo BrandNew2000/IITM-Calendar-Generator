@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,15 +9,113 @@
   <script src="https://accounts.google.com/gsi/client" async defer></script>
   <script src="https://apis.google.com/js/api.js"></script>
   <script src="g_cal_push.js"></script>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <title>Timetable Generator</title>
   <link rel="stylesheet" media="all" href="style.css">
 
 
-</head>
 
+  <style>
+
+    /* Responsive table */
+    @media (max-width: 900px) {
+    table {
+    font-size: 0.7rem;
+    }
+    }
+
+
+    @media (max-width: 600px) {
+    table {
+    font-size: 0.55rem;
+    }
+    }
+
+    body {
+      font-family: "Roboto", sans-serif;
+      margin: 20px;
+      padding: 0px;
+      max-width: 100vw;
+
+    }
+    body{
+        -webkit-print-color-adjust:exact !important;
+        print-color-adjust:exact !important;
+    }
+
+    .close-btn {
+      position: relative;
+      top: 5px;
+      right: 0px;
+      cursor: pointer;
+      font-size: 20px;
+      font-weight: bold;
+      color: #888;
+    }
+
+    table {
+      width: 60%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+      font-variant: small-caps;
+      font-size: small;
+    }
+
+    th, td {
+      border: 1px solid #a3a3a3;
+      padding: 5px;
+      text-align: center;
+    }
+
+    .form-section {
+      margin-bottom: 20px;
+    }
+
+    .form-row {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .form-row input, .form-row select {
+      padding: 5px;
+    }
+
+    button {
+      padding: 6px 12px;
+      cursor: pointer;
+    }
+
+    .print-btn {
+      margin-top: 20px;
+    }
+
+    .only-print {
+      display: none;
+    }
+
+    @media print {
+      .only-print {
+        display: block;
+      }
+      .no-print {
+        display: none;
+      }
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      table {
+        height: 100%;
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 1rem;
+      }
+    }
+  </style>
+
+</head>
 <body>
 
   <h1 class="no-print" style="text-align: center;">Timetable Generator</h1>
@@ -28,9 +125,7 @@
   <!-- Add Slot Section -->
   <div class="form-section no-print">
     <h3 style="margin-bottom: 1px;">Add Slot</h3>
-    <p>Add your courses here with the corresponding slot, course number, name and venue.</p>
-    <p> <b><i>Note: </i></b> The populate button attempts to fetch <b>unfilled</b> information from the course database
-      using the course number.</p>
+    <p>Add your courses here with the corresponding slot, course number, name and venue.</p> <p> <b><i>Note: </i></b> The populate button attempts to fetch <b>unfilled</b> information from the course database using the course number.</p>
     <div id="slotInputs">
     </div>
     <button onclick="addSlotRow()">+ Add Slot</button>
@@ -41,8 +136,7 @@
   <!-- Override Section -->
   <div class="form-section no-print">
     <h3>Manual Override</h3>
-    <p>Add an override for a particular day-slot. </p>
-    <p> <i>Tip: Leave the fields blank to delete the particular day-slot.</i></p>
+    <p>Add an override for a particular day-slot. </p><p> <i>Tip: Leave the fields blank to delete the particular day-slot.</i></p>
     <div id="overrideInputs">
     </div>
     <button onclick="addOverrideRow()">+ Add Override</button>
@@ -56,26 +150,22 @@
     <p><i>Warning: Making modifications to the downloaded file might lead to unpredictable results!</i></p>
     <button onclick="download_data()">Save Data</button>
     <button onclick="upload_saved_data_file()">Load Data</button>
-    <input id='upload_cal_save' type='file' hidden />
+    <input id='upload_cal_save' type='file' hidden/>
   </div>
 
-  <div class="form-section no-print">
+  <div class="no-print">
     <h3>Import into your Calendar</h3>
-    <p>Dowload an .ics calendar file compatible with all Calendars. Refer <a
-        href="https://support.google.com/calendar/answer/37118" target="_blank">here</a> for an .ics import guide for
-      Google Calendar.</p>
+    <p>Dowload an .ics calendar file compatible with all Calendars. Refer <a href="https://support.google.com/calendar/answer/37118" target="_blank">here</a> for an .ics import guide for Google Calendar.</p>
     <p><i>Tip: Make a new calendar while importing the file to allow for easy modification/deletion later.</i></p>
-    <p><i><b>Experimental:</b></i> There is now an option to directly import to Google Calendar. This is not guranteed
-      to work. Bear in mind that this will take a while and the only progress indicator is the below status text which
-      will indicate success/failure.</p>
+    <p><i><b>Experimental:</b></i> There is now an option to directly import to Google Calendar. This is not guranteed to work. Bear in mind that this will take a while and the only progress indicator is the below status text which will indicate success/failure.</p>
 
     <button onclick="download_gcal()">Download .ics file</button>
     <button onclick="import_gcal()">Import to Google Calendar</button>
-    <br>
+    <br><br>
     <div id="gcal_import_mesg"></div>
   </div>
 
-  <div class="form-section no-print">
+  <div class="no-print">
     <h3>Lunch Slot Switch</h3>
     <form id="use_mtech_slot">
       <label>
@@ -104,125 +194,112 @@
   <br>
   <div style="">
     <button class="no-print" onclick="generateTable()">Generate Timetable</button>
-    <button class="no-print print-btn" onclick="printTimetable()">Print PDF</button>
+    <button class="no-print print-btn" onclick="window.print()">Print PDF</button>
     <button class="no-print print-btn" onclick="download_tt()">Download Image</button>
 
 
-    <table class="timetable" id="timetable" style="height: 100%;">
-      <tbody>
-        <tr class="gray_light">
-          <th>Days</th>
-          <td>8.00 - 8.50</td>
-          <td>9.00 - 9.50</td>
-          <td>10.00 - 10.50</td>
-          <td>11.00 - 11.50</td>
-          <!-- <th rowspan="12" width="50">
+      <table class="timetable" id="timetable" style="height: 100%;">
+          <tbody>
+              <tr class="gray_light">
+                  <th>Days</th>
+                  <td>8.00 - 8.50</td>
+                  <td>9.00 - 9.50</td>
+                  <td>10.00 - 10.50</td>
+                  <td>11.00 - 11.50</td>
+                  <!-- <th rowspan="12" width="50">
                   <p class="font__fontrols__style"><span class="rotate__text">Lunch recess<br>
                   11.50 am - 13.00 pm</span></p>
                   </th> -->
-          <td>12.00 - 12.50</td>
-          <td>13.00 - 13.50</td>
-          <td>14.00 - 15.15</td>
-          <td>15.30 - 16.45</td>
-          <td>17.00 - 17.50</td>
-        </tr>
-        <tr>
-          <td class="gray_light" rowspan="2">Mon</td>
-          <td class="lite_green" rowspan="2" id="Monday-A">A</td>
-          <td class="lavender" rowspan="2" id="Monday-B">B</td>
-          <td class="sky" rowspan="2" id="Monday-C">C</td>
-          <td class="orange" rowspan="2" id="Monday-D">D</td>
-          <td class="mossgreen" rowspan="2" id="Monday-G-M">G<br>(M. Tech)</td>
-          <td class="mossgreen" rowspan="2" id="Monday-G-B">G</td>
-          <td class="sandal" colspan="2" id="Monday-P">P</td>
-          <td class="pink" rowspan="2" id="Monday-J">J</td>
-        </tr>
-        <tr>
-          <td class="green" id="Monday-H">H</td>
-          <td class="lite_blue" id="Monday-M">M</td>
-        </tr>
-        <tr>
-          <td class="gray_light" rowspan="2">Tue</td>
-          <td class="lavender" rowspan="2" id="Tuesday-B">B</td>
-          <td class="sky" rowspan="2" id="Tuesday-C">C</td>
-          <td class="orange" rowspan="2" id="Tuesday-D">D</td>
-          <td class="red" rowspan="2" id="Tuesday-E">E</td>
-          <td class="lite_green" rowspan="2" id="Tuesday-A-M">A<br>(M. Tech)</td>
-          <td class="lite_green" rowspan="2" id="Tuesday-A-B">A</td>
-          <td class="sandal" colspan="2" id="Tuesday-Q">Q</td>
-          <td class="yellow" rowspan="2" id="Tuesday-F">F</td>
-        </tr>
-        <tr>
-          <td class="lite_blue" id="Tuesday-M">M</td>
-          <td class="green" id="Tuesday-H">H</td>
-        </tr>
-        <tr>
-          <td class="gray_light" rowspan="2">Wed</td>
-          <td class="sky" rowspan="2" id="Wednesday-C">C</td>
-          <td class="orange" rowspan="2" id="Wednesday-D">D</td>
-          <td class="red" rowspan="2" id="Wednesday-E">E</td>
-          <td class="yellow" rowspan="2" id="Wednesday-F">F</td>
-          <td class="lavender" rowspan="2" id="Wednesday-B-M">B<br>(M. Tech)</td>
-          <td class="lavender" rowspan="2" id="Wednesday-B-B">B</td>
-          <td class="gray_light" colspan="2" id="Wednesday-R">R</td>
-          <td class="mossgreen" rowspan="2" id="Wednesday-G">G</td>
-        </tr>
-        <tr>
-          <td class="pink" id="Wednesday-J">J</td>
-          <td class="blue white_text" id="Wednesday-K">K</td>
-        </tr>
-        <tr>
-          <td class="gray_light" rowspan="2">Thu</td>
-          <td class="red" rowspan="2" id="Thursday-E">E</td>
-          <td class="yellow" rowspan="2" id="Thursday-F">F</td>
-          <td class="mossgreen" rowspan="2" id="Thursday-G">G</td>
-          <td class="lite_green" rowspan="2" id="Thursday-A">A</td>
-          <td class="orange" rowspan="2" id="Thursday-D-M">D<br>(M. Tech)</td>
-          <td class="orange" rowspan="2" id="Thursday-D-B">D</td>
-          <td class="sandal" colspan="2" id="Thursday-S">S</td>
-          <td class="green" rowspan="2" id="Thursday-H">H</td>
-        </tr>
-        <tr>
-          <td class="gray white_text" id="Thursday-L">L</td>
-          <td class="pink" id="Thursday-J">J</td>
-        </tr>
-        <tr>
-          <td class="gray_light" rowspan="2">Fri</td>
-          <td class="yellow" rowspan="2" id="Friday-F">F</td>
-          <td class="mossgreen" rowspan="2" id="Friday-G">G</td>
-          <td class="lite_green" rowspan="2" id="Friday-A">A</td>
-          <td class="lavender" rowspan="2" id="Friday-B">B</td>
-          <td class="sky" rowspan="2" id="Friday-C-M">C<br>(M. Tech)</td>
-          <td class="sky" rowspan="2" id="Friday-C-B">C</td>
-          <td class="sandal" colspan="2" id="Friday-T">T</td>
-          <td class="red" rowspan="2" id="Friday-E">E</td>
-        </tr>
-        <tr>
-          <td class="blue white_text" id="Friday-K">K</td>
-          <td class="gray white_text" id="Friday-L">L</td>
-        </tr>
-      </tbody>
-    </table>
+                  <td>12.00 - 12.50</td>
+                  <td>13.00 - 13.50</td>
+                  <td>14.00 - 15.15</td>
+                  <td>15.30 - 16.45</td>
+                  <td>17.00 - 17.50</td>
+              </tr>
+              <tr>
+                  <td class="gray_light" rowspan="2">Mon</td>
+                  <td class="lite_green" rowspan="2" id="Monday-A">A</td>
+                  <td class="lavender" rowspan="2" id="Monday-B">B</td>
+                  <td class="sky" rowspan="2" id="Monday-C">C</td>
+                  <td class="orange" rowspan="2" id="Monday-D">D</td>
+                  <td class="mossgreen" rowspan="2" id="Monday-G-M">G</td>
+                  <td class="mossgreen" rowspan="2" id="Monday-G-B">G</td>
+                  <td class="sandal" colspan="2" id="Monday-P">P</td>
+                  <td class="pink" rowspan="2" id="Monday-J">J</td>
+              </tr>
+              <tr>
+                  <td class="green" id="Monday-H">H</td>
+                  <td class="lite_blue" id="Monday-M">M</td>
+              </tr>
+              <tr>
+                  <td class="gray_light" rowspan="2">Tue</td>
+                  <td class="lavender" rowspan="2" id="Tuesday-B">B</td>
+                  <td class="sky" rowspan="2" id="Tuesday-C">C</td>
+                  <td class="orange" rowspan="2" id="Tuesday-D">D</td>
+                  <td class="red" rowspan="2" id="Tuesday-E">E</td>
+                  <td class="lite_green" rowspan="2" id="Tuesday-A-M">A</td>
+                  <td class="lite_green" rowspan="2" id="Tuesday-A-B">A</td>
+                  <td class="sandal" colspan="2" id="Tuesday-Q">Q</td>
+                  <td class="yellow" rowspan="2" id="Tuesday-F">F</td>
+              </tr>
+              <tr>
+                  <td class="lite_blue" id="Tuesday-M">M</td>
+                  <td class="green" id="Tuesday-H">H</td>
+              </tr>
+              <tr>
+                  <td class="gray_light" rowspan="2">Wed</td>
+                  <td class="sky" rowspan="2" id="Wednesday-C">C</td>
+                  <td class="orange" rowspan="2"id="Wednesday-D">D</td>
+                  <td class="red" rowspan="2" id="Wednesday-E">E</td>
+                  <td class="yellow" rowspan="2" id="Wednesday-F">F</td>
+                  <td class="lavender" rowspan="2" id="Wednesday-B-M">B</td>
+                  <td class="lavender" rowspan="2" id="Wednesday-B-B">B</td>
+                  <td class="gray_light" colspan="2" id="Wednesday-R">R</td>
+                  <td class="mossgreen" rowspan="2" id="Wednesday-G">G</td>
+              </tr>
+              <tr>
+                  <td class="pink" id="Wednesday-J">J</td>
+                  <td class="blue white_text" id="Wednesday-K">K</td>
+              </tr>
+              <tr>
+                  <td class="gray_light" rowspan="2">Thu</td>
+                  <td class="red" rowspan="2" id="Thursday-E">E</td>
+                  <td class="yellow" rowspan="2" id="Thursday-F">F</td>
+                  <td class="mossgreen" rowspan="2" id="Thursday-G">G</td>
+                  <td class="lite_green" rowspan="2" id="Thursday-A">A</td>
+                  <td class="orange" rowspan="2" id="Thursday-D-M">D</td>
+                  <td class="orange" rowspan="2" id="Thursday-D-B">D</td>
+                  <td class="sandal" colspan="2"id="Thursday-S">S</td>
+                  <td class="green" rowspan="2" id="Thursday-H">H</td>
+              </tr>
+              <tr>
+                  <td class="gray white_text" id="Thursday-L">L</td>
+                  <td class="pink" id="Thursday-J">J</td>
+              </tr>
+              <tr>
+                  <td class="gray_light" rowspan="2">Fri</td>
+                  <td class="yellow" rowspan="2" id="Friday-F">F</td>
+                  <td class="mossgreen" rowspan="2" id="Friday-G">G</td>
+                  <td class="lite_green" rowspan="2" id="Friday-A">A</td>
+                  <td class="lavender" rowspan="2" id="Friday-B">B</td>
+                  <td class="sky" rowspan="2" id="Friday-C-M">C</td>
+                  <td class="sky" rowspan="2" id="Friday-C-B">C</td>
+                  <td class="sandal" colspan="2" id="Friday-T">T</td>
+                  <td class="red" rowspan="2" id="Friday-E">E</td>
+              </tr>
+              <tr>
+                  <td class="blue white_text"id="Friday-K">K</td>
+                  <td class="gray white_text" id="Friday-L">L</td>
+              </tr>
+          </tbody>
+      </table>
   </div>
 
   <div id="timetableContainer"></div>
-
+ <footer class="no-print">
   <br>
-  <footer class="no-print">
-    <div class="theme-toggle no-print">
-      <label class="theme-switch">
-        <input type="checkbox" id="darkModeToggle">
-        <span class="slider">
-          <span class="icon sun">☀️</span>
-          <span class="icon moon">🌙</span>
-        </span>
-      </label>
-    </div> <br>
-    <p>Feel free to drop me a mail at <a href="mailto:ar@smail.iitm.ac.in">ar@smail.iitm.ac.in</a> regarding any
-      bugs/issues!<br><br>
-      <b><i>Created by Achintya Raghavan</i></b>
-    </p>
-  </footer>
+  <p>Feel free to drop me a mail at <a href="mailto:ar@smail.iitm.ac.in">ar@smail.iitm.ac.in</a> regarding any bugs/issues!</p>
+  <p><b><i>Designed by Achintya Raghavan</i></b></p>
+</footer> 
 </body>
-
 </html>

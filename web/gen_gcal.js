@@ -149,10 +149,10 @@ function formatICSDate(date, time) {
   const [hour, minute] = time.split(":").map(Number);
   date.setHours(hour, minute, 0);
 
-  //   let utcDate = new Date(date.toLocaleString('en-US', { timeZone: "UTC" }));
-  //   let tzDate = new Date(date.toLocaleString('en-US', { timeZone: "Asia/Kolkata" }));
-  //   let offset = utcDate.getTime() - tzDate.getTime();
-  //   date.setTime( date.getTime() - offset );
+//   let utcDate = new Date(date.toLocaleString('en-US', { timeZone: "UTC" }));
+//   let tzDate = new Date(date.toLocaleString('en-US', { timeZone: "Asia/Kolkata" }));
+//   let offset = utcDate.getTime() - tzDate.getTime();
+//   date.setTime( date.getTime() - offset );
 
   return date.toISOString().replace(/[-:]/g, "").split(".")[0] + "Z";
 }
@@ -173,13 +173,13 @@ METHOD:PUBLISH
 `;
 
   for (const key in schedule) {
-    if (schedule[key] == null) {
-      continue;
+    if (schedule[key] == null){
+        continue;
     }
     const [day, slot] = key.split("-");
     const [code, name, venue] = [schedule[key].courseNo, schedule[key].name, schedule[key].venue];
     var times;
-    if (MtechData[day]["slot"] == slot && MtechData[day]["value"] == true) {
+    if (MtechData[day]["slot"] == slot && MtechData[day]["value"] == true){
       times = slotTimes_PG[day][slot];
     } else {
       times = slotTimes[day][slot];
@@ -196,7 +196,7 @@ METHOD:PUBLISH
 SUMMARY: (${slot}) ${code} - ${name}
 DTSTART:${dtStart}
 DTEND:${dtEnd}
-RRULE:FREQ=WEEKLY;BYDAY=${day.slice(0, 2).toUpperCase()}
+RRULE:FREQ=WEEKLY;BYDAY=${day.slice(0,2).toUpperCase()}
 LOCATION:${venue}
 UID:${uid}
 DESCRIPTION:${code} - ${name} at ${venue}
@@ -211,7 +211,7 @@ END:VEVENT
 }
 
 
-function downloadICS(schedule, MtechData) {
+function downloadICS(schedule, MtechData){
 
   icsContent = generateICS(schedule, MtechData);
   const blob = new Blob([icsContent], { type: "text/calendar;charset=utf-8" });
@@ -223,7 +223,7 @@ function downloadICS(schedule, MtechData) {
   document.body.removeChild(link);
 }
 
-async function importICSgcal(schedule, MtechData) {
+async function importICSgcal(schedule, MtechData){
   icsContent = generateICS(schedule, MtechData);
   return importICS(icsContent);
 }

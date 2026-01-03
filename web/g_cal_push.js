@@ -13,21 +13,21 @@ let token = null;
 =========================================== */
 
 async function importICS(icsText) {
-  try {
-    await loadGapi();
-    await authenticate();
+    try{
+      await loadGapi();
+      await authenticate();
 
-    const events = parseICS(icsText);
+      const events = parseICS(icsText);
 
-    const calendarId = await createCalendar("Time Table");
+      const calendarId = await createCalendar("Time Table");
 
-    await insertEvents(calendarId, events);
-    return true
-  }
-  catch (err) {
-    console.error(err);
-    return false
-  }
+      await insertEvents(calendarId, events);
+      return true
+    } 
+    catch(err) {
+      console.error(err);
+      return false
+    }
 }
 
 /* ===========================================
@@ -52,19 +52,19 @@ function loadGapi() {
 =========================================== */
 
 async function authenticate() {
-  return new Promise((resolve, reject) => {
-    const client = google.accounts.oauth2.initTokenClient({
-      client_id: CLIENT_ID,
-      scope: SCOPES,
-      callback: (resp) => {
-        if (resp.error) return reject(resp);
-        gapi.client.setToken({ access_token: resp.access_token });
-        resolve();
-      }
-    });
+    return new Promise((resolve, reject) => {
+        const client = google.accounts.oauth2.initTokenClient({
+            client_id: CLIENT_ID,
+            scope: SCOPES,
+            callback: (resp) => {
+                if (resp.error) return reject(resp);
+                gapi.client.setToken({ access_token: resp.access_token });
+                resolve();
+            }
+        });
 
-    client.requestAccessToken();
-  });
+        client.requestAccessToken();
+    });
 }
 
 /* ===========================================
@@ -72,10 +72,10 @@ async function authenticate() {
 =========================================== */
 
 async function createCalendar(name) {
-  const res = await gapi.client.calendar.calendars.insert({
-    summary: name
-  });
-  return res.result.id;
+    const res = await gapi.client.calendar.calendars.insert({
+        summary: name
+    });
+    return res.result.id;
 }
 
 // /* ===========================================
@@ -96,43 +96,43 @@ async function createCalendar(name) {
 =========================================== */
 
 function slimEvent(ev) {
-  return {
-    summary: ev.summary,
-    start: ev.start,
-    end: ev.end,
-    location: ev.location,
-    description: ev.description,
-    recurrence: ev.recurrence
-  };
+    return {
+        summary: ev.summary,
+        start: ev.start,
+        end: ev.end,
+        location: ev.location,
+        description: ev.description,
+        recurrence: ev.recurrence
+    };
 }
 
 async function insertEvents(calendarId, events) {
-  const BATCH_SIZE = 800;
+    const BATCH_SIZE = 800;
 
-  // Sort for better backend performance
-  events.sort((a, b) =>
-    new Date(a.start.dateTime || a.start.date) -
-    new Date(b.start.dateTime || b.start.date)
-  );
+    // Sort for better backend performance
+    events.sort((a, b) =>
+        new Date(a.start.dateTime || a.start.date) -
+        new Date(b.start.dateTime || b.start.date)
+    );
 
-  for (let i = 0; i < events.length; i += BATCH_SIZE) {
-    const batch = gapi.client.newBatch();
-    const chunk = events.slice(i, i + BATCH_SIZE);
+    for (let i = 0; i < events.length; i += BATCH_SIZE) {
+        const batch = gapi.client.newBatch();
+        const chunk = events.slice(i, i + BATCH_SIZE);
 
-    chunk.forEach((ev, idx) => {
-      batch.add(
-        gapi.client.calendar.events.insert({
-          calendarId,
-          resource: slimEvent(ev),
-          sendUpdates: "none",
-          supportsAttachments: false
-        }),
-        { id: `event-${i + idx}` }
-      );
-    });
+        chunk.forEach((ev, idx) => {
+            batch.add(
+                gapi.client.calendar.events.insert({
+                    calendarId,
+                    resource: slimEvent(ev),
+                    sendUpdates: "none",
+                    supportsAttachments: false
+                }),
+                { id: `event-${i + idx}` }
+            );
+        });
 
-    await batch;
-  }
+        await batch;
+    }
 }
 
 
@@ -157,7 +157,7 @@ function parseICS(icsText) {
     let exdates = [];
 
     for (const line of lines) {
-
+      
       // SUMMARY
       if (line.startsWith("SUMMARY:"))
         summary = line.substring(8).trim();
@@ -199,7 +199,7 @@ function parseICS(icsText) {
       summary,
       location,
       start: buildGoogleTime(dtStart, tzStart),
-      end: buildGoogleTime(dtEnd, tzEnd)
+      end:   buildGoogleTime(dtEnd, tzEnd)
     };
 
     // Recurrence
