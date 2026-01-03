@@ -483,7 +483,7 @@ function download_data() {
     const blob = new Blob([jsondata], { type: "text/json;charset=utf-8" });
     const link = document.createElement("a");
     link.href = URL.createObjectURL(blob);
-    link.download = "calendar_save.json";
+    link.download = "timetable_save.json";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
