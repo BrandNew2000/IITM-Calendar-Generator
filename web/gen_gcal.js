@@ -68,6 +68,68 @@ const slotTimes = {
   }
 };
 
+const slotTimes_PG = {
+  "Monday": {
+    "A": { start: "08:00", end: "08:50" },
+    "B": { start: "09:00", end: "09:50" },
+    "C": { start: "10:00", end: "10:50" },
+    "D": { start: "11:00", end: "11:50" },
+    "G": { start: "12:00", end: "12:50" },
+    "PG": { start: "13:00", end: "13:50" },
+    "P": { start: "14:00", end: "16:45" },
+    "J": { start: "17:00", end: "17:50" },
+    "H": { start: "14:00", end: "15:15" },
+    "M": { start: "15:30", end: "16:45" }
+  },
+  "Tuesday": {
+    "B": { start: "08:00", end: "08:50" },
+    "C": { start: "09:00", end: "09:50" },
+    "D": { start: "10:00", end: "10:50" },
+    "E": { start: "11:00", end: "11:50" },
+    "A": { start: "12:00", end: "12:50" },
+    "PG": { start: "13:00", end: "13:50" },
+    "Q": { start: "14:00", end: "16:45" },
+    "F": { start: "17:00", end: "17:50" },
+    "M": { start: "14:00", end: "15:15" },
+    "H": { start: "15:30", end: "16:45" }
+  },
+  "Wednesday": {
+    "C": { start: "08:00", end: "08:50" },
+    "D": { start: "09:00", end: "09:50" },
+    "E": { start: "10:00", end: "10:50" },
+    "F": { start: "11:00", end: "11:50" },
+    "B": { start: "12:00", end: "12:50" },
+    "PG": { start: "13:00", end: "13:50" },
+    "R": { start: "14:00", end: "16:45" },
+    "G": { start: "17:00", end: "17:50" },
+    "J": { start: "14:00", end: "15:15" },
+    "K": { start: "15:30", end: "16:45" }
+  },
+  "Thursday": {
+    "E": { start: "08:00", end: "08:50" },
+    "F": { start: "09:00", end: "09:50" },
+    "G": { start: "10:00", end: "10:50" },
+    "A": { start: "11:00", end: "11:50" },
+    "D": { start: "12:00", end: "12:50" },
+    "PG": { start: "13:00", end: "13:50" },
+    "S": { start: "14:00", end: "16:45" },
+    "H": { start: "17:00", end: "17:50" },
+    "L": { start: "14:00", end: "15:15" },
+    "J": { start: "15:30", end: "16:45" }
+  },
+  "Friday": {
+    "F": { start: "08:00", end: "08:50" },
+    "G": { start: "09:00", end: "09:50" },
+    "A": { start: "10:00", end: "10:50" },
+    "B": { start: "11:00", end: "11:50" },
+    "C": { start: "12:00", end: "12:50" },
+    "PG": { start: "13:00", end: "13:50" },
+    "T": { start: "14:00", end: "16:45" },
+    "E": { start: "17:00", end: "17:50" },
+    "K": { start: "14:00", end: "15:15" },
+    "L": { start: "15:30", end: "16:45" }
+  }
+};
 
 const dayToWeekday = {
   "Sunday": 0,
@@ -103,7 +165,7 @@ function getNextDate(dayName) {
   return resultDate;
 }
 
-function generateICS(schedule) {
+function generateICS(schedule, MtechData) {
   let icsContent = `BEGIN:VCALENDAR
 VERSION:2.0
 CALSCALE:GREGORIAN
@@ -116,7 +178,12 @@ METHOD:PUBLISH
     }
     const [day, slot] = key.split("-");
     const [code, name, venue] = [schedule[key].courseNo, schedule[key].name, schedule[key].venue];
-    const times = slotTimes[day][slot];
+    var times;
+    if (MtechData[day]["slot"] == slot && MtechData[day]["value"] == true){
+      times = slotTimes_PG[day][slot];
+    } else {
+      times = slotTimes[day][slot];
+    }
     if (!times) continue;
 
     // const startDate = getNextDate(day);
@@ -144,9 +211,9 @@ END:VEVENT
 }
 
 
-function downloadICS(schedule){
+function downloadICS(schedule, MtechData){
 
-  icsContent = generateICS(schedule);
+  icsContent = generateICS(schedule, MtechData);
   const blob = new Blob([icsContent], { type: "text/calendar;charset=utf-8" });
   const link = document.createElement("a");
   link.href = URL.createObjectURL(blob);
@@ -156,7 +223,7 @@ function downloadICS(schedule){
   document.body.removeChild(link);
 }
 
-async function importICSgcal(schedule){
-  icsContent = generateICS(schedule);
+async function importICSgcal(schedule, MtechData){
+  icsContent = generateICS(schedule, MtechData);
   return importICS(icsContent);
 }

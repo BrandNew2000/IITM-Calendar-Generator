@@ -62,7 +62,7 @@
     }
 
     th, td {
-      border: 1px solid #ccc;
+      border: 1px solid #a3a3a3;
       padding: 5px;
       text-align: center;
     }
@@ -165,6 +165,31 @@
     <div id="gcal_import_mesg"></div>
   </div>
 
+  <div class="no-print">
+    <h3>Lunch Slot Switch</h3>
+    <form id="use_mtech_slot">
+      <label>
+        <input type="checkbox" name="day" value="Monday"> Monday
+      </label>
+
+      <label>
+        <input type="checkbox" name="day" value="Tuesday"> Tuesday
+      </label>
+
+      <label>
+        <input type="checkbox" name="day" value="Wednesday"> Wednesday
+      </label>
+
+      <label>
+        <input type="checkbox" name="day" value="Thursday"> Thursday
+      </label>
+
+      <label>
+        <input type="checkbox" name="day" value="Friday"> Friday
+      </label>
+    </form>
+  </div>
+
   <!-- Display Timetable -->
   <br>
   <div style="">
@@ -185,7 +210,7 @@
                   <p class="font__fontrols__style"><span class="rotate__text">Lunch recess<br>
                   11.50 am - 13.00 pm</span></p>
                   </th> -->
-                  <th>Lunch</th>
+                  <td>12.00 - 12.50</td>
                   <td>13.00 - 13.50</td>
                   <td>14.00 - 15.15</td>
                   <td>15.30 - 16.45</td>
@@ -197,8 +222,8 @@
                   <td class="lavender" rowspan="2" id="Monday-B">B</td>
                   <td class="sky" rowspan="2" id="Monday-C">C</td>
                   <td class="orange" rowspan="2" id="Monday-D">D</td>
-                  <td class="gray_light" rowspan="2" id="Monday-PG"></td>
-                  <td class="mossgreen" rowspan="2" id="Monday-G">G</td>
+                  <td class="mossgreen" rowspan="2" id="Monday-G-M">G</td>
+                  <td class="mossgreen" rowspan="2" id="Monday-G-B">G</td>
                   <td class="sandal" colspan="2" id="Monday-P">P</td>
                   <td class="pink" rowspan="2" id="Monday-J">J</td>
               </tr>
@@ -212,8 +237,8 @@
                   <td class="sky" rowspan="2" id="Tuesday-C">C</td>
                   <td class="orange" rowspan="2" id="Tuesday-D">D</td>
                   <td class="red" rowspan="2" id="Tuesday-E">E</td>
-                  <td class="gray_light" rowspan="2" id="Tuesday-PG"></td>
-                  <td class="lite_green" rowspan="2" id="Tuesday-A">A</td>
+                  <td class="lite_green" rowspan="2" id="Tuesday-A-M">A</td>
+                  <td class="lite_green" rowspan="2" id="Tuesday-A-B">A</td>
                   <td class="sandal" colspan="2" id="Tuesday-Q">Q</td>
                   <td class="yellow" rowspan="2" id="Tuesday-F">F</td>
               </tr>
@@ -227,14 +252,14 @@
                   <td class="orange" rowspan="2"id="Wednesday-D">D</td>
                   <td class="red" rowspan="2" id="Wednesday-E">E</td>
                   <td class="yellow" rowspan="2" id="Wednesday-F">F</td>
-                  <td class="gray_light" rowspan="2" id="Wednesday-PG"></td>
-                  <td class="lavender" rowspan="2" id="Wednesday-B">B</td>
+                  <td class="lavender" rowspan="2" id="Wednesday-B-M">B</td>
+                  <td class="lavender" rowspan="2" id="Wednesday-B-B">B</td>
                   <td class="gray_light" colspan="2" id="Wednesday-R">R</td>
                   <td class="mossgreen" rowspan="2" id="Wednesday-G">G</td>
               </tr>
               <tr>
                   <td class="pink" id="Wednesday-J">J</td>
-                  <td class="white_text blue" id="Wednesday-K">K</td>
+                  <td class="blue white_text" id="Wednesday-K">K</td>
               </tr>
               <tr>
                   <td class="gray_light" rowspan="2">Thu</td>
@@ -242,8 +267,8 @@
                   <td class="yellow" rowspan="2" id="Thursday-F">F</td>
                   <td class="mossgreen" rowspan="2" id="Thursday-G">G</td>
                   <td class="lite_green" rowspan="2" id="Thursday-A">A</td>
-                  <td class="gray_light" rowspan="2" id="Thursday-PG"></td>
-                  <td class="orange" rowspan="2" id="Thursday-D">D</td>
+                  <td class="orange" rowspan="2" id="Thursday-D-M">D</td>
+                  <td class="orange" rowspan="2" id="Thursday-D-B">D</td>
                   <td class="sandal" colspan="2"id="Thursday-S">S</td>
                   <td class="green" rowspan="2" id="Thursday-H">H</td>
               </tr>
@@ -257,8 +282,8 @@
                   <td class="mossgreen" rowspan="2" id="Friday-G">G</td>
                   <td class="lite_green" rowspan="2" id="Friday-A">A</td>
                   <td class="lavender" rowspan="2" id="Friday-B">B</td>
-                  <td class="gray_light" rowspan="2" id="Friday-PG"></td>
-                  <td class="sky" rowspan="2" id="Friday-C">C</td>
+                  <td class="sky" rowspan="2" id="Friday-C-M">C</td>
+                  <td class="sky" rowspan="2" id="Friday-C-B">C</td>
                   <td class="sandal" colspan="2" id="Friday-T">T</td>
                   <td class="red" rowspan="2" id="Friday-E">E</td>
               </tr>

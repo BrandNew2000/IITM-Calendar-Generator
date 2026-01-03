@@ -6,8 +6,30 @@ const slotLayout = {
     "Friday": ["F", "G", "A", "B", "C", "PG", "T", "E", "K", "L"]
 };
 
+const colorList = {
+    "A": "lite_green",
+    "B": "lavender",
+    "C": "sky",
+    "D": "orange",
+    "E": "red",
+    "F": "yellow",
+    "G": "mossgreen",
+    "H": "green",
+    "J": "pink",
+    "K": "blue",
+    "L": "gray",
+    "M": "lite_blue",
+    "P": "sandal",
+    "Q": "sandal",
+    "R": "sandal",
+    "S": "sandal",
+    "T": "sandal",
+    "PG": "gray_light",
+}
+
 var slotData = {}; // { slot: { courseNo, name, venue } }
 var overrideData = {}; // { "Monday-A": { courseNo, name, venue } }
+var MtechData = {}
 
 ACADS_COURSES = {}; // Add courses after pulling from file
 
@@ -137,7 +159,7 @@ function gen_gcal() {
 
 function download_gcal(){
     data = gen_gcal();
-    downloadICS(data);
+    downloadICS(data, MtechData);
 }
 
 
@@ -145,13 +167,36 @@ async function import_gcal(){
     message_field = document.getElementById('gcal_import_mesg');
     data = gen_gcal();
     message_field.innerHTML = `<b>Status:</b> Running import. Please wait ... <br>`
-    let result = await importICSgcal(data);
+    let result = await importICSgcal(data, MtechData);
     if (result == true){
         message_field.innerHTML = `<b>Status:</b> Successfully imported! <br>`
     }
     else if (result == false) {
         message_field.innerHTML = `<b>Status:</b> Failed to import! <br>`
     }
+}
+
+function setMtechInputs() {
+    document.getElementById("use_mtech_slot")
+    .querySelectorAll('input[type="checkbox"]')
+    .forEach(cb => {
+    const day = cb.value;
+    if (MtechData[day]) {
+        cb.checked = !!MtechData[day].value;
+    }
+    });
+}
+
+function readMtechInputs() {
+    MtechData = {"Monday": {"slot": "G", value: false}, "Tuesday": {"slot": "A", value: false}, "Wednesday": {"slot": "B", value: false}, "Thursday": {"slot": "D", value: false}, "Friday": {"slot": "C", value: false}};
+    document.getElementById("use_mtech_slot")
+    .querySelectorAll('input[type="checkbox"]:checked')
+    .forEach(cb => {
+    const day = cb.value;
+    if (MtechData[day]) {
+        MtechData[day].value = true;
+    }
+    });
 }
 
 function parseInputs(){
@@ -184,6 +229,8 @@ function parseInputs(){
         };
     }
     });
+
+    readMtechInputs();
 }
 
 async function fetch_courses_json(){
@@ -268,6 +315,7 @@ function process_saved_data(jsondata){
     data = JSON.parse(jsondata);
     slotData = data.slotData;
     overrideData = data.overrideData;
+    MtechData = data.MtechData;
     
     Object.keys(slotData).forEach(slot => {
         addSlotRow(slot, slotData[slot].courseNo, slotData[slot].name, slotData[slot].venue);
@@ -278,6 +326,8 @@ function process_saved_data(jsondata){
         console.log(day, slot);
         addOverrideRow(day, slot, overrideData[override].courseNo, overrideData[override].name, overrideData[override].venue);
     })
+
+    setMtechInputs();
 
 }
 
@@ -293,7 +343,7 @@ function download_data(){
 }
 
 function save_data(){
-    data = {slotData: slotData, overrideData: overrideData};
+    data = {slotData: slotData, overrideData: overrideData, MtechData: MtechData};
     return JSON.stringify(data);
 }
 
@@ -308,6 +358,25 @@ function save_to_cookie(){
     cookie_string = "save_data=" + jsondata +"; path=/; expires=" + expiration_date.toUTCString();
     // Create or update the cookie:
     document.cookie = cookie_string;
+}
+
+function RunMtechCheck(key) {
+    [day, slot] = key.split("-")
+    if (slot == "PG") {
+        if (MtechData[day]["value"] == true){
+            return `${day}-${MtechData[day]["slot"]}-B`;
+        } else if (MtechData[day]["value"] == false){
+            return `${day}-${MtechData[day]["slot"]}-M`;
+        }
+    }
+
+    if (MtechData[day]["slot"] == slot && MtechData[day]["value"] == true){
+        return `${key}-M`;
+    } else if (MtechData[day]["slot"] == slot && MtechData[day]["value"] == false){
+        return `${key}-B`;
+    } else {
+        return key;
+    }
 }
 
 function generateTable() {
@@ -326,12 +395,16 @@ function generateTable() {
             }
         }
 
+        element = document.getElementById(`${RunMtechCheck(key)}`);
+
         if (data == null){
-        row = `<br>`;
+            element.innerHTML = `<br>`;
+            element.classList.replace(element.classList.item(0), "darkgray");
         } else {
-        row = `(${slot}) <br> <strong> ${data.courseNo} </strong><br>${data.name}<br> <span style="font-size: x-small">${data.venue}</span>`;
+            element.innerHTML = `(${slot}) <br> <strong> ${data.courseNo} </strong><br>${data.name}<br> <span style="font-size: x-small">${data.venue}</span>`;
+            element.classList.replace(element.classList.item(0), colorList[slot]);
         }
-        document.getElementById(`${key}`).innerHTML = row;
+
     });
     });
 
