@@ -399,11 +399,11 @@ function generateTable() {
 
         if (data == null){
             element.innerHTML = `<br>`;
-            element.classList.replace(element.classList.item(0), "darkgray");
         } else {
             element.innerHTML = `(${slot}) <br> <strong> ${data.courseNo} </strong><br>${data.name}<br> <span style="font-size: x-small">${data.venue}</span>`;
-            element.classList.replace(element.classList.item(0), colorList[slot]);
         }
+        element.classList.replace(element.classList.item(0), colorList[slot]);
+
 
     });
     });
