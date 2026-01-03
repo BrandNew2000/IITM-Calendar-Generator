@@ -1,0 +1,99 @@
+
+.white_text {
+    color: #fff;
+}
+.yellow {
+    background: #fcf332;
+}
+.orange {
+    background: #ec9545;
+}
+.lavender {
+    background: #8064a2;
+}
+.sky {
+    background: #56acc6;
+}
+.pink {
+    background: #f6d4b4;
+}
+.gray {
+    background: #632423;
+}
+.lite_green {
+    background: #c1d59b;
+}
+.green {
+    background: #60b151;
+}
+.lite_blue {
+    background: #b6dde8;
+}
+.blue {
+    background: #00205f;
+}
+.mossgreen {
+    background: #948a54;
+}
+.red {
+    background: #c0504d;
+}
+.sandal {
+    background: #fef9e7;
+}
+.lite_yellow {
+    background: #fef9c0;
+}
+.gray_light {
+    background: #f4f0eb;
+}
+.table__colors li {
+    display: inline-block;
+    font-size: 14px;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+.table__colors span {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.table__layout {
+    margin: 0 0 30px;
+}
+.table__layout table {
+    table-layout: fixed;
+    margin: 0;
+}
+.table__layout table tr:nth-child(even) {
+    background: #fcf9f6;
+}
+.table__layout table tr:nth-child(odd) {
+    background: #f4f0eb;
+}
+.table__layout table tr:first-child {
+    background: #33110e;
+}
+.table__layout table tr>th, .table__layout table tr>td {
+    font: 16px/20px "Lato-Semibold";
+    color: #fff;
+    letter-spacing: 0.3px;
+    vertical-align: middle;
+    background: transparent;
+    padding: 10px 15px;
+    border: none;
+}
+.table__layout table tr>td {
+    font-family: "Lato-Regular";
+    color: #33110e;
+}
+.table__layout--nonfixed table {
+    table-layout: inherit;
+}
+.table__heading {
+    font-family: "Lato-Heavy" !important;
+    color: #c00404 !important;
+    text-transform: uppercase;
+}
