@@ -44,17 +44,26 @@ function printTimetable() {
                 Array.from(sheet.cssRules).forEach(rule => {
                     styles += rule.cssText;
                 });
-            } catch (e) { }
+            } catch (e) {}
         });
 
-        // Measure natural size
-        const table = wrapper.querySelector("table");
+        // ✅ Robust table detection
+        const table =
+            wrapper.tagName === "TABLE"
+                ? wrapper
+                : wrapper.querySelector("table") || wrapper.firstElementChild;
+
+        if (!table) {
+            console.error("Timetable table not found");
+            return;
+        }
+
         const tableWidth = table.scrollWidth;
         const tableHeight = table.scrollHeight;
 
-        // A4 landscape printable area (approx, in px @96dpi)
-        const PAGE_WIDTH = 1120;   // A4 landscape width minus margins
-        const PAGE_HEIGHT = 780;   // A4 landscape height minus margins
+        // A4 landscape printable area (@96dpi approx)
+        const PAGE_WIDTH = 1120;
+        const PAGE_HEIGHT = 780;
 
         const scale = Math.min(
             PAGE_WIDTH / tableWidth,
@@ -63,85 +72,111 @@ function printTimetable() {
         );
 
         printWindow.document.write(`
-      <html>
-        <head>
-          <title>Timetable</title>
-          <style>
-            ${styles}
+        <html>
+          <head>
+            <title style="text-align:center">Timetable</title>
+            <style>
+              ${styles}
 
-            * {
-              -webkit-print-color-adjust: exact !important;
-              print-color-adjust: exact !important;
-            }
+              * {
+                -webkit-print-color-adjust: exact !important;
+                print-color-adjust: exact !important;
+              }
 
-            @page {
-              size: A4 landscape;
-              margin: 10mm;
-            }
+              @page {
+                size: A4 landscape;
+                margin: 10mm;
+              }
 
-            html, body {
-              margin: 0;
-              padding: 0;
-            }
+              html, body {
+                margin: 0;
+                padding: 0;
+                background: white;
+              }
 
-            .print-scale {
-              transform: scale(${scale});
-              transform-origin: top left;
-              width: ${tableWidth}px;
-            }
-          </style>
-        </head>
-        <body>
-          <div class="print-scale">
-            ${wrapper.innerHTML}
-          </div>
-        </body>
-      </html>
-    `);
+              .print-scale {
+                transform-origin: top left;
+                width: ${tableWidth}px;
+                height: ${tableHeight}px;
+              }
+
+              table {
+                display: table !important;
+                overflow: visible !important;
+              }
+            </style>
+          </head>
+          <body>
+            <h1 style="margin: 0 auto; text-align: center;"> Timetable </h1>
+            <div class="print-scale">
+              ${table.outerHTML}
+            </div>
+          </body>
+        </html>
+        `);
 
         printWindow.document.close();
         printWindow.focus();
 
-        printWindow.onload = () => {
-            printWindow.print();
-            printWindow.close();
+        printWindow.onload = async () => {
+            try {
+                // 1. Wait for fonts
+                if (printWindow.document.fonts) {
+                    await printWindow.document.fonts.ready;
+                }
+
+                // 2. Wait for layout + styles
+                await new Promise(resolve => setTimeout(resolve, 50));
+
+                // 3. Final paint
+                printWindow.requestAnimationFrame(() => {
+                    printWindow.print();
+                    printWindow.close();
+                });
+            } catch {
+                // Fallback
+                printWindow.print();
+                printWindow.close();
+            }
         };
+
     });
 }
+
 
 
 function captureFullTimetable(callback) {
     const table = document.getElementById("timetable");
 
-    // Clone the table
+    // Clone timetable
     const clone = table.cloneNode(true);
 
-    // Wrapper that expands to full scroll width
+    // Wrapper for layout only
     const wrapper = document.createElement("div");
     wrapper.style.position = "fixed";
     wrapper.style.top = "-99999px";
     wrapper.style.left = "0";
-    wrapper.style.width = table.scrollWidth + "px";
-    wrapper.style.background = "white";
-    wrapper.style.overflow = "visible";
-    wrapper.appendChild(clone);
+    wrapper.style.background = "transparent";
+    wrapper.style.display = "inline-block";
+    wrapper.style.padding = "0";
+    wrapper.style.margin = "0";
 
+    clone.style.display = "inline-block";
+
+    wrapper.appendChild(clone);
     document.body.appendChild(wrapper);
 
-    // Let browser finish layout
     requestAnimationFrame(() => {
-        callback(wrapper, clone);
-
-        // Cleanup
+        callback(clone); // capture ONLY the table
         document.body.removeChild(wrapper);
     });
 }
 
 function download_tt() {
-    captureFullTimetable((wrapper) => {
-        html2canvas(wrapper, {
-            scale: 10,
-            windowWidth: wrapper.scrollWidth
+    captureFullTimetable((tableClone) => {
+        html2canvas(tableClone, {
+            backgroundColor: null,   // removes white background
+            scale: 10
         }).then(canvas => {
             const link = document.createElement("a");
             link.download = "timetable.png";
@@ -150,6 +185,7 @@ function download_tt() {
         });
     });
 }
+
 
 function addSlotRow(slot = "", course_num = "", course_name = "", venue = "") {
     const container = document.getElementById("slotInputs");
@@ -438,6 +474,7 @@ function process_saved_data(jsondata) {
     })
 
     setMtechInputs();
+    generateTable();
 
 }
 
@@ -550,7 +587,6 @@ function load_from_cookie() {
     for (let i = 0; i < cookies.length; i++) {
         let cookie = cookies[i].replace(/^\s+|\s+$/g, "");
         if (cookie.slice(0, 9) == "save_data") {
-            console.log((cookie).slice(10));
             process_saved_data((cookie).slice(10));
         }
     }
@@ -591,4 +627,21 @@ document.addEventListener("DOMContentLoaded", async function () {
     load_from_cookie();
     ACADS_COURSES = await fetch_courses_json();
     setupDarkMode();
+});
+
+document.addEventListener("keydown", (e) => {
+    const isMac = navigator.platform.toUpperCase().includes("MAC");
+    const isPrint =
+        (isMac && e.metaKey && e.key === "p") ||
+        (!isMac && e.ctrlKey && e.key === "p");
+
+    if (isPrint) {
+        e.preventDefault();
+        printTimetable();
+    }
+});
+
+window.addEventListener("beforeprint", () => {
+    // Redirect to your custom print
+    printTimetable();
 });
