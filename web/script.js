@@ -312,13 +312,13 @@ function download_gcal() {
 async function import_gcal() {
     message_field = document.getElementById('gcal_import_mesg');
     data = gen_gcal();
-    message_field.innerHTML = `<br><b>Status:</b> Running import. Please wait ... <br>`
+    message_field.innerHTML = `<b>Status:</b> Running import. Please wait ... <br><br>`
     let result = await importICSgcal(data, MtechData);
     if (result == true) {
-        message_field.innerHTML = `<br><b>Status:</b> Successfully imported! <br>`
+        message_field.innerHTML = `<b>Status:</b> Successfully imported! <br><br>`
     }
     else if (result == false) {
-        message_field.innerHTML = `<br><b>Status:</b> Failed to import! <br>`
+        message_field.innerHTML = `<b>Status:</b> Failed to import! <br><br>`
     }
 }
 
