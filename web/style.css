@@ -644,17 +644,9 @@ body {
   body:not(.light-mode) {
     --cb-border: #666666;
     --cb-bg: #1e1e1e;
-    --cb-check: #922f2f;
+    --cb-check: #d4d4d4;
     --cb-focus: rgba(255, 255, 255, 0.25);
   }
-}
-
-/* MANUAL DARK MODE ALWAYS WINS */
-body.dark-mode {
-  --cb-border: #666666;
-  --cb-bg: #1e1e1e;
-  --cb-check: #922f2f;
-  --cb-focus: rgba(255, 255, 255, 0.25);
 }
 
 /* =====================

@@ -490,6 +490,7 @@ function download_data() {
 }
 
 function save_data() {
+    parseInputs();
     data = { slotData: slotData, overrideData: overrideData, MtechData: MtechData };
     return JSON.stringify(data);
 }
@@ -640,6 +641,22 @@ document.addEventListener("keydown", (e) => {
         printTimetable();
     }
 });
+
+document.addEventListener("keydown", (e) => {
+  const isMac = navigator.platform.toUpperCase().includes("MAC");
+
+  const isSave =
+    (isMac && e.metaKey && e.key === "s") ||
+    (!isMac && e.ctrlKey && e.key === "s");
+
+  if (isSave) {
+    e.preventDefault();     // stop browser Save dialog
+    e.stopPropagation();
+
+    download_data();
+  }
+});
+
 
 window.addEventListener("beforeprint", () => {
     // Redirect to your custom print
