@@ -195,22 +195,27 @@
     BUTTONS
     ===================== */
     button {
-        appearance: none;
-        border: 1px solid #d0d0d0;
-        background: #ffffff;
-        padding: 0.45rem 0.9rem;
-        border-radius: 8px;
-        font-size: 0.9rem;
-        cursor: pointer;
-        transition: all 0.15s ease;
+    appearance: none;
+    border: 1px solid #d0d0d0;
+    background: #ffffff;
+    padding: 0.45rem 0.9rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background 0.15s ease, transform 0.1s ease;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
     }
 
+    /* Hover ONLY on non-touch devices */
+    @media (hover: hover) and (pointer: fine) {
     button:hover {
         background: #f2f2f2;
     }
+    }
 
     button:active {
-        transform: translateY(1px);
+    transform: translateY(1px);
     }
 
     /* =====================
