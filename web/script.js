@@ -545,12 +545,19 @@ function generateTable() {
 
             element = document.getElementById(`${RunMtechCheck(key)}`);
 
+            element.classList.replace(element.classList.item(0), colorList[slot]);
             if (data == null) {
-                element.innerHTML = `<br>`;
+                if (slot != "PG"){
+                    element.innerHTML = `(${slot})`;
+                } else {
+                    element.innerHTML = `Lunch`;
+                }
+                element.classList.add("td-muted");
             } else {
                 element.innerHTML = `(${slot}) <br> <strong> ${data.courseNo} </strong><br>${data.name}<br> <span style="font-size: x-small">${data.venue}</span>`;
+                element.classList.remove("td-muted");
             }
-            element.classList.replace(element.classList.item(0), colorList[slot]);
+            
 
 
         });
